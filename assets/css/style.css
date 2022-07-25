@@ -1685,6 +1685,7 @@ footer a:hover {
 
 .team {
 		padding: 0 0 100px;
+        background: #fff;
 }
 
 
@@ -2277,6 +2278,29 @@ ul.social-icons li i{
     }
     .main-header .container-fluid {
         padding: 0;
+    }
+    .box-intro,#testimonials {
+            background-attachment: inherit!important;
+    }
+    #testimonials  {
+        margin-top: 0;
+        background-position: -99999px -99999px;
+        overflow: hidden;
+    }
+    #testimonials:before{
+        content: "";
+        background-image: inherit;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover;
+        background-size: cover !important;
+        z-index: -1;
+        background-position: 60% center;
     }
 }
 @media only screen and (max-width : 420px){ 
