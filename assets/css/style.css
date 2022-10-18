@@ -76,7 +76,7 @@ ol, ul {
 }
 
 p{
-    color: #777;
+    color: #666;
     font-size: 15px;
     font-weight: 300;
 }
@@ -2335,3 +2335,12 @@ ul.social-icons li i{
 }
 }
 
+.mb {
+    display: none;
+}
+
+@media only screen and (max-width : 768px){ 
+.mb {
+    display: block;
+}
+}
