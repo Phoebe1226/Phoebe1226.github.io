@@ -1,0 +1,153 @@
+@media only screen and (max-width:1367px){.cd-slider .content{padding:0 6% 0 5%}
+.service02{margin-top:100px}
+}
+@media only screen and (max-width:1025px){.container{max-width:900px}
+.cd-slider .content{padding:0 50px 0 5%}
+.navbar{margin-right:100px}
+.navbar-nav>li>a{padding:0 15px}
+.service-t{position:relative; left:auto; transform:none; bottom:auto; margin-bottom:50px; max-width:900px}
+.about, .feature, .service, .product, .contact{padding:70px 0}
+.cd-slider-wrapper{height:75vh}
+.service01 .service-t >div, .service02 .service-t >div{padding:0; width:100%; float:none; max-width:70%}
+.service-img{width:100%}
+.service01{background-position:left top}
+.service02{margin-top:60px; background:url(../img/bg-left.png) no-repeat; background-position:right top; background-size:contain}
+.service30, .service08, .frature-big-img{ height:auto; background:none}
+.frature-big-img-i, .service-01, .service-02{display:block}
+}
+@media (max-width:997px){.navbar-nav{display:none}
+.title{font-size:32px}
+.container{width:90%}
+nav{position:fixed; background:rgba(44,44,44,0); height:60px; padding:20px 10px}
+.logo{margin-top:0}
+.logo img{height:20px}
+.hamburger{right:10px; top:22px}
+.l-scroll-count{right:10px}
+.sond-box{top:10px; right:50px; position:fixed}
+.sound--icon{background-size:12px}
+.nav-color{background:rgba(44,44,44,0.9); -webkit-transition:-webkit-transform 0.3s; -moz-transition:-moz-transform 0.3s; transition:transform 0.3s}
+.hamburger__icon.changing-color, .hamburger__icon.changing-color:before, .hamburger__icon.changing-color:after{background-color:#FFF}
+}
+@media (max-width:900px){.logo span{border-left:#009f91 solid 5px}
+.title{font-size:36px; margin-bottom:20px}
+.frature-item h3{font-size:18px}
+.cd-slider .cd-half-block.image{width:100%}
+.cd-slider-wrapper{position:relative; height:100vh; min-height:800px}
+.cd-slider{position:relative; z-index:1; height:100%; overflow:hidden}
+.cd-slider li{position:absolute; top:0; left:0; height:100%; width:100%; -webkit-transform:translateX(100%); -moz-transform:translateX(100%); -ms-transform:translateX(100%); -o-transform:translateX(100%); transform:translateX(100%); -webkit-transition:-webkit-transform 0.6s; -moz-transition:-moz-transform 0.6s; transition:transform 0.6s}
+.cd-slider li.is-visible{-webkit-transform:translateX(0); -moz-transform:translateX(0); -ms-transform:translateX(0); -o-transform:translateX(0); transform:translateX(0)}
+.cd-slider .cd-half-block{height:50%; background-position:center center; background-repeat:no-repeat; background-color:#ececec}
+.cd-slider .image{background-size:cover}
+.cd-slider .content{padding:30px 50px; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+.cd-slider .cd-half-block.content{width:100%}
+.cd-slider .light-bg{color:rgba(0,0,0,0.6)}
+.cd-slider-navigation{ position:absolute; z-index:3; left:50%; right:auto; -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); bottom:30px}
+.cd-slider-navigation li{display:inline-block; margin:0 .25em}
+.cd-slider-navigation li{height:10px}
+.product .item >div{padding:30px}
+.product .row{margin-right:-20px; margin-left:-20px}
+.product .item{padding-right:20px; padding-left:20px}
+.product .item >div{min-height:535px}
+.tel-btn{width:auto}
+.contact-intro h3{font-size:18px}
+.contact-intro .time{font-size:32px}
+.contact-title h4{font-size:14px}
+.has-animation.animate-in:before{background-color:#ececec; animation-delay:.3s; -webkit-animation-delay:.3s}
+}
+@media (max-width:800px){.video-title{font-size:48px}
+.frature-item h3{font-size:16px}
+section.one{padding-top:40px}
+.about, .contact{padding-top:50px}
+.contact-title{width:100%; text-align:center}
+.contact-intro{text-align:center; width:100%; margin-top:30px}
+.right-arrow:after{height:16px; width:16px}
+.right-arrow{height:29px; width:29px}
+.service02, .service01{background-position:right top; background-size:60%}
+}
+@media (max-width:767px){.mob{display:block}
+.mob .video_content{ position:absolute;  left:50%;  top:50%;  -webkit-transform:translate(-50%,-50%);  transform:translate(-50%,-50%);  width:100%}
+.videobanner{display:none}
+.video-title{font-size:40px}
+.video-intro h4{font-size:16px}
+.video-title span{width:100%; height:80px; background:transparent; margin-bottom:5px; margin:8px 0}
+.video-title span:before{content:''; width:1px; height:80px; background-color:#FFF; display:inline-block; position:absolute; left:50%; z-index:1; -webkit-animation:elasticus 1.5s cubic-bezier(1,0,0,1) infinite; -moz-animation:elasticus 1.5s cubic-bezier(1,0,0,1) infinite; -o-animation:elasticus 1.5s cubic-bezier(1,0,0,1) infinite; animation:elasticus 1.5s cubic-bezier(1,0,0,1) infinite}
+.scroll-down{width:35px; height:35px}
+.one p{white-space:nowrap; font-size:13px}
+section.one{padding-top:25px}
+.one .item{margin-top:40px}
+.l-scroll-count{display:none}
+.cd-slider .cd-half-block{height:30%}
+.cd-slider .content{padding:30px 10%}
+.title{font-size:28px; text-align:left}
+section.one .item span{margin:10px auto 15px; opacity:0.7}
+.cd-slider .content >div{padding-bottom:20px; padding-top:10px}
+.cd-slider-wrapper{height:680px; min-height:680px}
+.cd-slider-navigation{bottom:-10px}
+.about, .feature, .service, .product, .contact{padding:70px 0 20px}
+.frature-big-img:before{top:-50px; left:50%; height:80px}
+.service01 .service-t >div, .service02 .service-t >div{max-width:100%}
+.pro-title .title{padding:0;width: 100%;}
+.product .item{margin-bottom:30px}
+.product .item:last-child{margin-bottom:0}
+.logo img{height:15px}
+.logo span{font-size:13px; margin-left:10px}
+.sound{width:30px; height:30px; opacity:1}
+.sound--wave{right:2px}
+.sound--wave_one{width:42%; height:42%}
+.hamburger{width:23px; height:16px; right:20px; top:19px}
+nav{padding:17px 15px; height:52px}
+.hamburger__icon:before{top:-6px}
+.hamburger__icon:after{top:6px}
+.sond-box{top:11px; right:55px}
+.sound--icon{background-size:10px}
+.hamburger__icon, .hamburger__icon:after, .hamburger__icon:before{width:23px}
+.feature-info .item{width:100%}
+.frature-item{width:100%; margin-top:30px}
+.frature-big-img{position:relative; padding:0; width:110%; margin-left:-5%}
+.pro-title hr{display:none}
+.btn{font-size:13px; height:40px; background:rgba(255,255,255,0.5)}
+.btn:before{top:18px}
+.btn span{line-height:40px}
+.a-btn{text-align:left; left:0}
+.product{padding-bottom:70px; border-bottom:1px solid #e5e5e5}
+.service .title span{font-size:28px}
+.service{padding-top:20px}
+.service01{background:#ececec; padding-top:50px}
+.service02{margin-top:0; padding-top:50px; background:#ececec}
+.contact-title .title{text-align:center}
+.contact-intro .time{width:100%; display:block; margin-top:5px; font-size:28px}
+.contact-intro h3{font-size:16px}
+.contact-info{padding:0; border:none}
+.contact-intro h5{margin:10px 0px 0}
+.contact-info2{margin-top:15px; text-align:center}
+.mailto, .mailto:hover, .mailto:focus, .mailto:active, .mailto.active{font-size:18px}
+.tel-btn{float:none; font-size:15px; padding:15px; width:100%; margin-top:5px; max-width:350px}
+.mailto img{width:24px}
+.copyright{text-align:center; width:100%}
+.facebook{text-align:center; width:100%; margin-top:5px}
+.pro-title .zh-title{display:block; text-align:left}
+.contact-title{padding:0}
+.service02 .service-t >div{-webkit-animation-name:fadeInLeft!important;  animation-name:fadeInLeft!important}
+.btn:hover{border:1px solid #2c2c2c; color:#2c2c2c}
+.btn:hover:before{border-color:#2c2c2c; left:-35px}
+.btn:hover span{-webkit-transform:none; -moz-transform:none; -o-transform:none; transform:none}
+}
+@media (max-width:385px){p{font-size:13px}
+.cd-slider .content >div{padding-bottom:10px}
+.cd-slider-navigation{bottom:0}
+.product .pro-title{margin:0 0 40px}
+.container{width:94%}
+.product .item >div{min-height:auto; padding:20px 20px 40px}
+.one .item img{width:42px}
+.one .item{margin-top:30px}
+section.one{padding-top:10px}
+.about, .feature, .service, .product, .contact{padding:50px 0 20px}
+.product{border-bottom:none}
+.contact-intro h5{font-size:13px}
+.contact-intro h3{font-size:14px}
+.contact-intro .time{font-size:26px}
+.right-arrow{height:26px; width:26px; top:-2px; left:0px}
+.right-arrow:after{height:15px; width:15px}
+.contact-info2{margin-top:0}
+.mailto, .mailto:hover, .mailto:focus, .mailto:active, .mailto.active{ font-size:17px;  line-height:50px}
+}
