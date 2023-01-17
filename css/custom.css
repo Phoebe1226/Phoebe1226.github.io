@@ -11,7 +11,10 @@ a, p, li {
   font-family: "Lato", Arial, sans-serif;
   color: #4e4e4e;
   font-size: 1em;
-  line-height: 1.75em; }
+  line-height: 1.75em;
+  -webkit-appearance: none;
+  appearance: none;
+ }
 
 a:hover {
   text-decoration: none !important;
@@ -21,6 +24,12 @@ a:hover {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
+
+input {
+    -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+    -moz-appearance: none;     /* FireFox */
+    appearance: none;
+}
 
 .container {
   margin: auto;
