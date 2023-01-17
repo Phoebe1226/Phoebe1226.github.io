@@ -191,7 +191,7 @@ footer {
 }
 .t1-container {
     position: relative;
-    max-height: 240px;
+    max-height: 230px;
     overflow: hidden;
 }
 .t1-container.max-height {
