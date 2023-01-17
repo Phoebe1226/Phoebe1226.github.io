@@ -138,10 +138,12 @@ input {
     color: #8c8c8c; }
     .work .work-list li b {
       padding-bottom: 5px;
-      font-size: 1.1875em;
+      font-size: 17px;
       font-weight: 700;
       text-decoration: none;
-      border-bottom: 1px solid #b3b3b3; }
+      border-bottom: 1px solid #b3b3b3; 
+        color: #4e4e4e;
+    line-height: 1.75em;}
       .work .work-list li a:hover {
         border-bottom: 1px solid #333333; }
 
