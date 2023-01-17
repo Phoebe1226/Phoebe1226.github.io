@@ -143,6 +143,9 @@ input, button {
     list-style: none;
     font-size: 0.9375em;
     color: #8c8c8c; }
+    .work .work-list li:last-child {
+      margin-top: 4px;
+    }
     .work .work-list li b {
       padding-bottom: 5px;
       font-size: 17px;
