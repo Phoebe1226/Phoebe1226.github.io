@@ -31,11 +31,11 @@
 				</div>
 			    <nav id="navbar-1" class="navbar item-nav">
 				    <ul>
-				        <li class="active"><a href="#about">關於我</a></li>
-				        <li><a href="#experiences">工作經驗</a></li>
-				        <li><a href="#achievements">接案經驗</a></li>
-				        <li><a href="#skills">專業技能</a></li>
-				        <!-- <li><a href="case.html">作品</a></li> -->
+				        <li class="active"><a href="index.html">關於我</a></li>
+				        <li><a href="index.html#experiences">工作經驗</a></li>
+				        <li><a href="index.html#achievements">接案經驗</a></li>
+				        <li><a href="index.html#skills">專業技能</a></li>
+				        <li><a href="case.html">作品案例</a></li>
 				    </ul>
 				</nav>
 			</header>
@@ -212,7 +212,7 @@
 	<!-- Javascript -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
+    <script src="js/kube.js"></script>
     <script src="js/site.js"></script>
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
@@ -231,6 +231,16 @@
 	      $(this).text("Read More (+)");
 	    };
 	});
+	</script>
+	<script type="text/javascript">
+		if ($(window).width() < 768) {
+			$('.navigation-toggle').click(function() {
+				$('#navbar-1').toggle('Display');
+			});
+			$('#navbar-1 a').click(function() {
+				$('#navbar-1').toggle('Display');
+			});
+		}
 	</script>
       <!-- Swiper JS -->
       <script src="js/swiper.min.js"></script>

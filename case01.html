@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/kube.min.css" />
      <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -14,14 +15,8 @@
     <link rel="shortcut icon" href="img/favicon.png" />
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<style>
-		.intro h1:before {
-			/* Edit this with your name or anything else */
-			content: 'Design';
-		}
-	</style>
 </head>
-<body>
+<body class="page">
 	<!-- Navigation -->
 	<div class="main-nav">
 		<div class="container">
@@ -31,11 +26,11 @@
 				</div>
 			    <nav id="navbar-1" class="navbar item-nav">
 				    <ul>
-				        <li class="active"><a href="#about">關於我</a></li>
-				        <li><a href="#experiences">工作經驗</a></li>
-				        <li><a href="#achievements">接案經驗</a></li>
-				        <li><a href="#skills">專業技能</a></li>
-				        <li><a href="case.html">作品</a></li>
+				        <li class="active"><a href="index.html">關於我</a></li>
+				        <li><a href="index.html#experiences">工作經驗</a></li>
+				        <li><a href="index.html#achievements">接案經驗</a></li>
+				        <li><a href="index.html#skills">專業技能</a></li>
+				        <li><a href="case.html">作品案例</a></li>
 				    </ul>
 				</nav>
 			</header>
@@ -43,15 +38,17 @@
 	</div>
 
 	<!-- Introduction -->
-	
+	<div class="container container2 intro section">
+    <div class="title text-center"><h1>巴哈姆特APP改版</h1></div>
+  </div>
+
 
       <!-- Swiper -->
       <div class="swiper-container">
          <div class="swiper-wrapper">
             <div class="swiper-slide"> <a href="case01.html"><img class="img-fluid" src="img/photo-1.jpg" alt="Photo"></a></div>
-            <div class="swiper-slide"> <a href="case02.html"><img class="img-fluid" src="img/photo-1.jpg" alt="Photo"></a></div>
-            <div class="swiper-slide"> <a href="case03.html"><img class="img-fluid" src="img/photo-1.jpg" alt="Photo"></a></div>
-            <div class="swiper-slide"> <a href="case04.html"><img class="img-fluid" src="img/photo-1.jpg" alt="Photo"></a></div>
+            <div class="swiper-slide"> <a href="case/case_web_01/index.html" target="_blank"><img class="img-fluid" src="img/photo-2.jpg" alt="Photo"></a></div>
+            <div class="swiper-slide"><img class="img-fluid" src="img/photo-3.jpg" alt="Photo"></div>
          </div>
          <!-- Add Pagination -->
          <div class="swiper-pagination"></div>
@@ -89,17 +86,15 @@
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
-    <script>
-	$('.t1-button').click(function() {
-	  $(this).toggleClass('readless');
-	    $('.t1-container').toggleClass('max-height');
-	    if ($(this).hasClass('readless')) {
-	      $(this).text("Read Less (-)");
-	    } else {
-	      $(this).text("Read More (+)");
-	    };
-	});
-	</script>
+
+  <script type="text/javascript">
+    $('.navigation-toggle').click(function() {
+      $('#navbar-1').toggle('Display');
+    });
+    $('#navbar-1 a').click(function() {
+      $('#navbar-1').toggle('Display');
+    });
+  </script>
       <!-- Swiper JS -->
       <script src="js/swiper.min.js"></script>
       <script>
