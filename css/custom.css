@@ -136,7 +136,7 @@ input {
     list-style: none;
     font-size: 0.9375em;
     color: #8c8c8c; }
-    .work .work-list li a {
+    .work .work-list li b {
       padding-bottom: 5px;
       font-size: 1.1875em;
       font-weight: 700;
