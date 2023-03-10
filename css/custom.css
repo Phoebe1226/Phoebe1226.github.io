@@ -604,6 +604,107 @@ article {
     font-size: calc(2rem + 0.6vw);
     font-weight: 500;
 }
+.page-case h3 {
+  font-size: calc(2rem + 0.6vw);
+
+    font-family: roboto condensed,sans-serif;
+}
+.page-case p {
+  font-size: 16px;
+}
+.page-case ul {
+  margin-left: 20px;
+  font-size: 16px;
+}
 .data-item p {
   opacity: .5;
+}
+.iphone-feature {
+  position: relative;
+    padding: 160px 0 240px
+}
+.iphone-showcase {
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+}
+@media only screen and (max-width: 992px){
+  .iphone-showcase {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    padding: 0 15px;
+    margin-top: 64px;
+  }
+  .iphone-feature {
+    padding: 80px 0 60px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+}
+.bg-gray {
+    padding: 120px 0 800px;
+    position: relative;
+    background-color: #f4f4f5;
+    margin-bottom: 50px;
+}
+.iphone-screens {
+  position: relative;
+  margin-bottom: 120px;
+}
+.iphone-screens .images-list li {
+    position: absolute;
+    width: 320px;
+    top: 92px;
+    box-shadow: 10px 10px 16px 0px rgb(61 61 62 / 15%);
+}
+.iphone-screens .images-list li.main-img {
+    width: 395px;
+    top: 0;
+    left: 50%;
+    margin-left: -193px;
+    box-shadow: none;
+}
+.iphone-screens .images-list li:nth-child(1) {
+    left: 50%;
+    margin-left: -880px;
+}
+.iphone-screens .images-list li:nth-child(2) {
+    left: 50%;
+    margin-left: -530px;
+}
+.iphone-screens .images-list li:nth-child(4) {
+    right: 50%;
+    margin-right: -530px;
+}
+.iphone-screens .images-list li:nth-child(5) {
+    right: 50%;
+    margin-right: -880px;
+}
+@media only screen and (max-width: 992px){
+  .iphone-screens .images-list li {
+    position: absolute;
+    width: 240px;
+    top: 68px;
+  }
+  .iphone-screens .images-list li.main-img {
+    width: 295px;
+    margin-left: -148px;
+  }
+  .iphone-screens .images-list li:nth-child(1) {
+    margin-left: -680px;
+  }
+  .iphone-screens .images-list li:nth-child(2) {
+    margin-left: -410px;
+  }
+  .iphone-screens .images-list li:nth-child(4) {
+    margin-right: -410px;
+  }
+  .iphone-screens .images-list li:nth-child(5) {
+    margin-right: -680px;
+  }
 }
