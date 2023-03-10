@@ -15,7 +15,6 @@
     <link rel="shortcut icon" href="img/favicon.png" />
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
 <body class="page page-case">
 	<!-- Navigation -->
@@ -39,63 +38,23 @@
 	</div>
 
 	<!-- Introduction -->
-<section class="case-header">
+<section>
     <div class="container container2 section">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1 class="title  wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">巴哈姆特APP改版</h1>
-          <p class="wow fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">巴哈姆特是一個提供ACG玩家討論的社交平台，創立至今已有26年，隨著服務增加，資訊堆砌雜亂，視覺也不符合現代主流設計，本次改版根據目的及需求，主要將信息進行整理、視覺優化、提高瀏覽舒適度，重新設計一版較清爽的介面，讓內容即是介面。</p>
-         <div><a href="https://apps.apple.com/tw/app/ba-ha-mu-te/id479826450" class="btn-w" data-wow-delay=".3s" data-effect="mfp-zoom-in" target="_blank" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">下載APP</a></div>
-        
-
-          <!-- iPhone -->  
-          <img class="header_iphone wow fadeInUp animated" src="img/case-detail/01/header_iphone.png" alt="" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-        </div>
-        <!-- //iPhone -->
+          <article>
+            <h1 class="title  wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">巴哈姆特名片設計</h1>
+            
+            <img src="img/case-detail/08/case-8-3.jpg">
+            <img src="img/case-detail/08/case-8-4.jpg">
+            <img src="img/case-detail/08/case-8-1.jpg">
+            <img src="img/case-detail/08/case-8-2.jpg">
+          </article>
+       
       </div>
     </div>
-</section>
-<section>
-  <div class="container container2 section">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="case-title text-center">
-          <h5>網站成績</h5>
-          <h2>WEBSITE TRAFFIC</h2>
-        </div>
-      </div>
-      <div class="col-md-12 text-center">
-        <p class="mb-5">隨時接收遊戲動漫畫最新資訊<br>
-        哈啦討論零時差、盡情發揮創作力，沉浸在豐富的 ACG 世界</p>
-      </div>
+  </section>
 
-      <div class="col-md-3 col-6 mb-5">
-        <div class="data-item text-center">
-          <h3><span class="counter animated">2,240</span><small>萬</small></h3>
-          <p>日平均瀏覽量</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="data-item text-center">
-          <h3><span class="counter animated">150</span><small>萬</small></h3>
-          <p>日活躍使用者</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="data-item text-center">
-          <h3><span class="counter animated">256</span><small>萬</small></h3>
-          <p>週回訪者</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="data-item text-center">
-          <h3><span class="counter animated">649</span><small>萬</small></h3>
-          <p>月回訪者</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
   <section class="section">
     <div class="text-center"></div>
   </section>
@@ -136,6 +95,14 @@
 	<script src="js/typed.min.js"></script>
     <script src="js/kube.min.js"></script>
     <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["Phoebe Chen", "UI Designer"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+
   <script type="text/javascript">
     $('.navigation-toggle').click(function() {
       $('#navbar-1').toggle('Display');
@@ -144,7 +111,6 @@
       $('#navbar-1').toggle('Display');
     });
   </script>
-
       <!-- Swiper JS -->
       <script src="js/swiper.min.js"></script>
       <script>
@@ -182,15 +148,5 @@
            },
          });
       </script>
-    <script src="js/waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.counter').counterUp({
-                delay: 50,
-                time: 2500
-            });
-        });
-    </script>
 </body>
 </html>
