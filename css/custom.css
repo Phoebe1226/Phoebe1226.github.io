@@ -1,4 +1,7 @@
-
+*{
+  -webkit-appearance:none; 
+  outline:none;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display SC", serif;
   color: #333333; }
@@ -552,4 +555,15 @@ margin-bottom: 60px;
     width: 80%;
     margin: 0 auto;
     max-width: 380px;
+}
+article p {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
+article img {
+  margin-bottom: 11px;
+}
+article {
+  margin-bottom: 80px;
 }
