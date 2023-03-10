@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>升級巴哈 VIP．全裝置無廣告</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <!-- facebook share link start -->
+    <meta property="og:url" content="https://prj.gamer.com.tw/2018/wall/ob/luckydraw.php">
+    <meta property="og:image" content="https://i2.bahamut.com.tw/prj/2018/wall-ob/img/fb-lottery.jpg">
+    <meta property="og:title" content="升級巴哈 VIP．全裝置無廣告">
+    <meta property="og:description" content="一年 365 天 X 全裝置 X 跟商業廣告絕緣的純淨體驗">
+    <link rel="apple-touch-icon" href="http://m.gamer.com.tw/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://m.gamer.com.tw/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://m.gamer.com.tw/apple-touch-icon-144x144.png">
+    <!-- facebook share link end -->
+    <link href="css/animsition.min.css" rel="stylesheet">
+    <link href="https://i2.bahamut.com.tw/css/plugins/tippy-1.4.0.css?v=1508309674" rel="stylesheet" type="text/css">
+    <link href="css/event_layout.css" rel="stylesheet">
+    <link href="css/event_style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+  <div>
+    <div class="wapper">
+
+      <div class="wapper-backgroundimg">
+        <img class="bk-img_rt" src="img/background-img2.png">
+        <section class="content-wrap content content--layout content--layout-1">
+          <div class="leaf_topleft-2"><img class="w100" src="img/leaf_topleft.png"></div>
+          <img class="left_rb rellax" src="img/leaf01.png" data-rellax-speed="3">
+          <img class="left_rt rellax" src="img/leaf02.png" data-rellax-speed="0">
+          <img class="left_l rellax" src="img/leaf03.png" data-rellax-speed="2">
+          <div class="container">
+            <div>
+              <div class="row">
+                <div class="col-12"><h2 class="title">升級 VIP</h2></div>
+                <div class="col-12">
+                  <form>
+                    <fieldset class="input-group">
+                        <input type="text" placeholder="輸入巴哈 VIP 序號">
+                        <button type="submit" value="submit"><img src="img/btn-icon.png">送出</button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="precautions content-wrap">
+          <div class="container content content--layout content--layout-3">
+            <h3 class="little-title">注意事項：</h3>
+            <ul>
+              <li>購買 VIP 方案即代表接受服務條款。</li>
+              <li>升級後：巴哈姆特<span>桌面版</span>、<span>手機版</span>網頁、巴哈姆特 <span>APP</span> 將<span>不會顯示商業廣告</span>。</li>
+              <li>不包含動畫瘋服務，及使用者內嵌的站外內容廣告。</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="content content--related">
+      <img class="footer-leaf_right" src="img/footer-img02.png">
+      <img class="w100 footer-ground" src="img/footer-img.png">
+      <div class="footerbg">
+        <div class="container">
+          <div class="text-center">
+            旺普網路資訊股份有限公司 © Oneup Network Corporation All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script type="text/javascript" src="js/rellax.min.js"></script>
+    <script type="text/javascript">
+      var rellax = new Rellax('.rellax');
+    </script>
+    <script type="text/javascript">
+      //平滑滾動
+      var headerHeight = $("header").height();
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - headerHeight
+            }, 800, 'swing', function () {
+                window.location.hash = target ;
+            });
+        });
+      });
+    </script>
+</body>
+</html>

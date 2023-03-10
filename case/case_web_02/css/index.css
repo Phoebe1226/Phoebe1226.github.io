@@ -1,0 +1,373 @@
+/* 
+---------------------------------------------
+index s1
+--------------------------------------------- 
+*/
+.index .wrapper {
+  background-image: none;
+}
+.index .wrapper {
+  margin-top: 0;
+}
+.index .header-area {
+  background-color: rgba(255,255,255,.9);
+}
+.index-s1 {
+  position: relative;
+  background-image: url(../images/index-bg-s1_1.png);
+  background-size: cover;
+  background-position: bottom center;
+  min-height: calc(100vh + 100px);
+  padding-bottom: 0!important;
+}
+.index-s1_bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+.indx_s1_title {
+  position: absolute;
+  width: 60%;
+  max-width: 640px;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.indx_s1_title .indx_s1_title02 {
+  position: absolute;    
+  left: 0;
+  top: 0;
+}
+.s1_container {
+  position: absolute;
+  bottom: 12%;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-height: 92vh;
+  z-index: 2;
+}
+.main01 {
+  max-height: 92vh;
+}
+.nav-slide .download-qr {
+      background-image: url(https://nikki4webstorage.papegames.cn/tw/home/images/down-qr.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 3px auto 0;
+}
+
+.index .star {
+  background-color: #fff;
+    box-shadow: #f2b4b7 0 0px 7px 1px, #fbe6b2 0 0 12px, #fbe6b2 0 0 12px;
+}
+.index .banner_star  {
+  right: 3px;
+    bottom: 40px;
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+}
+
+.index-s2-top_r {
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    width: 15%;
+    z-index: 2;
+
+}
+.qrcode {
+    position: absolute;
+    right: 60px;
+    top: 80px;
+    z-index: 3;
+    cursor: pointer;
+}
+.qrcode a {
+    background: no-repeat center;
+    display: block;
+}
+.qrcode img {
+    width: 150px;
+}
+.icon img {
+  width: 128px;
+  height: 48px;
+}
+/* 
+---------------------------------------------
+index s2
+--------------------------------------------- 
+*/
+.index-s2 {
+  background-image: url(../images/index-s2-bg.png);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  margin-top: -100px;
+  padding-bottom: 100px;
+  z-index: 0;
+}
+.s2-circle {
+  text-align: center;
+}
+.s2-circle  img {
+  max-width: 60%;
+}
+.s2-circle .s2-circle-mid {
+   position: absolute;
+   left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  transform-origin:0px 0px;
+}
+.s2-circle .s2-circle-mid img {
+  -webkit-animation: rotateRun 8s linear infinite;
+  animation: rotateRun 8s linear infinite;
+  transform-origin:center;
+  max-width: 37%;
+  margin-top: 12%;
+  margin-left: -.5%;
+}
+
+ @keyframes rotateRun { 
+  0%{transform: rotate(0deg);}
+  100%{  transform: rotate(360deg);}
+
+}
+.s2-circle p {
+  color: #a9313a;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.index-s2-top_l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+}
+.s1_container .desk {
+  margin-top: 16px;
+}
+/* 
+---------------------------------------------
+index s3
+--------------------------------------------- 
+*/
+.index-s3 {
+  background-image: url(../images/index-s3-bg.png);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 0;
+  margin-top: -100px;
+  padding-bottom: 100px;
+}
+.index-s3-img01 {
+  max-width: 70%;
+  position: relative;
+  z-index: 2;
+}
+.index-s3-img02 {
+  max-width: 24%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.s3-btn {
+  max-width: 440px;
+  width: 80%;
+  margin: -8% auto 80px;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+}
+.s3-btn a {
+  display: inline-block;
+  width: 49%;
+  padding: 0 4px;
+}
+.s3-btn  .btn {
+  padding: 0;
+}
+
+
+/* 
+---------------------------------------------
+RWD CSS
+--------------------------------------------- 
+*/
+
+@media (max-width: 992px) {
+  .index-s1 {
+    min-height: calc(100vh + 80px);
+  }
+  .index-s1_bottom {
+    max-width: initial;
+    width: 130%;
+    margin-left: -15%;
+  }
+  .s2-circle img {
+    max-width: 80%;
+  }
+  .s2-circle .s2-circle-mid img {
+    max-width: 50%;
+    margin-top: 15.5%;
+    margin-left: -.5%;
+  }
+  .index-s2-top_l {
+    top: 5%;
+    width: 15%;
+  }
+  .index-s3-img01 {
+    max-width: 80%;
+  }
+  .index .header-area .container {
+    max-width: 90%;
+  }
+  .qrcode {
+    right: 30px;
+  }
+  .s2-circle p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .s3-btn {
+    margin-top: -10%;
+    max-width: 400px;
+  }
+  .index-s3-img01 {
+    max-width: 88%;
+  }
+  .index-s3-img02 {
+    max-width: 25%;
+  }
+  .qrcode {
+    right: 20px;
+  }
+  .s2-circle p {
+    font-size: 16px;
+  }
+  .index-s1_bottom {    
+    width: 150%;
+    margin-left: -25%;
+  }
+  .s2-circle img {
+    max-width: 90%;
+  }
+  .s2-circle .s2-circle-mid img {
+    max-width: 57%;
+    margin-top: 17.2%;
+    margin-left: -.8%;
+  }
+  .s2-circle p{
+    font-size: 16px;
+  }
+  .s1_container .desk {
+    display: block;
+  }
+  .s1_container .mb {
+    display: none;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .s1_container .desk {
+    display: none;
+  }
+  .s1_container .mb {
+    display: block;
+    width: 100%;
+  }
+  .s1_container {
+    left: 50%;
+    bottom: 15%;
+  }
+  .qrcode {
+    display: none;
+  }
+  .indx_s1_title {
+    width: 100%;
+  }
+  .indx_s1_title {
+    bottom: 0;
+  }
+  .index-s1_bottom {
+    width: 220%;
+    bottom: 4%;
+    margin-left: -60%;
+  }
+  .s2-circle img {
+    max-width: 128%;
+    margin-left: -14%;
+  }
+  .s2-circle p {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 600;
+    word-break: keep-all;
+  }
+  .s2-circle .s2-circle-mid img {
+    max-width: 80%;
+    margin-top: 25%;
+    margin-left: -1%;
+  }
+  .s2-circle {
+    margin-top: -5%;
+  }
+  .index-s2-top_r {
+    bottom: -8%;
+    width: 25%;
+  }
+  .index-s2-top_l {
+    top: 9%;
+    width: 18%;
+  }
+  .index-s3-img01 {
+    max-width: 110%;
+  }
+  .s3-btn {
+    margin-top: 0;
+  }
+  .index-s3-img02 {
+    max-width: 36%;
+  }
+  .index-s1 {
+    position: relative;
+    background-image: url(../images/index-bg-s1_m.png)
+    background-size: cover;
+    background-position: bottom left;
+  }
+  .sakura {
+    display: none!important;
+  }
+  .main01 {
+    max-width: auto;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .s2-circle p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
