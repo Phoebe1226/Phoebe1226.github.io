@@ -30,7 +30,7 @@ body {
 
 @media (min-width: 1600px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1400px; } }
+    max-width: 1200px; } }
 section {
   padding: 120px 0;
 }
@@ -43,6 +43,7 @@ p {
 @media (min-width: 1200px) {
   .h2, h2 {
     font-size: 2.82rem;
+    font-weight: bold;
   }
   .h3, h3 {
     font-size: 1.55rem;
@@ -76,6 +77,9 @@ li {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+.kv img {
+  width: 100%;
 }
 .mb {
   display: none;
@@ -153,6 +157,9 @@ ul.tab-title li.active a{
 
 .s3 {
   box-shadow: 0px 0px 40px rgba(0,0,0,.8);
+  position: relative;
+  z-index: 1;
+  background: #fff;
 }
 
 .s3 .title {
@@ -465,3 +472,57 @@ color: #430000!important;
 .s7-text.active {
   display: block;
 }
+.fab {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  top: 20%;
+  z-index: 2;
+    overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
+  border-radius: 16px 0 0 16px;
+}
+.fab a {
+  display: inline-block;
+  position: relative;
+  padding: 16px 6px 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d84256+0,f2808c+100 */
+background: #d84256; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #d84256 0%, #f2808c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #d84256 0%,#f2808c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #d84256 0%,#f2808c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d84256', endColorstr='#f2808c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.fab a:after{
+    background: #fff;
+    content: "";
+    height: 240px;
+    left: -100px;
+    opacity: .2;
+    position: absolute;
+    top: -48px;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19,1,0.22,1);
+    transition: all 550ms cubic-bezier(0.19,1,0.22,1);
+    width: 48px;
+    z-index: 1;
+    overflow: hidden;
+  }
+.fab a:hover:after, .fab a:focus:after{left: 180px;}
+
+.fab a img {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 8px;
+}
+.fab p {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+

@@ -9,14 +9,14 @@
 	 <meta name="apple-mobile-web-app-capable" content="yes">
 	 <meta name="mobile-web-app-capable" content="yes">
 
-	 <meta name="title" content="新光銀行">
-	 <meta name="keywords" content="新光銀行">
-	 <meta name="description" content="新光銀行">
+	 <meta name="title" content="新光銀行全新AI理財工具，理財Dr.光">
+	 <meta name="keywords" content="新光銀行,AI大數據分析,AI,規劃,投資">
+	 <meta name="description" content="24H用AI為你量身打造投資組合，靈活選配喜歡的投資標的，不需資金門檻，也能享有專業理財顧問服務。">
 
 	 <meta property="og:url" content="http://">
-	 <meta property="og:title" content="新光銀行">
-	 <meta property="og:description" content="新光銀行">
-	 <meta property="og:image" content="img/default/fb.jpg">
+	 <meta property="og:title" content="新光銀行全新AI理財工具，理財Dr.光">
+	 <meta property="og:description" content="24H用AI為你量身打造投資組合，靈活選配喜歡的投資標的，不需資金門檻，也能享有專業理財顧問服務。">
+	 <meta property="og:image" content="img/default/kv.png">
 	 <meta property="og:type" content="website">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +29,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/rwd.css">
 
-	<title>新光銀行</title>
+	<title>新光銀行全新AI理財工具，理財Dr.光</title>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNHRFZ7');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
 	<header>
@@ -43,7 +50,13 @@
 			</nav>
 		</div>
 	</header>
-	
+	<div class="fab" style="display: none;">
+		<a href="#" target="_blank">
+			<img src="img/fab-icon.png" >
+			<p>加入LINE立即體驗<br>
+完成任務抽萬元好禮</p>
+		</a>
+	</div>
 	<div>
 		<div id="top" class="kv">
 			<img src="img/kv.png">
@@ -166,28 +179,28 @@
 			<div class="text-center"><h2 class="title color-primary mb-5 text-left">四步驟<br>獲取專屬投資建議</h2></div>
 
 			<div class="row">
-				<div class="col-lg-3 col-6">
+				<div class="col-lg-3 col-6 pulse wow animate">
 					<div class="item text-center">
 						<div class="text-center"><h4><b>STEP1</b></h4></div>
 						<div class="img"><img src="img/s3-icon1.png"></div>
 						<h5>綁定新光銀行LINE<br>個人化服務</h5>
 					</div>
 				</div>
-				<div class="col-lg-3 col-6">
+				<div class="col-lg-3 col-6 pulse wow animate" animation-delay=".5s">
 					<div class="item text-center item-2">
 						<div class="text-center"><h4><b>STEP2</b></h4></div>
 						<div class="img"><img src="img/s3-icon2.png"></div>
 						<h5>進入理財Dr.光<br>量身打造理財建議書</h5>
 					</div>
 				</div>
-				<div class="col-lg-3 col-6">
+				<div class="col-lg-3 col-6 pulse wow animate" animation-delay="1s">
 					<div class="item text-center">
 						<div class="text-center"><h4><b>STEP3</b></h4></div>
 						<div class="img"><img src="img/s3-icon3.png"></div>
 						<h5>取得並下載專屬<br>投資建議書</h5>
 					</div>
 				</div>
-				<div class="col-lg-3 col-6">
+				<div class="col-lg-3 col-6 pulse wow animate" animation-delay="1.5s">
 					<div class="item text-center">
 						<div class="text-center"><h4><b>STEP4</b></h4></div>
 						<div class="img"><img src="img/s3-icon4.png"></div>
@@ -422,12 +435,41 @@
 		    }
 		  ]
 		});
-    </script>
-    <script type="text/javascript">
     	$('.s7-button a').click(function () {
     		$(this).toggleClass("active");
     		$('.s7-text').toggleClass("active");
     	});
+		$(function() {
+		  $('.fab').sidebar({
+			scrollTop: 100,
+			duration: 800
+		  });
+		});
+		(function(a) {
+		  a.fn.sidebar = function(c) {
+			var d = a.extend({
+			  scrollTop: 100,
+			  duration: 400
+			}, c);
+			var g = a(window);
+			var f = this;
+	
+			function e() {
+			  if (g.scrollTop() > d.scrollTop) {
+				f.fadeIn()
+			  } else {
+				f.fadeOut()
+			  }
+			}
+			g.scroll(function() {
+			  e()
+			});
+		  }
+		})(jQuery);
     </script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHRFZ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
