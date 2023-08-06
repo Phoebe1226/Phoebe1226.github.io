@@ -260,7 +260,10 @@ ul.tab-title li.active a{
 }
 
 .s5 img {
-  max-width: 90%;
+  max-width: 85%;
+}
+.s5 img.desk {
+  max-width: 285px;
 }
 .s5 .title {
   position: relative;
