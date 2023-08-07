@@ -20,7 +20,7 @@
     width: 72px;
   }
   .s3 .item h5 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
     min-height: 2.6rem;
   }
@@ -82,11 +82,11 @@
     font-weight: normal;
   }
   h3 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: normal;
   }
   h4 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
   }
   .container {
@@ -147,7 +147,7 @@ nav a.active{
     padding-left: 80px;
   }
   .s3 .item h5 {
-    font-size: 13px;
+    font-size: 14px;
   }
   .s4 .mb {
     margin-bottom: 32px;
@@ -248,6 +248,6 @@ nav a.active{
     height: 44px;
   }
   .fab p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }

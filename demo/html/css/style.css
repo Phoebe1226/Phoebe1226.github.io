@@ -35,7 +35,7 @@ section {
   padding: 120px 0;
 }
 p {
-  font-size: 17px;
+  font-size: 18px;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
@@ -119,6 +119,7 @@ nav a:hover,nav a:active, nav a.is-active {
 .s2-mob-img {
     position: absolute;
     top: 0;
+    transform: none!important;
 }
 .s2-tab .img img {
   width: 90%;
