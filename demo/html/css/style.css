@@ -115,11 +115,12 @@ nav a:hover,nav a:active, nav a.is-active {
 
 .tab-inner-wrap {
   position: relative;
+    transform: translateZ(0) rotate(0) !important;
 }
 .s2-mob-img {
     position: absolute;
     top: 0;
-    transform: none!important;
+    transform: translateZ(0) rotate(0) !important;
 }
 .s2-tab .img img {
   width: 90%;
