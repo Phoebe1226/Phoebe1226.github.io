@@ -133,19 +133,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="row s2-tab">
 				<div class="col-md-6 col-sm-6  col-xs-6  img animate fadeInUp wow" animation-delay="1.5s" animation-duration="1.5s">
 					<div class="tab-inner-wrap">
-					    <div id="one" class="tab-inner">
+					    <div id="one" class="tab-inner animated active">
 					      <img src="img/s2-img-1-2.png">
 					    </div>
-					    <div id="two" class="tab-inner">
+					    <div id="two" class="tab-inner animated">
 					      <img src="img/s2-img-2-2.png">
 					    </div>
-					    <div id="three" class="tab-inner">
+					    <div id="three" class="tab-inner animated">
 					      <img src="img/s2-img-3-2.png">
 					    </div>
-					    <div id="four" class="tab-inner">
+					    <div id="four" class="tab-inner animated">
 					      <img src="img/s2-img-4-2.png">
 					    </div>
-					    <div id="five" class="tab-inner">
+					    <div id="five" class="tab-inner animated">
 					      <img src="img/s2-img-5-2.png">
 					    </div>
 					    <img class="s2-mob-img" src="img/s2-img.png">
@@ -400,11 +400,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		 $(".tab-title li.active").each(function () {
 		    var tablink = $(this).find("a").data("tablink");
 
-		    $('#'+tablink).show().siblings(".tab-inner").hide();
+		    // $('#'+tablink).show().siblings(".tab-inner").hide();
 		  });
 
 		 $(".tab-title li").click(function () {
-		    $('#'+$(this).find("a").data("tablink")).show().siblings(".tab-inner").hide();
+		    $('#'+$(this).find("a").data("tablink")).addClass('active fadeIn wow').siblings(".tab-inner").removeClass('active fadeIn');
 		    $(this).addClass("active").siblings(".active").removeClass("active");
 		  });
 
