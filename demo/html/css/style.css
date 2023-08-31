@@ -543,5 +543,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d84256', end
   position: relative;
   transition: all 1s;
 }
+ol {
+  list-style: trad-chinese-informal;
+}
 
+ol ol {
+  list-style: revert;
+}
+}
 
