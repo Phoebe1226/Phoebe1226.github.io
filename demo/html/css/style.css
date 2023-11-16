@@ -494,9 +494,6 @@ color: #430000!important;
   right: 0;
   top: 20%;
   z-index: 2;
-    overflow: hidden;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
-  border-radius: 16px 0 0 16px;
 }
 .fab a {
   display: inline-block;
@@ -513,6 +510,10 @@ background: #d9a141; /* Old browsers */
 background: -moz-linear-gradient(45deg,  #d9a141 0%, #e7b549 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg,  #d9a141 0%,#e7b549 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(45deg,  #d9a141 0%,#e7b549 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-radius: 16px 0 0 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
+z-index: 3;
+    overflow: hidden;
 
 }
 .fab a:after{
@@ -679,3 +680,61 @@ width: 8%;
     opacity: 0;
   }
 }
+
+.fab-img {
+  position: absolute;
+    transform: translateY(-100%);
+    z-index: 1;
+        top: 8px;
+  width: 90%;
+}
+
+.yt-link a {
+  text-decoration: none;
+  font-weight: 500;
+      color: #d4374e;
+}
+
+.yt-link  img {
+    width: 54px;
+    position: relative;
+    top: -2px;
+    margin-right: 8px;
+}
+.fab-mb {
+  position: fixed;
+  bottom: 48px;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+}
+.fab-mb img {
+  width: 95%;
+  max-width: 480px;
+}
+@media (max-width: 768px) {
+  .fab.desk {
+    display: none!important;
+  }
+  .h1-title {
+    font-size: 2rem;
+  }
+  .h1-title span {
+    width: 30px;
+  }
+  .yt-link a {
+    width: 24px;
+  }
+  .yt-link img {
+    width: 36px;
+  }
+  .s2 .btn-l {
+        font-size: 15px;
+  }
+  .s7 {
+    padding-bottom: 120px; 
+  }
+}
+
+
+
