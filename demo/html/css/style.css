@@ -635,30 +635,30 @@ background-size: 100% 100%;
 }
 
 .shine.small {
-    width: 5%;
+    width: 3%;
     padding-bottom: 5%;
     position: absolute;
     z-index: 2;
-    top: 20.5%;
-    left: 58%;
+    top: 36.5%;
+    left: 61.8%;
 }
 
 .shine.medium {
-width: 8%;
+    width: 8%;
     padding-bottom: 8%;
     position: absolute;
     z-index: 2;
-    top: 62.2%;
-    left: 51.5%;
+    top: 60%;
+    left: 54%;
 }
 
 .shine.large {
-    width: 10%;
+  width: 10%;
     padding-bottom: 10%;
     position: absolute;
     z-index: 2;
-    top: 6.5%;
-    left: 44%;
+    top: 10.5%;
+    left: 42.5%;
 }
 
 /*CSS3 keyframes for glittering effect*/

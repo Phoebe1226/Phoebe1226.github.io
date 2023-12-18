@@ -1,4 +1,12 @@
-
+@media (min-width:992px) {
+  .slick-item .item img {
+    margin-bottom: 20px;
+    padding: 0 15px;
+    max-width: 124%;
+    max-height: inherit;
+    margin-left: -12%;
+  }
+}
 
 @media (max-width:992px) {
   .h3, h3 {
