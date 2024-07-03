@@ -1,0 +1,23 @@
+.navbar-brand {
+    img {
+        width: 32px;
+        margin-right: 8px;
+        position: relative;
+        top: -4px;
+    }
+}
+.navbar .highlight .nav-button {
+    color: #fff !important;
+    border: 1px solid var(--black);
+    background: var(--black);
+    font-size: 0.93rem;
+    border-radius: 99rem;
+    font-weight: bold;
+    padding: 9px 24px;
+}
+.navbar  .badge-secondary {
+    position: relative;
+    top: -2px;
+    background-color: var(--pink);
+    font-size: 12px;
+}

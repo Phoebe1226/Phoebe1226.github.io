@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 3771.5 2051" style="enable-background:new 0 0 3771.5 2051;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);fill-opacity:0.11;}
+	.st1{fill:url(#SVGID_00000074401974081149616230000012154800980082121368_);fill-opacity:0.11;}
+	.st2{opacity:0.44;fill:url(#SVGID_00000025437854632775164220000002169685567640522410_);fill-opacity:0.11;}
+	.st3{opacity:0.56;fill:url(#SVGID_00000170252517959438015540000010194675843581266619_);fill-opacity:0.11;}
+</style>
+<radialGradient id="SVGID_1_" cx="1314.0189" cy="3365.2722" r="1.1714" gradientTransform="matrix(-570.9743 -5.4147 -5.4147 570.9743 769161.9375 -1912993.5)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#D84867"/>
+	<stop  offset="0.1439" style="stop-color:#D94C6A;stop-opacity:0.8561"/>
+	<stop  offset="0.2919" style="stop-color:#DC5875;stop-opacity:0.7081"/>
+	<stop  offset="0.442" style="stop-color:#E06D86;stop-opacity:0.558"/>
+	<stop  offset="0.5934" style="stop-color:#E68A9E;stop-opacity:0.4066"/>
+	<stop  offset="0.746" style="stop-color:#EEAFBD;stop-opacity:0.254"/>
+	<stop  offset="0.8973" style="stop-color:#F8DCE2;stop-opacity:0.1027"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</radialGradient>
+<circle class="st0" cx="668.9" cy="1375.4" r="668.9"/>
+<radialGradient id="SVGID_00000116217324239611809570000002783006547426865570_" cx="1311.8667" cy="3364.8071" r="1.1141" gradientTransform="matrix(-571 0 0 571 750961.6875 -1920668.75)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#D84867"/>
+	<stop  offset="0.1168" style="stop-color:#D94E6C;stop-opacity:0.8832"/>
+	<stop  offset="0.2697" style="stop-color:#DD5E79;stop-opacity:0.7303"/>
+	<stop  offset="0.4426" style="stop-color:#E37990;stop-opacity:0.5574"/>
+	<stop  offset="0.6304" style="stop-color:#EB9FAF;stop-opacity:0.3696"/>
+	<stop  offset="0.8277" style="stop-color:#F5CFD7;stop-opacity:0.1723"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</radialGradient>
+<circle style="fill:url(#SVGID_00000116217324239611809570000002783006547426865570_);fill-opacity:0.11;" cx="1885.8" cy="636.1" r="636.1"/>
+<radialGradient id="SVGID_00000178913049775497737510000012356255596109333672_" cx="1311.8667" cy="3364.8071" r="1.1141" gradientTransform="matrix(-571 0 0 571 750961.6875 -1920668.75)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#D84867"/>
+	<stop  offset="0.1168" style="stop-color:#D94E6C;stop-opacity:0.8832"/>
+	<stop  offset="0.2697" style="stop-color:#DD5E79;stop-opacity:0.7303"/>
+	<stop  offset="0.4426" style="stop-color:#E37990;stop-opacity:0.5574"/>
+	<stop  offset="0.6304" style="stop-color:#EB9FAF;stop-opacity:0.3696"/>
+	<stop  offset="0.8277" style="stop-color:#F5CFD7;stop-opacity:0.1723"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</radialGradient>
+<circle style="opacity:0.44;fill:url(#SVGID_00000178913049775497737510000012356255596109333672_);fill-opacity:0.11;" cx="1885.8" cy="636.1" r="636.1"/>
+<radialGradient id="SVGID_00000121259864978673744180000008449063478879894420_" cx="1314.0189" cy="3365.2722" r="1.1714" gradientTransform="matrix(-570.9743 -5.4147 -5.4147 570.9743 769161.9375 -1912993.5)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#D84867"/>
+	<stop  offset="0.1087" style="stop-color:#DA516F;stop-opacity:0.8913"/>
+	<stop  offset="0.2897" style="stop-color:#DF6B84;stop-opacity:0.7103"/>
+	<stop  offset="0.5205" style="stop-color:#E894A6;stop-opacity:0.4795"/>
+	<stop  offset="0.7892" style="stop-color:#F4CDD6;stop-opacity:0.2108"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</radialGradient>
+<circle style="opacity:0.56;fill:url(#SVGID_00000121259864978673744180000008449063478879894420_);fill-opacity:0.11;" cx="668.9" cy="1375.4" r="668.9"/>
+</svg>

@@ -1,0 +1,75 @@
+@import 'layout';
+@import 'header';
+@import 'footer';
+@import 'containers';
+@import 'columns';
+@import 'extends';
+@import 'page_art';
+.kv {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    .slick-slider {
+        max-width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+    .kv-bubble {
+        display: inline-flex;
+        position: absolute;
+        padding: 8px 16px 8px 8px;
+        align-items: center;
+        background: rgba(255, 255, 255,.72);
+        border: 1px solid #fff;
+        backdrop-filter: saturate(180%) blur(6px);
+        font-size: 14px;
+        border-radius: 99rem;
+        box-shadow: rgba(0, 0, 0, 0.26) 0px 1px 1px -1px, rgba(0, 0, 0, 0.24) 0px 2px 3px -2px, rgba(0, 0, 0, 0.2) 0px 5px 9px -3px, rgba(0, 0, 0, 0.03) 0px 16px 28px -4px;
+        z-index: 3;
+        img {
+            margin-right: 8px;
+            width: 28px;
+        }
+        &-right {
+            right: 8px;
+            top: 50%;
+        }
+        &-left {
+            top: 80%;
+        }
+    }
+}
+.circle-line{
+    position: absolute;
+    &::before {
+        content: "";
+        display: inline-flex;
+        position: absolute;
+        top: -12px;
+        left: -3px;
+        width: 106%;
+        height: 82px;
+        transform: rotate(-4deg);
+        background-image: url(../img/index/circle-line.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.index-s2 {
+    border-radius: 1rem;
+}
+.index-s4 {
+    &-img {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+}

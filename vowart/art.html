@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.ico">
+<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>VowArt.AI</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<meta name="keywords" content="wedding illustration,婚禮,似顏繪,婚禮小物,婚顧,自助婚禮">
+<meta name="description" content="描述">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Slick Icons -->
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Main CSS -->
+<link href="./assets/css/main.css" rel="stylesheet"/>
+</head>
+<body class="bg-light-img">
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+	<a class="navbar-brand" href="./index.html"><img src="./assets/img/header-logo.svg"<strong>VowArt.ai</strong></a>
+	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+		<ul class="navbar-nav mr-auto d-flex align-items-center">
+			<li class="nav-item">
+			<a class="nav-link" href="./art.html">製作似顏繪</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./logo.html">製作婚禮LOGO</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="./photo.html">生成婚紗照 <span class="badge badge-secondary">Beta</span></a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="./product.html">婚禮小物訂製</a>
+			</li>
+			
+		</ul>
+		<ul class="navbar-nav ml-auto d-flex align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="./contact.html">聯絡我們</a>
+			</li>
+		</ul>
+	</div>
+
+	<ul class="navbar-nav ml-auto d-flex align-items-center flex-direction">
+        <li class="nav-item">
+			<a class="nav-link color-red font-weight-bold" href="./art.html">300積分</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link nav-user pl-0 pr-0" href="./member.html">
+                <img class="aspect-square h-full w-full" alt="Phoebe Chen" src="https://lh3.googleusercontent.com/a/ACg8ocJNDhO4QeDjKsi7BTbk8YS-FMwdKpT4xPK6CzT3Wvo12uw9hsQ=s96-c">
+            </a>
+		</li>
+	</ul>
+    
+	<button class="navbar-toggler collapsed ml-3" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+</nav>
+<!-- End Navbar -->
+
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-5 pb-5 mt-5 mb-5">
+	<div class="row justify-content-between">
+        <div class="col-lg-4 col-md-12">
+            <h4 class="mb-3 text-center">上傳您的照片</h4>
+            <div class="file-upload mb-5">
+                <button class="file-upload-btn btn btn-round btn-dark pl-5 pr-5" type="button" onclick="$('.file-upload-input').trigger( 'click' )">上傳圖片</button>
+              
+                <div class="image-upload-wrap">
+                  <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                  <div class="drag-text">
+                    <h3>或拖曳圖片到此</h3>
+                  </div>
+                </div>
+                <div class="file-upload-content">
+                  <img class="file-upload-image" src="#" alt="your image" />
+                  <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image">取消 <span class="image-title">Uploaded Image</span></button>
+                  </div>
+                </div>
+            </div>
+            <h4 class="mb-4 text-center">選擇風格</h4>
+            <div class="row choose-style mb-3">
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkx80G17vW4yY4NklKandgDFDpKq-rJ7crQM0_lXx-YGBrISBIfSFr0R7dh57Vc4xNwXU&usqp=CAU">
+                        </div>
+                        <p class="text-center">韓漫寫實</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)" class="is-active">
+                        <div class="img-box">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1c3f87116016361.605b4b91963bd.png">
+                        </div>
+                        <p class="text-center">水彩</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://cdn01.pinkoi.com/product/EqS8nPHw/12/640x530.jpg">
+                        </div>
+                        <p class="text-center">清新文青感</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://cdn01.pinkoi.com/product/AvFbwNJW/0/1/640x530.jpg">
+                        </div>
+                        <p class="text-center">韓系質感</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://shoplineimg.com/59ae652a9f9a4f944100009d/6279c18b48c3dd000fa5c687/800x.jpg?">
+                        </div>
+                        <p class="text-center">可愛風</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://megapx-assets.dcard.tw/images/9b534780-03d5-4956-8086-7c841fb419b0/1280.jpeg">
+                        </div>
+                        <p class="text-center">寫實風</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://image-cdn-flare.qdm.cloud/q668141d44d112/image/data/2023/05/30/a5b8bd2e73b46208d783d00516926691.jpg">
+                        </div>
+                        <p class="text-center">小清新</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://assets.matters.news/embed/3a180cef-e37b-4c46-b381-6316c0b2ab74.jpeg">
+                        </div>
+                        <p class="text-center">無臉畫</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <a href="javascript:void(0)">
+                        <div class="img-box">
+                            <img src="https://cdn01.pinkoi.com/product/PtCPCBt9/0/1/220x220.jpg">
+                        </div>
+                        <p class="text-center">寫實畫風</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between ml-0 mr-0 mb-3">
+                <a href="#" class="btn btn-round btn-dark btn-text-l w-full pl-5 pr-5 d-flex align-items-center justify-content-center">Let's GO! <small class="ml-4">使用100積分</small></a>
+            </div>
+            <p class="text-muted text-center flex line-hegith13 mb-5">
+                <small>生成的圖片帶有浮水印，以展示風格為主。<br>如需無浮水印及高清版本，請額外解鎖或使用Plus方案。高清版可用於加工成客製化婚禮小物。
+            </small></p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <h1 class="text-center">將在幾分鐘內<br>設計出<span class="color-red">專屬似顏繪</span></h1>
+            <p class="text-center mt-3 text-muted">生成可能需要長達 <span>3</span> 分鐘的時間，請耐心等待。</p>
+            <div class="img-box main-art loading-simulator" style=" background: #ffeaf0;">
+                <img src="./assets/img/watermark-01.png">
+            </div>
+            <p class="text-center color-red">你的笑容真是迷人，瞬間點亮整個畫面✨</p>
+            <div class="mt-5">
+                <div class="art-price">
+                    <div class="row align-items-center justify-content-between mb-3">
+                        <h2 class="h1 color-red font-weight-bold mb-1 ml-3">$ 399</h2>
+                        <p class="mb-0 line-hegith13 mb-1"><small class="text-left text-muted">
+                            1440 x 2560 像素 /  2560 x 2560 像素 / 2560 x 1440 像素 - 2K高清電視用<br>
+                            三種尺寸完美適配，滿足你的各種需求
+                        </small></p>
+                    </div>
+                    <button class="btn btn-l btn-round btn-primary btn-text-m w-full mb-3 ">購買專屬似顏繪<img class="ml-1" src="./assets/img/logout.svg" alt=""></button>
+                    <button class="btn btn-l  btn-round btn-outline-light btn-text-m text-muted w-full">重新設計<small class="ml-2">(-100積分)</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+<footer class="bg-white  text-muted small mt-5 p-3">
+    <div class="container border-top">
+	<div class="row align-items-center justify-content-between">
+		<div></div>
+		<div>
+            <span class="navbar-brand mr-2"><strong>VowArt.AI</strong></span> Copyright &copy;
+			<script>document.write(new Date().getFullYear())</script>
+			 . All rights reserved.
+		</div>
+	</div>
+    </div>
+</footer>
+<!-- End Footer -->
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+<script>
+    function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+        $('.image-upload-wrap').hide();
+        $('.file-upload-image').attr('src', e.target.result);
+        $('.file-upload-content').show();
+        $('.file-upload-btn').hide();
+        $('.image-title').html(input.files[0].name);
+    };
+    reader.readAsDataURL(input.files[0]);
+        } else {
+            removeUpload();
+        }
+    }
+    function removeUpload() {
+        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        $('.file-upload-content').hide();
+        $('.file-upload-btn').show();
+        $('.image-upload-wrap').show();
+    }
+    $('.image-upload-wrap').bind('dragover', function() {
+        $('.image-upload-wrap').addClass('image-dropping');
+    });
+    $('.image-upload-wrap').bind('dragleave', function() {
+        $('.image-upload-wrap').removeClass('image-dropping');
+    });
+
+    jQuery(function() {
+        jQuery('.choose-style a').on('click', function(event) {
+            event.preventDefault();
+            jQuery('.choose-style a').removeClass('is-active');
+            jQuery(this).addClass('is-active');
+        });
+    });
+</script>
+</body>
+</html>

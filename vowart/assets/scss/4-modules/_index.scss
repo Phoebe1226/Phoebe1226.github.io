@@ -1,0 +1,16 @@
+// @import 'some-module';
+.icon-circle {
+    display: flex;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: var(--pink-light);
+    border-radius: 99rem;
+    svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+    }
+}
