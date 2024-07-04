@@ -11169,6 +11169,7 @@ html {
     left: 0px;
     width: 100%;
     background: rgb(255, 255, 255);
+    padding: 12px 0;
   }
   .nav-user {
     margin-left: 8px;
@@ -11312,6 +11313,7 @@ html {
   padding-bottom: 100%;
   border-radius: 8px;
   overflow: hidden;
+  background-color: #fff;
 }
 .choose-style .img-box img {
   position: absolute;
