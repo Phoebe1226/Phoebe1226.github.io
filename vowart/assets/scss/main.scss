@@ -93,7 +93,7 @@ a.text-dark:hover {
 .bg-light-img {
     background-image: url(../img/bg-light.svg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top left;
     background-size: cover;
     background-color: transparent;
     &-green {
@@ -192,7 +192,7 @@ a.text-dark:hover {
     justify-content: center;
     background: linear-gradient(135deg, #e59c9c 0%, #c24b4d 100%);
     border: none;
-    padding: 8px;
+    padding: 12px 8px;
     width: 100%;
     color: #fff;
 }
@@ -203,7 +203,7 @@ a.text-dark:hover {
     justify-content: center;
     background:linear-gradient(135deg, #89e4cc 0%, #05a87c 100%);
     border: none;
-    padding: 8px;
+    padding: 12px 8px;
     width: 100%;
     color: #fff;
 }
