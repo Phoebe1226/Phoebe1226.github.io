@@ -11138,6 +11138,12 @@ html {
   width: 85%;
 }
 
+@media (max-width: 540px) {
+  .icon-circle {
+    width: 24px;
+    height: 24px;
+  }
+}
 .navbar-brand img {
   width: 32px;
   margin-right: 8px;
@@ -11497,7 +11503,7 @@ html {
 
 @media (max-width: 540px) {
   .index-kv h1 {
-    margin-bottom: 36px !important;
+    margin-bottom: 36px important;
   }
   .index-kv .icon-circle {
     width: 24px;
@@ -12781,5 +12787,8 @@ ul.ascii > li > ul > li:last-child > ul > li:last-child > ul > li:last-child > u
 @media (max-width: 768px) {
   .mb-hidden {
     display: none;
+  }
+  h1 {
+    font-size: 2.3rem;
   }
 }/*# sourceMappingURL=main.css.map */
