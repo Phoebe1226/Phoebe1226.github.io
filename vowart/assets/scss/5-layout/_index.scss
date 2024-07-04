@@ -5,6 +5,7 @@
 @import 'columns';
 @import 'extends';
 @import 'page_art';
+@import 'page_logo';
 .kv {
     position: relative;
     border-radius: 2rem;
@@ -71,5 +72,19 @@
         height: 120px;
         object-fit: cover;
         flex-shrink: 0;
+    }
+}
+@media (max-width: 540px) { 
+    .index-kv {
+        h1 {
+            margin-bottom: 36px !important;
+        }
+        .icon-circle {
+            width: 24px;
+            height: 24px;
+        }
+        p {
+            font-size: 14px;
+        }
     }
 }

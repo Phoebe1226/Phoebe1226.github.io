@@ -1,0 +1,9 @@
+.choose-style.choose-logo {
+    a.is-active {
+        color: var(--green-text);
+        .img-box::before {
+            border-color: var(--green-light);
+        }
+    }
+
+}

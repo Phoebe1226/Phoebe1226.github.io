@@ -183,3 +183,29 @@
         padding: 10px 0;
     }
 }
+@media (max-width: 768px) { 
+    .drag-text h3 {
+        opacity: 0;
+    }
+    .btn.file-upload-btn {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main-art {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+    }
+    .art-price {
+        div.justify-content-between {
+            justify-content: center !important;
+        }
+        h2 {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        p {
+            padding: 4px 16px;
+        }
+    }
+}
