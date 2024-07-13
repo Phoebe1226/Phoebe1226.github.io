@@ -35,6 +35,10 @@
     &:hover {
         text-decoration: none;
         color: var(primary);
+        .img-box img {
+            width: 105%;
+            height: 105%;
+        }
     }
     .s-feature-badge {
         display: inline-block;
@@ -56,6 +60,16 @@
         color: var(--primary);
     }
 }
+.logo-art {
+    .main-art {
+    height: 0;
+    padding-bottom: 100%;
+    }
+    .is-active  .main-art {
+      border-color: var(--green-light);
+      box-shadow: 0 0 0 3px var(--green-light);
+    }
+  }
 @media (max-width: 540px) {
     .product {
         .row {

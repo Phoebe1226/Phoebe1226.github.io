@@ -1,0 +1,24 @@
+//登入驗證碼
+.code-form {
+  .code-img {
+    padding: 4px;
+    width: 100px;
+    border: 1px solid var(--pink-light);
+  }
+  .form-control {
+    width: calc(100% - 116px);
+    margin-right: 12px;
+  }  
+}
+.btn.btn-login {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  &:hover {
+    background-color: #fff;
+  }
+  img {
+    float: left;
+    width: 40px;
+  }
+}

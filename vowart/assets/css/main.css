@@ -11475,6 +11475,10 @@ html {
   text-decoration: none;
   color: var(primary);
 }
+.product-item:hover .img-box img {
+  width: 105%;
+  height: 105%;
+}
 .product-item .s-feature-badge {
   display: inline-block;
   border: 1px solid #d3d3d5;
@@ -11495,6 +11499,15 @@ html {
   color: var(--primary);
 }
 
+.logo-art .main-art {
+  height: 0;
+  padding-bottom: 100%;
+}
+.logo-art .is-active .main-art {
+  border-color: var(--green-light);
+  box-shadow: 0 0 0 3px var(--green-light);
+}
+
 @media (max-width: 540px) {
   .product .row {
     margin-right: -8px;
@@ -11505,6 +11518,29 @@ html {
     padding-right: 8px;
   }
 }
+.code-form .code-img {
+  padding: 4px;
+  width: 100px;
+  border: 1px solid var(--pink-light);
+}
+.code-form .form-control {
+  width: calc(100% - 116px);
+  margin-right: 12px;
+}
+
+.btn.btn-login {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+}
+.btn.btn-login:hover {
+  background-color: #fff;
+}
+.btn.btn-login img {
+  float: left;
+  width: 40px;
+}
+
 .kv {
   position: relative;
   border-radius: 2rem;

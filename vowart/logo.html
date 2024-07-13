@@ -57,7 +57,7 @@ NAVBAR
 
 	<ul class="navbar-nav ml-auto d-flex align-items-center flex-direction-row">
         <li class="nav-item">
-			<a class="nav-link color-red font-weight-bold" href="./art.html">300積分</a>
+			<a class="nav-link color-red font-weight-bold" href="./plan.html">300積分</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link nav-user pl-0 pr-0" href="./member.html">
@@ -158,11 +158,38 @@ MAIN
                 <small>生成的圖片帶有浮水印，以展示風格為主。<br>如需無浮水印及高清版本，請額外解鎖或使用Plus方案。高清版可用於加工成客製化婚禮小物。
             </small></p>
         </div>
-        <div class="col-lg-8 col-md-12">
+        <div class="col-lg-7 col-md-11 col-12 ml-auto mr-auto">
             <h1 class="text-center">將在幾分鐘內<br>設計出你的<span class="color-green">婚禮<b>LOGO</b></span></h1>
             <p class="text-center mt-3 text-muted">生成可能需要長達 <span>3</span> 分鐘的時間，請耐心等待。</p>
-            <div class="img-box main-art loading-simulator" style=" background: #f5f5f5;">
-                <img src="./assets/img/watermark-01.png">
+            <div class="row logo-art p-3">
+                <div class="col-12 col-md-6 mb-2">
+                    <a href="javascript:void(0)">
+                        <div class="img-box main-art loading-simulator" style=" background: #f5f5f5;">
+                            <img src="./assets/img/watermark-01.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <a href="javascript:void(0)">
+                        <div class="img-box main-art loading-simulator" style=" background: #f5f5f5;">
+                            <img src="./assets/img/watermark-01.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <a href="javascript:void(0)">
+                        <div class="img-box main-art loading-simulator" style=" background: #f5f5f5;">
+                            <img src="./assets/img/watermark-01.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <a href="javascript:void(0)">
+                        <div class="img-box main-art loading-simulator" style=" background: #f5f5f5;">
+                            <img src="./assets/img/watermark-01.png">
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="mt-4">
                 <div class="art-price">
@@ -234,6 +261,11 @@ JAVASCRIPTS
             arrow: true,
             animation: 'fade',
             theme: 'light',
+    });
+    //選取logo
+    $('.logo-art a').click(function() {
+        $('.logo-art a').removeClass('is-active'); 
+        $(this).addClass('is-active');
     });
 </script>
 </body>
