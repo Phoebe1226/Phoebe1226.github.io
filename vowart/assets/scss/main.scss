@@ -195,6 +195,11 @@ a.text-dark:hover {
     padding: 12px 8px;
     width: 100%;
     color: #fff;
+    &:hover {
+        color: #fff!important;
+        background: linear-gradient(135deg, #e59c9c 0%, #c24b4d 75%);
+        transition: all .3s;
+    }
 }
 
 .btn-second {

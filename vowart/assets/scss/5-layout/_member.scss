@@ -22,3 +22,24 @@
     width: 40px;
   }
 }
+.plan-section {
+  .card.border-radius  {
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .05);
+    .btn-white:hover {
+      background-color: #fff;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      padding: 8px 0;
+      text-align: center;
+      border-bottom: 1px dashed #eee;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}

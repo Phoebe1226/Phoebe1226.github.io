@@ -11541,6 +11541,26 @@ html {
   width: 40px;
 }
 
+.plan-section .card.border-radius {
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+}
+.plan-section .card.border-radius .btn-white:hover {
+  background-color: #fff;
+}
+.plan-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.plan-section ul li {
+  padding: 8px 0;
+  text-align: center;
+  border-bottom: 1px dashed #eee;
+}
+.plan-section ul li:last-child {
+  border-bottom: 0;
+}
+
 .kv {
   position: relative;
   border-radius: 2rem;
@@ -11819,6 +11839,11 @@ a.text-dark:hover {
   padding: 12px 8px;
   width: 100%;
   color: #fff;
+}
+.btn-primary:hover {
+  color: #fff !important;
+  background: linear-gradient(135deg, #e59c9c 0%, #c24b4d 75%);
+  transition: all 0.3s;
 }
 
 .btn-second {
