@@ -39,6 +39,7 @@
         .highlight .nav-button {
             padding: 8px 16px;
             font-size: 14px;
+            margin-left: 4px;
         }
         li.nav-item {
             font-size: 14px;
@@ -47,14 +48,23 @@
     .navbar-brand {
         margin-right: 0!important;
     }
+    .navbar {
+        padding-right: .5rem;
+    }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
     .navbar {
         .navbar-brand img {
-            width: 28px;
+            width: 24px;
         }
         .navbar-brand {
-            font-size: 20px;
+            font-size: 18px;
         }
+    }
+    .navbar-collapse {
+        top: 50px;
+    }
+    .navbar .highlight .nav-button {
+        font-size: 12px;
     }
 } 

@@ -11186,6 +11186,7 @@ html {
   .navbar .highlight .nav-button {
     padding: 8px 16px;
     font-size: 14px;
+    margin-left: 4px;
   }
   .navbar li.nav-item {
     font-size: 14px;
@@ -11193,13 +11194,22 @@ html {
   .navbar-brand {
     margin-right: 0 !important;
   }
+  .navbar {
+    padding-right: 0.5rem;
+  }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .navbar .navbar-brand img {
-    width: 28px;
+    width: 24px;
   }
   .navbar .navbar-brand {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .navbar-collapse {
+    top: 50px;
+  }
+  .navbar .highlight .nav-button {
+    font-size: 12px;
   }
 }
 .file-upload {
@@ -11559,6 +11569,55 @@ html {
 }
 .plan-section ul li:last-child {
   border-bottom: 0;
+}
+
+.tippy-menu {
+  padding: 4px;
+  width: 250px;
+  pointer-events: auto;
+}
+.tippy-menu h5 {
+  margin-left: 4px;
+  padding: 8px 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.tippy-menu .bg-pink {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.tippy-menu .bg-pink img {
+  margin-right: 8px;
+  padding: 5px;
+  width: 40px;
+  background: #fff;
+  border-radius: 99rem;
+}
+.tippy-menu .member-menu ul {
+  margin-top: 4px;
+  padding: 0;
+}
+.tippy-menu .member-menu ul li {
+  list-style: none;
+}
+.tippy-menu .member-menu ul li a {
+  display: flex;
+  padding: 12px 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px dashed #e8f3ec;
+}
+.tippy-menu .member-menu ul li a:hover {
+  color: var(--primary) !important;
+  text-decoration: none;
+}
+.tippy-menu .member-menu ul li:last-child a {
+  border: none;
+  padding-bottom: 0;
 }
 
 .kv {
@@ -12041,7 +12100,9 @@ a.text-dark:hover {
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  margin-left: 8px !important;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");

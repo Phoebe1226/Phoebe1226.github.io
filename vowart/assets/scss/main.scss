@@ -323,7 +323,10 @@ a.text-dark:hover {
 
   .navbar-toggler {
     color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
+    // border-color: $navbar-light-toggler-border-color;
+    border: none;
+    outline: none;
+    margin-left: 8px !important;
   }
 
   .navbar-toggler-icon {

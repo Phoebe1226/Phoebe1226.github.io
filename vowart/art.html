@@ -60,7 +60,7 @@ NAVBAR
 			<a class="nav-link color-red font-weight-bold" href="./plan.html">300積分</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link nav-user pl-0 pr-0" href="./member.html">
+			<a class="nav-link nav-user pl-0 pr-0 js-tippy-member" href="javascript:void(0)">
                 <img class="aspect-square h-full w-full" alt="Phoebe Chen" src="https://lh3.googleusercontent.com/a/ACg8ocJNDhO4QeDjKsi7BTbk8YS-FMwdKpT4xPK6CzT3Wvo12uw9hsQ=s96-c">
             </a>
 		</li>
@@ -226,6 +226,25 @@ Tippy Cont
         <img src="https://cdn01.pinkoi.com/product/AvFbwNJW/0/1/640x530.jpg">
     </div>
 </div>
+<div id="tippy-member" style="display: none">
+    <div class="tippy-menu">
+        <h5>Hi! Phoebe</h5>
+        <div class="point-box">
+            <div class="bg-pink">
+                <div><img src="./assets/img/ic_vowart.png"><b>300點</b></div>
+                <a class="color-red" href="./plan.html">獲得更多Point 🔮</a>
+            </div>
+        </div>
+        <div class="member-menu">
+            <ul>
+                <li><a class="text-muted" href="member.html">基本設定</a></li>
+                <li><a class="text-muted" href="plan.html">會員計劃</a></li>
+                <li><a class="text-muted" href="order.html">訂單管理</a></li>
+                <li><a class="text-muted" href="point.html">點數管理</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 <!--------------------------------------
 JAVASCRIPTS
 --------------------------------------->
@@ -274,6 +293,15 @@ JAVASCRIPTS
     tippy('.js-tippy', {
             content: document.getElementById('tippy-img').innerHTML,
             allowHTML: true,
+            arrow: true,
+            animation: 'fade',
+            theme: 'light',
+    });
+
+    tippy('.js-tippy-member', {
+            content: document.getElementById('tippy-member').innerHTML,
+            allowHTML: true,
+            trigger: 'click',
             arrow: true,
             animation: 'fade',
             theme: 'light',

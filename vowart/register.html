@@ -77,39 +77,52 @@ MAIN
                 <div class="pr-0 h-100 tofront">
                     <div class="row ">
                         <div class="col-lg-5 col-md-7 col-12 d-md-block pl-5 pt-5 pr-5 pb-5 ml-auto mr-auto kv bg-white">
-                            <h3 class="framer-text text-center">使用 <b>VowArt</b> 登入</h3>
-                            <div class="row">
-                                <div  class="col-12 mb-3">
-                                    <label class="row ml-0 mr-0 justify-content-between" for="account">
-										<small>帳號</small>
-										<!-- <small class="text-danger">查無此帳號</small>  -->
-									</label>
-									<!-- 若判斷錯誤請加上以上text-danger訊息，並在 .form-control 加上 "is-invalid" -->
+                            <h3 class="framer-text text-center">註冊帳號</h3>
+                            
+                            <div class="row mb-2">
+                                <div class="col-12 mb-3 text-left">
+                                    <label for="account"><small>帳號</small></label>
                                     <input class="form-control" name="account" type="text">
                                 </div>
                                 <div class="col-12 mb-3 text-left">
-                                    <label class="row ml-0 mr-0 justify-content-between" for="password">
-										<small>密碼</small>
-										<!-- <small class="text-danger">密碼錯誤</small>  -->
-									</label>
-									<!-- 若判斷錯誤請加上以上text-danger訊息，並在 .form-control 加上 "is-invalid" -->
-                                    <input class="form-control " name="password" type="password">
+                                    <label for="password"><small>密碼（8位數以上，須包含英文寫及數字）</small></label>
+                                    <input class="form-control" name="password" type="password">
                                 </div>
                                 <div class="col-12 mb-3 text-left">
-                                    <label class="row ml-0 mr-0 justify-content-between" for="code">
-										<small>驗證碼</small>
-										<small class="text-danger">驗證碼輸入錯誤</small> 
-									</label>
-									<!-- 若判斷錯誤請加上以上text-danger訊息，並在 .form-control 加上 "is-invalid" -->
-                                    <div class="row align-items-center code-form ml-0 mr-0">
-                                        <input class="form-control is-invalid" name="code" type="text">
-                                        <div class="code-img">
-                                            <img src="https://www.cc.ntu.edu.tw/chinese/epaper/0039/08/201612203908041.jpg" style="width: 100%;">
+                                    <label class="justify-content-between row ml-0 mr-0" for="password2">
+                                        <small>確認密碼</small>  
+                                        <small class="text-danger">確認密碼不一致</small>      
+                                    </label>
+                                    <!-- 若判斷錯誤請加上以上text-danger訊息，並在 .form-control 加上 "is-invalid" -->
+                                    <input class="form-control is-invalid" name="password2" type="password">
+                                </div>
+                                <div class="col-12 mb-3 text-left">
+                                    <label for="name"><small>姓名</small></label>
+                                    <input class="form-control" name="name" type="text">
+                                </div>
+                                <div class="col-12 mb-3 text-left">
+                                    <label for="bd"><small>生日</small></label>
+                                    <input id="datepicker" class="form-control" name="bd" type="date">
+                                </div>
+                                <div class="col-12 mb-3 text-left">
+                                    <label class="row ml-0 mr-0 justify-content-between" for="tel">
+                                        <small>手機號碼</small>
+                                        <!-- <small class="text-danger">手機號碼格式錯誤</small>  -->
+                                        <!-- <small class="text-danger">手機號碼已被使用</small> -->
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <input class="form-control" name="tel01" type="tel" value="+886">
+                                        </div>
+                                        <div class="col-8">
+
+                                            <!-- 若判斷錯誤請加上以上text-danger訊息，並在 .form-control 加上 "is-invalid" -->
+                                            <input class="form-control" name="tel" type="tel" placeholder="">
                                         </div>
                                     </div>
                                 </div>
-                                <div  class="col-12"><button class="btn btn-l btn-round btn-primary btn-text-m w-full mt-3 mb-3 pt-2 pb-2">登入<img class="ml-1" src="./assets/img/logout.svg" alt=""></button></div>
-								<div class="col-12 row justify-content-center align-items-center mr-0 ml-0 mt-1"><a class="text-dark mr-3" href="login.html"><small>返回前頁</small></a> | <a class="text-dark ml-3 mr-3" href="forget.html"><small>忘記密碼</small></a> | <a class="text-dark ml-3" href="register.html"><small>註冊帳號</small></a></div>
+                                <div  class="col-12"><button class="btn btn-l btn-round btn-primary btn-text-m w-full mt-3 mb-3 pt-2 pb-2">送出<img class="ml-1" src="./assets/img/logout.svg" alt=""></button></div>
+								<div class="col-12 row justify-content-center align-items-center mr-0 ml-0 mt-1"><a class="text-dark mr-3" href="login-2.html"><small>返回前頁</small></a> </div>
                             </div>
                         </div>
                     </div>
