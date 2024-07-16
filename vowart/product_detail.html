@@ -20,6 +20,8 @@
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Slick -->
+<link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>
 <!-- Main CSS -->
 <link href="./assets/css/main.css" rel="stylesheet"/>
 </head>
@@ -73,7 +75,153 @@ MAIN
 <div class="container pt-4 pb-5 mt-0 ">
     <div class="pt-4 pb-4">
         <div class="product-detail product-detail-A">
-            
+			<div class="bread-crumbs mb-4">
+				<a class="text-muted" href="product.html">婚禮小物</a>
+				<small><i class="fa fa-angle-right text-muted ml-1 mr-1" aria-hidden="true"></i></small>
+				<a class="text-muted" href="product.html">客製化商品</a>
+				<small><i class="fa fa-angle-right text-muted ml-1 mr-1" aria-hidden="true"></i></small>
+				<a class="text-dark" href="product_detail.html">雙人婚紗似顏繪結婚書約 結婚證書</a>
+			</div>
+            <div class="row">
+				<div class="col-12 col-md-6 col-lg-6 ml-auto mr-auto mb-3">
+					<!-- 產品圖 -->
+					<div class="slider slider-single">
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/0/5/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/9/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/11/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/0/5/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/9/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/11/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/0/5/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/9/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/11/800x0.jpg"></div>
+					</div>
+					
+					<div class="slider slider-nav mt-2 ">
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/0/5/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/9/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/11/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/0/5/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/9/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/11/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/0/5/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/9/800x0.jpg"></div>
+						<div><img src="https://cdn01.pinkoi.com/product/28xXKKdd/11/800x0.jpg"></div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-5  ml-0 mr-auto">
+					<h1 class="h2 mb-3 line-hegith13">雙人婚紗似顏繪結婚書約 結婚證書</h1>
+					<a href="#" class="text-left color-red mb-2 mr-3">★★★★<span class="color-pink-light">★</span></a><small class="text-muted">4.7 (39)</small>
+					<div class="flex align-items-center">
+						<h2 class="h1 color-pink mt-2 mr-3 nowrap"> NT$ 858 <small>起</small></h2> 
+						<del class="h4 text-muted mb-0">NT$ 958</del>
+					</div>
+					<div class="mt-4">
+						<select class="form-control">
+							<option value="" selected="" disabled="">請選擇商品規格</option>
+								<option value= "">規格一：尺寸WWxHH、材質XXX</option>
+								<option value= "">規格二：尺寸WWxHH、材質XXX</option>
+							</select>
+						</select>
+						<div class="col-12 col-md-10 col-lg-8 pl-0 pr-0">
+							<div class="form-group w-100 mt-4 pb-2 flex align-items-center">
+								<small class="nowrap">選擇數量:</small>
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button id="down" class="btn btn-white text-muted" onclick=" down('0')"><small><i class="fa fa-minus" aria-hidden="true"></i></small></button>
+									</div>
+									<input type="text" id="myNumber" class="form-control input-number text-center" value="1" />
+									<div class="input-group-btn">
+										<button id="up" class="btn  btn-white text-muted" onclick="up('999')"><small><i class="fa fa-plus" aria-hidden="true"></i></small></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="./cart.html" class="btn btn-l btn-primary btn-text-s w-full mt-4 mb-3 pt-2 pb-2">直接購買</a>
+						<button  class="btn btn-l btn-dark btn-text-s w-full mt-1 mb-4 pt-2 pb-2">加入購物車</button>
+						<small class="text-muted ">
+							客製化商品需要N天製作，預計MM/DD～MM/DD到貨，感謝您的耐心等待<br>
+							由於商品為客製化設計，因此不提供退貨服務。<br>
+							本公司符合營業稅法第 37 條之規定，銷售之商品免開立統一發票。
+						</small>
+						<hr>
+						<h5>優惠活動</h5>
+						<p class="color-pink font-weight-bold">於本站生產似顏繪，即享加價購優惠!</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-7  ml-auto mr-auto mt-5">
+					<div>
+						<h4>商品介紹</h4>
+						<hr>
+						<img class="mt-2 mb-3" src="https://live.staticflickr.com/65535/53268221807_879783d482_o.jpg">
+						<p>
+							淡雅的莫蘭迪綠，象徵幸福恩賜的花語，<br>
+							搭配人像線條插畫，收藏你們的美好回憶，<br>
+							值得如此高雅無比。<br>
+							<br>
+							人像線條插畫依照您的照片描繪人物(2人)<br>
+							手繪人像畫風簡約文青，與照片相似度高。<br>
+							畫出神情及溫度感。<br>
+							可加畫寵物似顏繪(請另詢問費用)<br>
+							<br>
+							免費附贈三張結婚書約【另有同性結婚書約，可於下單時備註喔】<br>
+							(符合戶政事務所規定，結婚登記可用)<br>
+							一張戶政事務所收走<br>
+							一張新人自己留存紀念<br>
+							一張貼心提供新人備用,以防筆誤寫錯<br>
+							<br><br>
+							*可加價改選編輯書約二張(印好個人資料免手寫)<br>
+							編排好個人資料,簽上名字輕鬆結婚登記去~<br>
+							<br><br>
+							結婚書約夾材質極佳 💍<br>
+							●書約夾為霧膜精裝硬殼.厚實耐用<br>
+							●書約為147p道林紙.單面印刷.好書寫
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 mr-auto mt-5">
+					<div>
+						<h4>產品規格</h4>
+						<hr>
+						<table>
+							<tbody>
+								<tr>
+									<td class="text-muted p-1 nowrap pr-3">商品材質</td>
+									<td class="p-1">紙</td>
+								</tr>
+								<tr>
+									<td class="text-muted p-1 nowrap pr-3">商品尺寸</td>
+									<td class="p-1">WWxHH</td>
+								</tr>
+								<tr>
+									<td class="text-muted p-1 nowrap pr-3">製造方式</td>
+									<td class="p-1">機器製造</td>
+								</tr>
+								<tr>
+									<td class="text-muted p-1 nowrap pr-3">庫存</td>
+									<td class="p-1">100件以上</td>
+								</tr>
+								<tr valign="top">
+									<td class="text-muted p-1 nowrap pr-3">商品摘要</td>
+									<td class="p-1">
+										<small>結婚書約夾搭配專屬您的似顏繪插畫，可結婚登記用，還有美美入鏡拍照留念的功用。結婚證書夾封面可以編排你的名字及繪製你的人像，一生一世值得你擁有客製化專屬於你的似顏繪手繪風書約夾</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="mt-5">
+						<h4>其他注意事項</h4>
+						<hr>
+						<b>🌟客製化書約夾需提供的資料 (請備註於訂單)</b>
+						<ul class="mt-2">
+							<li>email信箱 </li>
+							<li>預計使用的時間</li>
+							<li>封面編排的名字 (可選擇中文或英文)</li>
+							<li>封面編排的日期（可不編排日期）</li>
+						</ul>
+					</div>
+				</div>
+			</div>
         </div>
     </div>
 </div>
@@ -102,5 +250,74 @@ JAVASCRIPTS
 <script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/js/functions.js" type="text/javascript"></script>
+<script type="text/javascript" src="./assets/js/vendor/slick_1.8.1.min.js"></script>
+<script> 
+$('.slider-single').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	fade: false,
+	adaptiveHeight: true,
+	infinite: false,
+   useTransform: true,
+	speed: 400,
+	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+});
+
+$('.slider-nav')
+	.on('init', function(event, slick) {
+		$('.slider-nav .slick-slide.slick-current').addClass('is-active');
+	})
+	.slick({
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		dots: false,
+		arrows: false,
+		focusOnSelect: false,
+		centerMode: true,
+		infinite: true,
+		responsive: [{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},  {
+				breakpoint: 420,
+				settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+	   		}
+		}]
+	});
+	$('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+		$('.slider-nav').slick('slickGoTo', currentSlide);
+		var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+		$('.slider-nav .slick-slide.is-active').removeClass('is-active');
+		$(currrentNavSlideElem).addClass('is-active');
+	});
+
+	$('.slider-nav').on('click', '.slick-slide', function(event) {
+		event.preventDefault();
+		var goToSingleSlide = $(this).data('slick-index');
+
+		$('.slider-single').slick('slickGoTo', goToSingleSlide);
+	});
+
+	//選擇數量
+	function up(max) {
+		document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+		if (document.getElementById("myNumber").value >= parseInt(max)) {
+			document.getElementById("myNumber").value = max;
+		}
+	}
+	function down(min) {
+		document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+		if (document.getElementById("myNumber").value <= parseInt(min)) {
+			document.getElementById("myNumber").value = min;
+		}
+	}
+
+</script>
 </body>
 </html>

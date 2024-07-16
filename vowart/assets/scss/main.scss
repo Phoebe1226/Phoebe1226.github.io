@@ -112,6 +112,9 @@ a.text-dark:hover {
 .color-green {
     color: var(--green-text)!important;
 }
+.color-pink {
+    color: var(--pink)!important;
+}
 .display-3 {
     @include media-breakpoint-down(md) {
         font-size: 3.5rem;
@@ -744,6 +747,12 @@ ul.ascii > li > ul > li:last-child > ul > li:last-child > ul > li:last-child > u
         height: 100%;
         object-fit: cover;
     }
+}
+.nowrap {
+    white-space: nowrap;
+}
+.flex {
+    display: flex;
 }
 @media (max-width: 768px) { 
     .mb-hidden {
