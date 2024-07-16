@@ -11763,6 +11763,108 @@ html {
     width: 25%;
   }
 }
+.checkout-page .carousel-nav {
+  margin-bottom: 50px;
+}
+.checkout-page .carousel-nav li {
+  display: inline-block;
+  width: calc(33.33% - 30px);
+  margin-right: 30px;
+}
+.checkout-page .carousel-nav li:last-child {
+  margin-right: 0;
+}
+.checkout-page .carousel-nav li a {
+  background: #ececec;
+  color: var(--text-primary);
+  display: block;
+  height: 74px;
+  font-size: 13px;
+  line-height: 42px;
+  padding: 15px 30px 0 12px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+.checkout-page .carousel-nav li a:before, .checkout-page .carousel-nav li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+}
+.checkout-page .carousel-nav li a:after {
+  border-left: 25px solid #ececec;
+  left: 100%;
+  width: 0;
+  height: 0;
+  z-index: 2;
+}
+.checkout-page .carousel-nav li.is-active a {
+  background: var(--pink);
+  color: #fff;
+}
+.checkout-page .carousel-nav li.is-active a:after {
+  border-left: 25px solid var(--pink);
+}
+.checkout-page .carousel-nav li.is-active:last-child a:after {
+  background: var(--pink);
+}
+.checkout-page .carousel-nav li:last-child a:after {
+  background: #ececec;
+}
+.checkout-page .carousel-nav li h3 {
+  display: inline-block;
+  float: left;
+  font-size: 48px;
+  line-height: 1;
+}
+.checkout-page .carousel-nav li h4 {
+  text-align: left;
+  padding-left: 40px;
+  font-size: 20px;
+  white-space: nowrap;
+  margin: 0;
+}
+.checkout-page .carousel-nav li h4 span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .checkout-page .carousel-nav li {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+  }
+  .checkout-page .carousel-nav li h3 {
+    display: none;
+  }
+  .checkout-page .carousel-nav li h4 {
+    padding-left: 0;
+    font-size: 17px;
+  }
+  .checkout-page .carousel-nav li a {
+    height: 64px;
+    font-size: 13px;
+    line-height: 44px;
+    padding: 15px 10px;
+  }
+  .checkout-page .carousel-nav li a:before, .checkout-page .carousel-nav li a:after {
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+  }
+  .checkout-page .carousel-nav li a:after {
+    border-left: 20px solid #ececec;
+    z-index: -1;
+  }
+  .checkout-page .carousel-nav li.is-active a:after {
+    border-left: 20px solid var(--pink);
+  }
+}
 .kv {
   position: relative;
   border-radius: 2rem;
