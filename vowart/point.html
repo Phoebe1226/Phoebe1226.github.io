@@ -86,90 +86,57 @@ MAIN
                     </div>
 					<div class="member-menu">
 						<ul>
-							<li><a class="text-muted is-active" href="member.html">基本設定</a></li>
+							<li><a class="text-muted" href="member.html">基本設定</a></li>
 							<li><a class="text-muted" href="member-plan.html">會員計劃</a></li>
 							<li><a class="text-muted" href="order.html">訂單管理</a></li>
-							<li><a class="text-muted" href="point.html">點數管理</a></li>
+							<li><a class="text-muted is-active" href="point.html">點數管理</a></li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="col-12 col-md-9 col-lg-8">
-					<h3 class="mb-5">用戶設定</h3>
-					<div class="pl-4 pr-4">
-						<h5 class="mb-3">個人資訊</h5>
-						<div class="row">
-							<div class="col-12 col-md-7 col-lg-4 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="name">
-									<small>姓名</small>
-								</label>
-								<input class="form-control" name="name" type="text" value="陳某某">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 col-md-7 col-lg-8 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="mail">
-									<small>E-mail</small>
-								</label>
-								<input class="form-control" name="mail" type="text" value="abc123@gmail.com">
-							</div>
-						</div>
-						<h5 class="mb-3 mt-4">配送地址</h5>
-						<div class="row">
-							<div class="col-12 col-md-7 col-lg-4 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="name2">
-									<small>收件人姓名</small>
-								</label>
-								<input class="form-control" name="name2" type="text" value="陳某某">
-							</div>
-							<div class="col-12 col-md-7 col-lg-4 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="tel2">
-									<small>聯絡電話</small>
-								</label>
-								<input class="form-control" name="tel2" type="text" value="0900999999">
-							</div>
-							<div class="col-12 col-md-7 col-lg-8 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="add">
-									<small>收件人地址</small>
-								</label>
-								<input class="form-control" name="add" type="text" value="台北市士林區XXXX">
-							</div>
-							<div class="col-12 col-md-7 col-lg-8 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="add">
-									<small>收件人備註</small>
-								</label>
-								<textarea  class="form-control"></textarea>
-							</div>
-						</div>
-						<h5 class="mb-3 mt-4">修改密碼</h5>
-						<div class="row">
-							<div class="col-12 col-md-7 col-lg-4 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="password">
-									<small>請輸入密碼</small>
-								</label>
-								<input class="form-control" name="password" type="password" value="124251255">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 col-md-7 col-lg-4 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="password-new">
-									<small>請輸入新密碼</small>
-								</label>
-								<input class="form-control" name="password-new" type="password">
-							</div>
-							<div class="col-12 col-md-7 col-lg-4 mb-4">
-								<label class="row ml-0 mr-0 justify-content-between" for="password2">
-									<small>確認密碼</small>
-								</label>
-								<input class="form-control" name="password2" type="password">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 col-md-7 col-lg-8 mt-4">
-								<button class="btn btn-l btn-round btn-primary btn-text-m w-full mb-3 ">確認修改<img class="ml-1" src="./assets/img/logout.svg" alt=""></button>
-							</div>
-						</div>
-					</div>
+				<div class="col-12 col-md-9 col-lg-9 pl-3 pr-3">
+					<h3 class="mb-5">點數管理</h3>
+                    <table class="w-100 vow-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center p-2">日期</th>
+                                <th class="text-center p-2">時間</th>
+                                <th class="text-center p-2">點數變動</th>
+                                <th class="text-center p-2">剩餘點數</th>
+                                <th class="text-center p-2">備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="日期：" class="text-center">2024/07/15</td>
+                                <td data-label="操作：" class="text-center">00:00:00</td>
+                                <td data-label="點數變動：" class="text-center">-100</td>
+                                <td data-label="剩餘點數：" class="text-center">400</td>
+                                <td data-label="備註：" class="text-center">生成婚禮Logo</td>
+                            </tr>
+                            <tr>
+                                <td data-label="日期：" class="text-center">2024/07/10</td>
+                                <td data-label="操作：" class="text-center">00:00:00</td>
+                                <td data-label="點數變動：" class="text-center">+200</td>
+                                <td data-label="剩餘點數：" class="text-center">500</td>
+                                <td data-label="備註：" class="text-center">成為標準會員加贈點數</td>
+                            </tr>
+                            <tr>
+                                <td data-label="日期：" class="text-center">2024/07/05</td>
+                                <td data-label="操作：" class="text-center">00:00:00</td>
+                                <td data-label="點數變動：" class="text-center">-100</td>
+                                <td data-label="剩餘點數：" class="text-center">300</td>
+                                <td data-label="備註：" class="text-center">生成似顏繪</td>
+                            </tr>
+                            <tr>
+                                <td data-label="日期：" class="text-center">2024/07/01</td>
+                                <td data-label="操作：" class="text-center">00:00:00</td>
+                                <td data-label="點數變動：" class="text-center">+100</td>
+                                <td data-label="剩餘點數：" class="text-center">400</td>
+                                <td data-label="備註：" class="text-center">新會員購買點數包</td>
+                            </tr>
+                        </tbody>
+                    </table>
 				</div>
 			</div>
         </div>

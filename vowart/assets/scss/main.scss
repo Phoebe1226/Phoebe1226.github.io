@@ -219,6 +219,9 @@ a.text-dark:hover {
     font-size: 12px;
 }
 .btn-text-m {
+    font-size: 14px;
+}
+.btn-text-m {
     font-size: 17px;
 }
 .btn-text-l {
@@ -233,6 +236,12 @@ a.text-dark:hover {
     &:focus { 
         box-shadow:none;
     }
+}
+.opacity-25 {
+    opacity: .25;
+}
+.opacity-5 {
+    opacity: .5;
 }
 
 @each $color, $value in $theme-colors {
