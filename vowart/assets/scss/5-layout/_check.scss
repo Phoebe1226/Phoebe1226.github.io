@@ -87,6 +87,62 @@
         }
       }
 }
+.pay-way {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 16px;
+  img.ic_payway {
+    height: 24px;
+  }
+  input[type=radio] {
+    margin-right: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  input[type=radio] + label::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    border: 1px solid #CCCCCC;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    margin-right: 5px;
+  }
+
+  input[type=radio] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  input[type=radio] + label::after {
+    background-color: var(--pink);
+    content: "";
+    border-radius: 10px;
+    opacity: 0;
+    width: 12px;
+    height: 12px;
+    top: 7px;
+    left: 5px;
+    position: absolute;
+    transform: scale(0);
+    transition: transform 200ms ease;
+  }
+
+  input[type=radio]:checked + label:after {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  input[type=radio]:disabled + label::before {
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}
+
+
 @media (max-width: 768px) {
     .checkout-page {
         .carousel-nav {

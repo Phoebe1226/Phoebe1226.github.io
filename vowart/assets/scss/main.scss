@@ -243,6 +243,9 @@ a.text-dark:hover {
 .opacity-5 {
     opacity: .5;
 }
+.form-control::-webkit-input-placeholder  {
+    font-size: 14px;
+}
 
 @each $color, $value in $theme-colors {
 .btn-link.btn-#{$color} {

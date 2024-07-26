@@ -80,7 +80,7 @@ MAIN
         <div class="row">
             <div class="col-12 col-lg-10 ml-auto mr-auto">
                 <div class="checkout-page">
-                    <h2 class="text-center">我的購物車</h2>
+                    <h2 class="text-center">訂單編號: #P300008400304</h2>
                     <ul class="carousel-nav mt-5 pl-0">
                         <li><a class="text-muted" href="cart.html">
                         <h3 class="mr-4 ml-1">1</h3>
@@ -88,7 +88,7 @@ MAIN
                         </a></li>
                         <li><a class="text-muted" href="cart2.html">
                         <h3 class="mr-4 ml-1">2</h3>
-                        <h4><span>第二步</span>配送資料</h4>
+                        <h4><span>第二步</span>收件資料</h4>
                         </a></li>
                         <li class="is-active"><a href="#">
                         <h3 class="mr-4 ml-1">3</h3>
@@ -96,7 +96,31 @@ MAIN
                         </a></li>
                     </ul>
                 </div>
-
+				<div class="row mb-6">
+					<div class="col-12 col-md-6 ">
+						<div class="shopping-head ml-0 mr-0 pb-2 pl-3 mb-4 border-bottom text-muted font-weight-bold">
+							訂購人資訊
+						</div>
+						<div class="col-12">
+							<p class="mb-2">訂購人姓名：王OO </p>
+							<p class="mb-2">聯絡電話：0912-123123</p>
+							<p class="mb-2">聯絡信箱：test123@gmail.com</p>
+							<p class="mb-2">聯絡地址：104台北市中山區中山北路二段93巷7號</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 ">
+						<div class="shopping-head ml-0 mr-0 pb-2 pl-3 mb-4 border-bottom text-muted font-weight-bold">
+							收件人資訊
+						</div>
+						<div class="col-12">
+							<p class="mb-2">收件人姓名：王某某 </p>
+							<p class="mb-2">聯絡電話：0912-123123</p>
+							<!-- <p class="mb-2">收件地址：104台北市中山區中山北路二段93巷7號</p> -->
+							<p class="mb-2">超商門市：7-11 友成門市</p>
+							<p class="mb-2">取貨地址：台北市士林區社中街211號1樓</p>
+						</div>
+					</div>
+				</div>
                 <div class="mb-6">
                     <div class="row shopping-head ml-0 mr-0 pb-2 mb-2 border-bottom text-muted font-weight-bold">
                         <div class="col-6">產品</div>
@@ -120,26 +144,123 @@ MAIN
                         <div class="col-2 text-center">1</div>
                         <div class="col-2 text-right">$ 350</div>
                     </div>
+
+					<div class="shopping-paid text-right mt-4 col-xs-12 col-md-6 ml-auto border-top pt-4">
+						<div>
+						  <div class="shopping-paid-info flex align-items-center justify-content-between mb-3">
+							<h6 class="text-left mb-0">運費</h6>
+							<p class="last-money mb-0">$105</p>
+						  </div>
+						  
+						  <div class="shopping-paid-info flex align-items-center justify-content-between mb-2">
+							<h6 class="text-left mb-0">折扣</h6>
+							<p class="last-money mb-0">-$15</p>
+						  </div>
+						  <div class="shopping-paid-info flex align-items-center justify-content-between">
+							  <h6 class="text-left mb-0">總金額</h6>
+							  <h2 class="h1 mb-0">$97,614</h2>
+						  </div>
+						</div>
+					</div>
                 </div>
-                <div class="shopping-paid text-right  col-xs-12 col-md-6 ">
-                    <div>
-                      <div class="shopping-paid-info">
-                        <h6 class="text-left">運費</h6>
-                        <p class="last-money">$105</p>
-                      </div>
-                      
-                      <div class="shopping-paid-info">
-                        <h6 class="text-left">回饋金</h6>
-                        <p class="last-money">-$15</p>
-                      </div>
-                      <div class="total-money">
-                        <div>
-                          <h6 class="text-left">總金額</h6>
-                          <p>$97,614</p>
-                        </div>
-                      </div>
+				<div class="mb-6">
+                    <div class="shopping-head ml-0 mr-0 pb-2 pl-3 mb-4 border-bottom text-muted font-weight-bold">
+						選擇付款方式 <small class="color-pink ml-1">（所有付款資訊皆已安全加密保護）</small>
+					</div>
+                    <div class="row pl-3 pr-3">
+						<div class="pay-way border-bottom pb-4 mb-4 w-100 justify-content-between flex">
+							<div>
+								<input type="radio" name="pay-radiobox" id="atm_radio"/>
+								<label class="ml-3" for="atm_radio">超商付款／銀行轉帳</label>
+							</div>
+							
+						</div>
+						<div class="pay-way border-bottom pb-4 mb-4 w-100">
+							<input type="radio" name="pay-radiobox" id="linepay_radio"/>
+							<label class="ml-3 justify-content-between flex" for="linepay_radio">
+								LINE Pay
+								<img class="ic_payway" src="./assets/img/pay-03.png">
+							</label>
+						</div>
+						<div class="pay-way border-bottom pb-4 mb-4 w-100">
+							<input type="radio" name="pay-radiobox" id="jkopay_radio"/>
+							<label class="ml-3 justify-content-between flex" for="jkopay_radio">
+								街口支付
+								<img class="ic_payway" src="./assets/img/pay-02.png">
+							</label>
+						</div>
+						<div class="pay-way border-bottom pb-4 mb-4 w-100">
+							<input type="radio" name="pay-radiobox" id="paypal_radio"/>
+							<label class="ml-3 justify-content-between flex" for="paypal_radio">
+								Paypal
+								<img class="ic_payway" src="./assets/img/pay-04.png">
+							</label>
+						</div>
+						<div class="pay-way pb-4 mb-4 w-100">
+							<input type="radio" name="pay-radiobox" id="card_radio"/>
+							<label class="ml-3 justify-content-between flex" for="card_radio">
+								信用卡/記帳卡
+								<div>
+									<img class="ic_payway mr-2" src="./assets/img/pay-visa.png">
+									<img class="ic_payway mr-2" src="./assets/img/pay-master.png">
+									<img class="ic_payway mr-2" src="./assets/img/pay-ae.png">
+									<img class="ic_payway" src="./assets/img/pay-jcb.jpeg">
+								</div>
+							</label>
+							<div class="mt-4 pl-3 pay_more" style="display: none;">
+								<div class="row">
+									<div class="col-12 col-md-6 mb-4">
+										<label class="row ml-0 mr-0 justify-content-between" for="card-number">
+											<small>卡號</small>
+										</label>
+										<input class="form-control" name="card-number" type="text" value="">
+									</div>
+								</div>
+								<div class="row ">
+									<div class="col-12 col-md-4 mb-4">
+										<label class="row ml-0 mr-0 justify-content-between" for="card-date">
+											<small>有效日期</small>
+										</label>
+										<input class="form-control" name="card-date" type="text" placeholder="MM/YY" value="">
+									</div>
+									<div class="col-12 col-md-3 col-lg-2 mb-3">
+										<label class="row ml-0 mr-0 justify-content-between" for="card-code">
+											<small>安全碼 </small>
+										</label>
+										<input class="form-control" name="card-code" type="text" value="">
+									</div>
+								</div>
+								<small class="text-muted"><i class="fa fa-lock opacity-5 mr-1" aria-hidden="true"></i>你的付款資訊，將由信譽良好的支付系統公司進行安全加密和保護</small>
+							</div>
+						</div>
+					</div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="shopping-head ml-0 mr-0 pb-2 pl-3 mb-4 border-bottom text-muted font-weight-bold">
+						發票資訊
+					</div>
+                    <div class="row pl-3 pr-3">
+						<div class="col-12 col-md-5 col-lg-3 mb-2">
+							<select class="form-control">
+								<option>愛心捐贈</option>
+								<option>手機載具條碼</option>
+								<option>統一編號</option>
+								<option>自然人憑證</option>
+							</select>
+						</div>
+						<div class="col-12 col-md-5 col-lg-4 mb-2">
+							<input class="form-control" type="text" value="/">
+						</div>
+					</div>
+                </div>
+
+				<div class="row mt-6">
+                    <div class="col-12 col-md-6 col-lg-4 ml-auto mr-auto mb-2 text-center">
+                        <a href="order.html" class="btn btn-l btn-round btn-primary btn-text-m w-full mb-3 ">確認付款<i class="fa fa-angle-right text-white ml-2" aria-hidden="true"></i></a>
+                        <a href="cart2.html" class="btn btn-l  btn-round btn-outline-light btn-text-m text-muted w-full">上一步</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     
@@ -172,72 +293,11 @@ JAVASCRIPTS
 <script src="./assets/js/functions.js" type="text/javascript"></script>
 <script type="text/javascript" src="./assets/js/vendor/slick_1.8.1.min.js"></script>
 <script> 
-$('.slider-single').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: false,
-	fade: false,
-	adaptiveHeight: true,
-	infinite: false,
-   useTransform: true,
-	speed: 400,
-	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-});
-
-$('.slider-nav')
-	.on('init', function(event, slick) {
-		$('.slider-nav .slick-slide.slick-current').addClass('is-active');
-	})
-	.slick({
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		dots: false,
-		arrows: false,
-		focusOnSelect: false,
-		centerMode: true,
-		infinite: true,
-		responsive: [{
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			}
-		},  {
-				breakpoint: 420,
-				settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-	   		}
-		}]
+    // 切換付款方式顯示填寫欄位
+		$('.pay-way input[type="radio"]').click(function() {
+		$('.pay_more').hide();
+		$(this).closest('.pay-way').find('.pay_more').show();
 	});
-	$('.slider-single').on('afterChange', function(event, slick, currentSlide) {
-		$('.slider-nav').slick('slickGoTo', currentSlide);
-		var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
-		$('.slider-nav .slick-slide.is-active').removeClass('is-active');
-		$(currrentNavSlideElem).addClass('is-active');
-	});
-
-	$('.slider-nav').on('click', '.slick-slide', function(event) {
-		event.preventDefault();
-		var goToSingleSlide = $(this).data('slick-index');
-
-		$('.slider-single').slick('slickGoTo', goToSingleSlide);
-	});
-
-	//選擇數量
-	function up(max) {
-		document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
-		if (document.getElementById("myNumber").value >= parseInt(max)) {
-			document.getElementById("myNumber").value = max;
-		}
-	}
-	function down(min) {
-		document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
-		if (document.getElementById("myNumber").value <= parseInt(min)) {
-			document.getElementById("myNumber").value = min;
-		}
-	}
-
 </script>
 </body>
 </html>
