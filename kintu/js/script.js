@@ -296,8 +296,10 @@
       });
     });
     $(document).on('click', function(e) {
-      if (!$(e.target).closest('.shop__sidebar__accordion, .toggle-accordion').length) {
-          $('.shop__sidebar__accordion').hide();
+      if (window.innerWidth < 991) {
+          if (!$(e.target).closest('.shop__sidebar__accordion, .toggle-accordion').length) {
+              $('.shop__sidebar__accordion').hide();
+          }
       }
-    });
+  });
 })(jQuery);
