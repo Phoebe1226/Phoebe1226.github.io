@@ -157,5 +157,147 @@
               $('.site-header').removeClass('site-header-scroll');
           }
       });
+/*-------------------
+		Quantity change
+	--------------------- */
+  var proQty = $('.pro-qty');
+  proQty.prepend('<span class="icon icon_minus-06 inc qtybtn"></span>');
+  proQty.append('<span class="icon icon_plus inc qtybtn"></span>');
+  proQty.on('click', '.qtybtn', function () {
+      var $button = $(this);
+      var oldValue = $button.parent().find('input').val();
+      if ($button.hasClass('inc')) {
+          var newVal = parseFloat(oldValue) + 1;
+      } else {
+          // Don't allow decrementing below zero
+          if (oldValue > 0) {
+              var newVal = parseFloat(oldValue) - 1;
+          } else {
+              newVal = 0;
+          }
+      }
+      $button.parent().find('input').val(newVal);
+  });
 
+  var proQty = $('.pro-qty-2');
+  proQty.prepend('<span class="icon icon_minus-06 inc qtybtn"></span>');
+  proQty.append('<span class="icon icon_plus inc qtybtn"></span>');
+  proQty.on('click', '.qtybtn', function () {
+      var $button = $(this);
+      var oldValue = $button.parent().find('input').val();
+      if ($button.hasClass('inc')) {
+          var newVal = parseFloat(oldValue) + 1;
+      } else {
+          // Don't allow decrementing below zero
+          if (oldValue > 0) {
+              var newVal = parseFloat(oldValue) - 1;
+          } else {
+              newVal = 0;
+          }
+      }
+      $button.parent().find('input').val(newVal);
+  });
+
+
+    /*-------------------
+		Scroll
+	--------------------- */
+  $(".nice-scroll").niceScroll({
+      cursorcolor: "#0d0d0d",
+      cursorwidth: "5px",
+      background: "#e5e5e5",
+      cursorborder: "",
+      autohidemode: true,
+      horizrailenabled: false
+  });
+
+    /*------------------
+        Accordin Active
+    --------------------*/
+    $('.collapse').on('shown.bs.collapse', function () {
+      $(this).prev().addClass('is-active');
+    });
+
+    $('.collapse').on('hidden.bs.collapse', function () {
+        $(this).prev().removeClass('is-active');
+    });
+
+    //Canvas Menu
+    $(".canvas__open").on('click', function () {
+        $(".offcanvas-menu-wrapper").addClass("is-active");
+        $(".offcanvas-menu-overlay").addClass("is-active");
+    });
+
+    $(".offcanvas-menu-overlay").on('click', function () {
+        $(".offcanvas-menu-wrapper").removeClass("is-active");
+        $(".offcanvas-menu-overlay").removeClass("is-active");
+    });
+
+    /*-------------------
+		Radio Btn
+	--------------------- */
+  $(".product__color__select label").on('click', function () {
+    var $currentItem = $(this).closest('.product__item');
+    $currentItem.find('.product__color__select label').removeClass('is-active');
+    $(this).addClass('is-active');
+  });
+   //切換側欄顏色選擇
+   $('.shop__sidebar__color .color-label').on('click', function() {
+    var $this = $(this);
+    if ($this.hasClass('is-active')) {
+        $this.removeClass('is-active');
+    } else {
+        $this.addClass('is-active');
+    }
+  });
+  //切換側欄顏色選擇
+  $('.shop__sidebar__tags a').on('click', function() {
+   var $this = $(this);
+   if ($this.hasClass('is-active')) {
+       $this.removeClass('is-active');
+   } else {
+       $this.addClass('is-active');
+   }
+ });
+
+ /*-------------------
+		Range Slider
+	--------------------- */
+	var rangeSlider = $(".price-range"),
+    minamount = $("#minamount"),
+    maxamount = $("#maxamount"),
+    minPrice = rangeSlider.data('min'),
+    maxPrice = rangeSlider.data('max');
+    rangeSlider.slider({
+    range: true,
+    min: minPrice,
+    max: maxPrice,
+    values: [minPrice, maxPrice],
+    slide: function (event, ui) {
+        minamount.val('$' + ui.values[0]);
+        maxamount.val('$' + ui.values[1]);
+        }
+    });
+    minamount.val('$' + rangeSlider.slider("values", 0));
+    maxamount.val('$' + rangeSlider.slider("values", 1));
+
+ /*-------------------
+		顯示隱藏篩選單
+	--------------------- */
+    $(document).ready(function() {
+      $('a.toggle-accordion').on('click', function(e) {
+          e.preventDefault();
+          $('.shop__sidebar__accordion').slideDown();
+      });
+
+      $('a.close-accordion').on('click', function(e) {
+          e.preventDefault();
+          $('.shop__sidebar__accordion').slideUp();
+      });
+    });
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.shop__sidebar__accordion, .toggle-accordion').length) {
+          $('.shop__sidebar__accordion').hide();
+      }
+    });
 })(jQuery);

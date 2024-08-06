@@ -52,6 +52,7 @@
 }
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   background-color: var(--gray-color-300);
@@ -236,7 +237,7 @@ h5.cart-title {
   border: 0;
 }
 
-.btn-primary{
+.btn-primary, .btn-primary:active, .btn-primary:focus{
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 10px 22px;
@@ -780,6 +781,10 @@ img.zoom-in {
     margin-bottom: 8px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--gray-color-400);
+  }
+  a.nav-link.dropdown-toggle.ms-0 {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
