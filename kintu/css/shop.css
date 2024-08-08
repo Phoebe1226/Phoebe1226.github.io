@@ -1059,9 +1059,9 @@
 }
 
 .product__details__option__size label.is-active {
-	background: var(--black-color);
+	background: var(--second-color);
 	color: #ffffff;
-	border-color: var(--black-color);
+	border-color: var(--second-color);
 }
 
 .product__details__option__size label input {
