@@ -161,8 +161,8 @@
 		Quantity change
 	--------------------- */
   var proQty = $('.pro-qty');
-  proQty.prepend('<span class="icon icon_minus-06 inc qtybtn"></span>');
-  proQty.append('<span class="icon icon_plus inc qtybtn"></span>');
+  proQty.prepend('<span class="fa fa-angle-down inc qtybtn"></span>');
+  proQty.append('<span class="fa fa-angle-up dec qtybtn"></span>');
   proQty.on('click', '.qtybtn', function () {
       var $button = $(this);
       var oldValue = $button.parent().find('input').val();
@@ -180,8 +180,8 @@
   });
 
   var proQty = $('.pro-qty-2');
-  proQty.prepend('<span class="icon icon_minus-06 inc qtybtn"></span>');
-  proQty.append('<span class="icon icon_plus inc qtybtn"></span>');
+  proQty.prepend('<span class="fa fa-angle-down inc qtybtn"></span>');
+  proQty.append('<span class="fa fa-angle-up dec qtybtn"></span>');
   proQty.on('click', '.qtybtn', function () {
       var $button = $(this);
       var oldValue = $button.parent().find('input').val();
@@ -259,7 +259,21 @@
        $this.addClass('is-active');
    }
  });
+ 
+  //切換詳細頁選擇
+$(document).ready(function(){
+  $('.product__details__option__size label').on('click', function() {
+      $('.product__details__option__size label').removeClass('is-active');
+      $(this).addClass('is-active');
+  });
+});
 
+$(document).ready(function(){
+  $('.product__details__option__color label').on('click', function() {
+      $('.product__details__option__color label').removeClass('is-active');
+      $(this).addClass('is-active');
+  });
+});
  /*-------------------
 		Range Slider
 	--------------------- */
@@ -300,6 +314,7 @@
           if (!$(e.target).closest('.shop__sidebar__accordion, .toggle-accordion').length) {
               $('.shop__sidebar__accordion').hide();
           }
-      }
-  });
+        }
+    });
+
 })(jQuery);

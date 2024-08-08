@@ -786,6 +786,9 @@ img.zoom-in {
     display: flex;
     justify-content: space-between;
   }
+  .dropdown-menu-big ul {
+    padding-left: 0;
+  }
 }
 
 /* 3.2 Billboard
