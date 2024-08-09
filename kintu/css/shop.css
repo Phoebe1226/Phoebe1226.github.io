@@ -1438,6 +1438,10 @@
 	.product__details__pic {
 		padding: 40px 0 40px;
 	}
+	
+	.continue__btn.update__btn,.continue__btn {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1200px) {

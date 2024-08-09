@@ -232,7 +232,7 @@
                         <ul>
                             <li><a href="member01.html">會員中心</a></li>
                             <li><a href="member02.html">訂單管理</a></li>
-                            <li><a href="member02.html">修改密碼</a></li>
+                            <li><a href="member03.html">修改密碼</a></li>
                             <li><a href="">登出</a></li>
                         </ul>
                     </div>
@@ -290,107 +290,92 @@
                         <div class="col-lg-3 col-md-4 col-12">
                             <div class="checkout__order">
                                <ul>
-                                 <li><a class="is-active" href="member01.html">會員中心</a></li>
-                                 <li><a href="member02.html">訂單管理</a></li>
+                                 <li><a href="member01.html">會員中心</a></li>
+                                 <li><a class="is-active" href="member02.html">訂單管理</a></li>
                                  <li><a href="member03.html">修改密碼</a></li>
                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-8 col-12 ms-auto">
-                            <h4 class="checkout__title">會員資料</h4>
-                            <p class="mb-4  font-weight-bold">會員帳號：ontel0209</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="checkout__input">
-                                        <p>名字<span>*</span></p>
-                                        <input type="text" value="嵩昱">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="checkout__input">
-                                        <p>姓氏<span>*</span></p>
-                                        <input type="text" value="徐">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>聯絡電話<span>*</span></p>
-                                      <div class="row">
-                                        <div class="col-3 pe-0"><input type="text" value="+886"></div>
-                                        <div class="col-9"><input type="text" value="095123456"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>聯絡信箱<span>*</span></p>
-                                      <input type="text" value="test123@gmail.com">
-                                  </div>
+                            <h4 class="checkout__title">訂單管理</h4>
+                          
+                            <div class="table-wrap">
+                                <table class="table order-accordion table-hover" id="accordion">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>訂單編號</th>
+                                      <th>下單日期</th>
+                                      <th>數量</th>
+                                      <th>金額</th>
+                                      <th>狀態</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <th scope="row" data-label="#">1</th>
+                                      <td data-label="訂單編號：">P123456777</td>
+                                      <td data-label="下單日期：">2024/8/8</td>
+                                      <td data-label="數量：">2</td>
+                                      <td data-label="金額：">NT$400</td>
+                                      <td data-label="狀態：">已出貨</td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="6" id="collapseOne" class="order-detail collapse show acc" data-parent="#accordion">
+                                        <ul>
+                                            <li> 
+                                                <a class="d-flex align-items-center" href="shop_detail.html">
+                                                    <img class="me-3" src="https://cdn.shoplightspeed.com/shops/633000/files/59576962/350x350x1/image.jpg" alt="">
+                                                    <p class="me-4 fs-6">復古偉特塔羅牌</p>
+                                                </a>
+                                                <div class="d-flex">
+                                                    <p class="me-4 fs-6">NT$350</p>
+                                                    <p class="me-4 fs-6">x2</p>
+                                                </div>
+                                            </li>
+                                            <li> 
+                                                <a class="d-flex align-items-center" href="shop_detail.html">
+                                                    <img class="me-3" src="https://cdn.shoplightspeed.com/shops/633000/files/59576962/350x350x1/image.jpg" alt="">
+                                                    <p class="me-4 fs-6">復古偉特塔偉特塔羅牌</p>
+                                                </a>
+                                                <div class="d-flex">
+                                                    <p class="me-4 fs-6">NT$350</p>
+                                                    <p class="me-4 fs-6">x2</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      </td>
+                                    </tr>
+                              
+                                    <tr data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
+                                      <th scope="row" data-label="#">2</th>
+                                      <td data-label="訂單編號：">P123456778</td>
+                                      <td data-label="下單日期：">2024/8/8</td>
+                                      <td data-label="數量：">2</td>
+                                      <td data-label="金額：">NT$400</td>
+                                      <td data-label="狀態：">待發貨</td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="6" id="collapseTwo" class="order-detail collapse acc" data-parent="#accordion">
+                                        <ul>
+                                            <li> 
+                                                <a class="d-flex align-items-center" href="shop_detail.html">
+                                                    <img class="me-3" src="https://cdn.shoplightspeed.com/shops/633000/files/59576962/350x350x1/image.jpg" alt="">
+                                                    <p class="me-4 fs-6">復古偉特塔羅牌</p>
+                                                </a>
+                                                <div class="d-flex">
+                                                    <p class="me-4 fs-6">NT$350</p>
+                                                    <p class="me-4 fs-6">x2</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </div>
                               
-                              <div class="col-lg-6">
-                                <div class="checkout__input">
-                                    <p>生日</p>
-                                    <input id="datepicker" class="form-control" name="bd" type="date" value="1992-12-26">
-                                </div>
-                            </div>
                           </div>
-                          <h4 class="mt-5 mb-4 checkout__title">收件資料</h4>
-                            <div class="checkout__input">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <p>收件國家<span>*</span></p>
-                                        <select>
-                                            <option>美國</option>
-                                            <option selected="">台灣</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkout__input">
-                                <p>收件地址<span>*</span></p>
-                                <div class="row">
-                                  <div class="col-md-4"><input type="text" placeholder="省份/州（選填）" class="checkout__input__add"></div>
-                                  <div class="col-md-4 col-6"><input type="text" placeholder="城鎮/城市" class="checkout__input__add" value="台北市"></div>
-                                  <div class="col-md-4 col-6"><input type="text" placeholder="郵遞區號" class="checkout__input__add" value="112"></div>
-                                </div>
-                                <input type="text" placeholder="地址" class="checkout__input__add" value="XXX路">
-                                <input type="text" placeholder="公寓，套房，單位等（選填）">
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="checkout__input">
-                                  <p>發票類型<span>*</span></p>
-                                  <select>
-                                    <option>個人發票</option>
-                                    <option>電子發票</option>
-                                    <option>公司用發票</option>
-                                    <option>發票捐贈</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="checkout__input">
-                                  <p>請輸入載具<span>*</span></p>
-                                  <input type="text" placeholder="" value="/">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mt-4 mb-3">
-                                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                    <div class="continue__btn">
-                                        <a class="w-100 text-center" href="#">取消修改</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                    <div class="continue__btn update__btn">
-                                        <a href="" class="btn btn-primary primary-btn mt-0 fs-6">儲存修改</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </form>
@@ -465,26 +450,11 @@
 			</div>
 		</footer>
     
-    <!-- Video Popup -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-
-          <div class="modal-content">
-            
-              <div class="modal-body">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40" height="40"><use xlink:href="#close-sharp"></use></svg></button>
-                  <div class="ratio ratio-16x9">
-                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                  </div>
-              </div>
-
-          </div>
-
-      </div>
-    </div>
     <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
   </body>
 </html>

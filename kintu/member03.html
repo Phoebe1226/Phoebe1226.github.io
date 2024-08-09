@@ -290,94 +290,34 @@
                         <div class="col-lg-3 col-md-4 col-12">
                             <div class="checkout__order">
                                <ul>
-                                 <li><a class="is-active" href="member01.html">會員中心</a></li>
+                                 <li><a href="member01.html">會員中心</a></li>
                                  <li><a href="member02.html">訂單管理</a></li>
-                                 <li><a href="member03.html">修改密碼</a></li>
+                                 <li><a class="is-active" href="member03.html">修改密碼</a></li>
                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-8 col-12 ms-auto">
-                            <h4 class="checkout__title">會員資料</h4>
+                            <h4 class="checkout__title">修改密碼</h4>
                             <p class="mb-4  font-weight-bold">會員帳號：ontel0209</p>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>請輸入密碼<span>*</span></p>
+                                    <input class="form-control" name="password" type="password" value="124251255">
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
-                                        <p>名字<span>*</span></p>
-                                        <input type="text" value="嵩昱">
+                                        <p>輸入新密碼<span>*</span><small> (含英文+數字共8位數以上)</small></p>
+                                        <input class="form-control" name="password-new" type="password">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
-                                        <p>姓氏<span>*</span></p>
-                                        <input type="text" value="徐">
+                                        <p>確認密碼<span>*</span></p>
+                                        <input class="form-control" name="password-new-2" type="password">
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="row">
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>聯絡電話<span>*</span></p>
-                                      <div class="row">
-                                        <div class="col-3 pe-0"><input type="text" value="+886"></div>
-                                        <div class="col-9"><input type="text" value="095123456"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>聯絡信箱<span>*</span></p>
-                                      <input type="text" value="test123@gmail.com">
-                                  </div>
-                              </div>
-                              
-                              <div class="col-lg-6">
-                                <div class="checkout__input">
-                                    <p>生日</p>
-                                    <input id="datepicker" class="form-control" name="bd" type="date" value="1992-12-26">
-                                </div>
-                            </div>
-                          </div>
-                          <h4 class="mt-5 mb-4 checkout__title">收件資料</h4>
-                            <div class="checkout__input">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <p>收件國家<span>*</span></p>
-                                        <select>
-                                            <option>美國</option>
-                                            <option selected="">台灣</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkout__input">
-                                <p>收件地址<span>*</span></p>
-                                <div class="row">
-                                  <div class="col-md-4"><input type="text" placeholder="省份/州（選填）" class="checkout__input__add"></div>
-                                  <div class="col-md-4 col-6"><input type="text" placeholder="城鎮/城市" class="checkout__input__add" value="台北市"></div>
-                                  <div class="col-md-4 col-6"><input type="text" placeholder="郵遞區號" class="checkout__input__add" value="112"></div>
-                                </div>
-                                <input type="text" placeholder="地址" class="checkout__input__add" value="XXX路">
-                                <input type="text" placeholder="公寓，套房，單位等（選填）">
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="checkout__input">
-                                  <p>發票類型<span>*</span></p>
-                                  <select>
-                                    <option>個人發票</option>
-                                    <option>電子發票</option>
-                                    <option>公司用發票</option>
-                                    <option>發票捐贈</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="checkout__input">
-                                  <p>請輸入載具<span>*</span></p>
-                                  <input type="text" placeholder="" value="/">
-                                </div>
-                              </div>
                             </div>
                             <div class="row mt-4 mb-3">
                                 <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
@@ -391,6 +331,8 @@
                                     </div>
                                 </div>
                             </div>
+                           
+                          </div>
                         </div>
                     </div>
                 </form>
