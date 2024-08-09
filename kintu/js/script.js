@@ -242,7 +242,7 @@
     $(this).addClass('is-active');
   });
    //切換側欄顏色選擇
-   $('.shop__sidebar__color .color-label').on('click', function() {
+   $('.shop__sidebar__color .shop-color-label').on('click', function() {
     var $this = $(this);
     if ($this.hasClass('is-active')) {
         $this.removeClass('is-active');

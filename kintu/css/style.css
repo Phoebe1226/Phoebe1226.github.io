@@ -649,7 +649,7 @@ img.zoom-in {
   background-color: var(--gray-color-300);
 }
 #header-nav .offcanvas-end {
-  width: 70%;
+  width: 80%;
   border: none;
 }
 .offcanvas.show .offcanvas-body .navbar-nav {
@@ -687,7 +687,7 @@ img.zoom-in {
   min-width: 21rem;
 }
 .cart-dropdown .dropdown-menu .btn {
-  font-size: 1rem;
+  font-size: 15px;
 }
 .cart-dropdown .badge {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -706,6 +706,31 @@ img.zoom-in {
 }
 .display-mb {
   display: none;
+}
+.cart-dropdown .dropdown-menu.dropdown-menu-member {
+  padding: 0;
+  min-width: 150px;
+  text-align: center;
+  background: #fff;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.cart-dropdown .dropdown-menu.dropdown-menu-member ul {
+  padding:8px  0;
+}
+.cart-dropdown .dropdown-menu.dropdown-menu-member li {
+  list-style: none;
+}
+.cart-dropdown .dropdown-menu.dropdown-menu-member a {
+  display: block;
+  padding: 4px 12px;
+  font-weight: normal;
+  font-size: 15px;
+  color: var(--accent-color);
+}
+.cart-dropdown .dropdown-menu.dropdown-menu-member a:hover {
+   background: var(--bs-gray-200);;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu-shop {
