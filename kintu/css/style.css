@@ -62,7 +62,7 @@ body {
   line-height: 1.6;
   margin: 0;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--heading-font);
@@ -840,6 +840,9 @@ img.zoom-in {
   height: 16px;
   fill: var(--light-color);
   margin-left: 9px;
+}
+.product-card img {
+  width: 100%;
 }
 
 /* 3.4 Video

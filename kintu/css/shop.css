@@ -1269,6 +1269,16 @@
 	font-size: 1.05rem;
 	line-height: 1.8;
 }
+.product__details__tab__content table {
+	width: 100%;
+	max-width: 600px;
+	margin:0 auto 40px;
+}
+.product__details__tab__content table td {
+	border: 1px solid var(--gray-color-400);
+	font-size: 15px;
+    padding: 8px 12px;
+}
 .product__details__tab__content img {
 	width: 100%;
 }
