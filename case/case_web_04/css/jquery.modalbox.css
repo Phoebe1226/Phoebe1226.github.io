@@ -1,0 +1,18 @@
+﻿body div.modal-box-scroll-bar{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}
+body.modal-box-open{overflow:hidden}
+div.modal-box{opacity:0;width:100%;height:100%;position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;background-color:rgba(0,0,0,0.4);overflow-x:hidden;overflow-y:auto;visibility:hidden;-moz-transition:visibility .3s linear 0.5s,opacity .5s linear;-o-transition:visibility .3s linear 0.5s,opacity .5s linear;-webkit-transition:visibility .3s linear,opacity .5s linear;-webkit-transition-delay:0.5s,0;transition:visibility .3s linear 0.5s,opacity .5s linear;transition-delay:0}
+div.modal-box.active{visibility:visible;opacity:1}
+div.modal-box > .inner{background:#f7f8fb;color:#101010;padding:37px 10px 10px;margin:50px auto;width:95%;height:auto;box-sizing:border-box;position:relative;box-shadow:0 5px 15px rgba(0,0,0,.5);max-width:640px}
+div.modal-box > .inner button.close{display:block;position:absolute;font-size:30px;line-height:11px;right:10px;top:2px;opacity:.5;background:none;border:none;height:30px;width:30px;z-index:11}
+div.modal-box > .inner button.close.close:hover{opacity:1;color:#888}
+div.modal-box > .inner.default-in{-webkit-animation-name:defaultIn;animation-name:defaultIn}
+div.modal-box > .inner.default-out{-webkit-animation-name:defaultOut;animation-name:defaultOut}
+div.modal-box.stylized > .inner{border:1px solid #dcdee0;border-radius:5px;-moz-box-shadow:0 3px 9px rgba(0,0,0,0.5);-webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);box-shadow:0 3px 9px rgba(0,0,0,0.5)}
+@keyframes defaultIn {
+0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}
+100%{opacity:1;-webkit-transform:none;transform:none}
+}
+@keyframes defaultOut {
+0%{opacity:1}
+100%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}
+}

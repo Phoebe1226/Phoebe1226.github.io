@@ -1,0 +1,131 @@
+@media (min-width: 1601px) and (max-width: 1200px) {
+.part03 .container{ margin-top: -250px;}
+.part04{ min-height: 540px; max-height: 640px; background-size: contain; background-position:left; background-position-x: 30%; }
+}
+@media (max-width:1200px) {
+h2,.part04_text h2,.part04_text h2 span,.part05 h2 span,.part03_text h2,.part03_text h2 span,.part05 h2,.part02_2_item >div h2{font-size:30px}
+.part04_text h2,.part05 h2{margin-bottom:30px}
+.part04{background-position:30%}
+.part06 p{ min-height: 92px; }
+.part06_item h4 span{display: block; font-size: 12px; float: none;margin-bottom: 5px;}
+}
+@media (max-width:1024px) {
+.part04{padding:70px 0;background-position:35%}
+.sideimg{width:90px;margin-top:-45px}
+.banner_model{right:12%;max-height:85vh;max-width:45%}
+input[type="submit"]{width:122px;height:40px}
+.chekbox_box{margin:7px 0}
+.part5_imgbox img{max-height:360px}
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+.container{max-width:900px}
+}
+@media (max-width: 992px) {
+.sideimg{border-radius:99em;background-color:#000}
+.container{max-width:90%}
+.part03_text h5{font-size:16px}
+.part03_img{width:90%}
+.banner_model{right:15%;max-height:100%;max-width:45%}
+.navbar-brand{position:absolute}
+.navbar-toggler{position:fixed;right:25px;top:20px;background-color:#1a1813;border:1px solid #c99f45;border-radius:0}
+.navbar-toggler-icon{height:auto;width:25px;color:#c99f45}
+.navbar-collapse{position:fixed;right:0;top:0;width:200px;margin-top:52px}
+.navbar-nav{max-width:200px;background-color:rgba(60,60,60,0.9);border-radius:6px 0 6px 6px;position:absolute;right:25px;text-align:left}
+.navbar-nav li{position:relative;padding-left:20px;width:160px}
+.nav-item:before{content:'';display:inline-block;background-image:url(../img/part2_item_span_ic.png);width:10px;height:10px;background-size:contain;background-repeat:no-repeat;position:absolute;left:15px;top:15px;opacity:0}
+.nav-item.active:before{opacity:1}
+.navbar{z-index:99}
+.sideimg{display:none}
+}
+@media (max-width: 860px) {
+header{min-height:90vh;position:relative}
+header .header-cont h1{font-size:36px}
+h2,.part04_text h2,.part04_text h2 span,.part05 h2 span,.part03_text h2,.part03_text h2 span,.part05 h2,.part02_2_item >div h2{font-size:24px}
+td{padding:10px 20px}
+h5{font-size:14px}
+h4{font-size:16px}
+section{padding:60px 0 30px}
+.part2_item_img{left:90px;width:50px}
+.part02_2_item >div{padding:40px 80px}
+.part02_2_item .col-md-6,.part03 .col-md-6{max-width:100%;-ms-flex:0 0 100%;flex:0 0 100%;text-align:center}
+.part02_2_item .part2_item_t{text-align:left;padding-left:100px;margin-bottom:20px}
+.part03 .part03_text{text-align:left}
+.part03_img img{max-height:400px;margin-top:30px}
+.part05_form{max-width:100%}
+.part03_img{width:auto}
+.part06 .col-md-4{ -ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}
+.part06_item{ margin-bottom: 20px; }
+.part06 p{ min-height: auto;width: 50%;display: inline-block; float: left; padding-right: 20px;}
+.part06_img{ display: inline-block; width: 50%; }
+.part06_item h4{ text-align: left; }
+.part06_item h4 span{  display: inline-block;float: left; margin-right: 15px;}
+}
+@media (max-width: 767px) {
+h2,.part04_text h2,.part04_text h2 span,.part05 h2 span,.part03_text h2,.part03_text h2 span,.part05 h2,.part02_2_item >div h2{font-size:30px}
+.part03 .container{margin-top:-100px}
+.mob-item{display:block}
+.part01 .mob-item{display:none}
+.part04{padding-bottom:0;background:transparent}
+.part04_text{margin-bottom:50px;outline:1px solid #e3a062;outline-offset:-6px;border:2px solid #b09d60;padding:40px 50px}
+.part5_imgbox{margin-top:50px}
+}
+@media (max-width: 640px) {
+.sideimg{display:block;width:60px;bottom:8%;top:auto}
+.container{max-width:100%}
+.navbar-toggler{right:20px}
+.navbar-brand{width:48px;top:15px;left:12px}
+.banner_model{max-width:65%;right:5%}
+.header-cont h4{text-shadow:1px 1px 1px rgba(0,0,0,0.6)}
+header{min-height:78vh}
+header .header-cont{left:10%;top:40%}
+header .header-cont h1{font-size:28px}
+h2,.part04_text h2,.part04_text h2 span,.part05 h2 span,.part03_text h2,.part03_text h2 span,.part05 h2,.part02_2_item >div h2{font-size:20px}
+p{font-size:13px;color:#dadada}
+.mouse{width:20px;height:32px}
+.line{height:60px;left:9px;margin-top:15px}
+.navbar-nav{right:20px}
+.part03_text h5{font-size:14px}
+.pc{display:none}
+.part01 .mob-item{display:block}
+tr td:first-child{font-size:13px;line-height:1.5;color:#dadada;padding:20px 15px}
+tr td h4{font-size:16px;color:#e3a062;margin-bottom:8px}
+.title h2{margin-bottom:40px}
+.step03_1{position:relative;z-index:2;-ms-flex:0 0 33%;flex:0 0 33%;max-width:33%;padding-right:10px;padding-left:10px}
+.step03_1_box h4{display:none}
+.step03_1_box a{display:none}
+.step03_1_box h5{margin-bottom:0;padding-bottom:0;color:#dadada}
+.step03_1_box h5:after{display:none}
+.part03_img img{max-height:300px}
+.part02_2_bg{top:-45px}
+.part02_2{padding:50px 0}
+.part02_2_item >div{padding:30px 20px}
+.part2_item_img{display:none}
+.part02_2_item{padding:15px 13px}
+.part02_2_item .part2_item_t{padding-left:20px}
+.part02_2_item >div span{margin-right:10px}
+.part02_2_item >div span img{margin-right:5px;width:10px}
+.part02_2_item >div p:last-child br{display:none}
+.part02_2_item >div span.none{display:none}
+.part03 .container{margin-top:-50px}
+.part03_text h5{margin-bottom:40px}
+.part03_detail{padding:30px 15px 0 40px}
+.part03_text h5:before{left:-60px;top:50%;width:40px;height:40px}
+.part04_text{padding:30px 20px}
+.part04_text h5{font-size:14px}
+.part04_text p br{display:none}
+.part05_form{max-width:90%;}
+.part05_form_border{padding:40px 30px}
+form > div > label{width:30%}
+form > div > div,[include*="form-input-select()"]{width:70%}
+.part05_form:before,.part05_form:after, .part05_form_border:before, .part05_form_border:after{ width: 24px; height: 24px; }
+.chekbox_box{max-width:100%}
+input[type="submit"]{float:none;margin-top:20px}
+.part5_imgbox img{max-height:180px;position:absolute;right:25px;bottom:0}
+.part05_form{position:relative}
+.part05_form .col-md-5{position:inherit}
+.part06 p{  margin-top: 5px;width: 60%;padding-right: 15px;}
+.part06_img{ margin-top: 5px;width: 40%; }
+footer .col-6{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;text-align:center}
+footer{padding:25px 0 20px}
+footer p{text-align:center;line-height:1;margin-top:10px;color:#d7ccac}
+}
