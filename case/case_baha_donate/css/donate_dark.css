@@ -1,0 +1,247 @@
+@-webkit-keyframes highlight {
+  from {
+    background-color: #124c5f;
+  }
+  to {
+    background-color: #1C1C1C;
+  }
+}
+
+@keyframes highlight {
+  from {
+    background-color: #124c5f;
+  }
+  to {
+    background-color: #1C1C1C;
+  }
+}
+
+@-webkit-keyframes highlight-comment {
+  from {
+    background-color: #124c5f;
+  }
+  to {
+    background-color: #1C1C1C;
+  }
+}
+
+@keyframes highlight-comment {
+  from {
+    background-color: #124c5f;
+  }
+  to {
+    background-color: #1C1C1C;
+  }
+}
+
+body {
+  background: url(https://i2.bahamut.com.tw/forum/html_bg_dark.gif) center top #111111;
+  color: #C7C6CB;
+}
+
+a {
+  color: #33cccc;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+.BH-menu.fixed {
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.TOP-bh {
+  background: #116b80;
+  background: -webkit-gradient(linear, left top, right top, from(#117e96), color-stop(35%, #116b80), color-stop(80%, #125b6b));
+  background: linear-gradient(to right, #117e96 0%, #116b80 35%, #125b6b 80%);
+  background: linear-gradient(to right, #117e96 0%, #116b80 35%, #125b6b 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51aeac', endColorstr='#117e96', GradientType=1);
+}
+
+.TOP-data {
+  background-color: transparent;
+}
+
+.TOP-msg {
+  background: #272728;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.TOP-msglist .a {
+  color: #117e96;
+}
+
+.TOP-msglist .check-group input[type="checkbox"]:checked + label .label-icon {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #11AAC1;
+}
+
+.TOP-more li {
+  border-color: #444;
+}
+
+.TOP-more a:hover {
+  background: #272728;
+}
+
+.TOP-btn a:before, .nav-search-button .nav-search-icon {
+  color: #0e4355;
+}
+
+.TOP-btn a.topb1:before {
+  background-image: url("https://i2.bahamut.com.tw/navicon_notification_dark.png");
+}
+
+.TOP-btn a.topbnow1:before {
+  background-image: url(https://i2.bahamut.com.tw/navicon_notification_active.png);
+}
+
+.BH-menu {
+  background-color: #1C1C1C;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+ul.BH-menuE {
+  border-top: none;
+  background-color: #1C1C1C;
+}
+
+ul.BH-menuE .now {
+  color: #00B0B6;
+}
+
+ul.BH-menuE li > a:hover {
+  color: #00B0B6;
+}
+
+ul.BH-menuE > li > a {
+  color: #C7C6CB;
+}
+
+ul.BH-menuE li:first-child > a {
+  color: #00B0B6;
+  border-color: #444;
+}
+
+ul.BH-menuE li.BH-menu-forumA-right > a {
+  color: #C7C6CB;
+}
+
+ul.BH-menuE li.BH-menu-forumA-right > a:hover i {
+  color: #F7F7F7;
+}
+
+ul.BH-menuE dl {
+  border: none;
+  background: #272728;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+ul.BH-menuE dl a {
+  border-bottom: 1px solid #444;
+  color: #C7C6CB;
+}
+
+ul.BH-menuE dl a:hover {
+  background: transparent;
+  color: #F7F7F7;
+}
+
+#navBarHover {
+  background-color: #00B0B6;
+  border-color: #00B0B6;
+  -webkit-box-shadow: 0 0 2px 0px #33cccc;
+          box-shadow: 0 0 2px 0px #33cccc;
+}
+
+.BH-list1 a {
+  color: #C7C6CB;
+}
+
+.c-post__body__buttonbar .article-footer_right .article-footer_right-btn:before,
+.c-post__body__buttonbar .article-footer_right .article-footer_right-btn-number {
+  background-color: #444;
+}
+
+.c-post__body__buttonbar .article-footer_right .article-footer_right-btn-number.is-active {
+  background-color: #124c5f;
+}
+
+.c-post__body__buttonbar .article-footer_right .article-footer_right-btn {
+  color: #C7C6CB;
+}
+
+.dialogify_donate .dialogify_donate_bar {
+  background: rgba(248, 248, 248, 0.05);
+}
+
+.dialogify_donate .dialogify_donate_giftbox .img-box,
+.payway-virtual-block {
+  border-color: #444;
+}
+
+.dialogify_donate .dialogify_donate_giftbox .img-box .donate_qyt {
+  color: #A7A6AD;
+}
+
+.dialogify_donate .dialogify_donate_giftbox .img-box {
+  background: #1C1C1C;
+}
+
+.dialogify_donate small {
+  color: #A7A6AD;
+}
+
+.dialogify_donate small a {
+  color: #00B0B6;
+}
+
+.dialogify_donate small a:hover {
+  color: #33cccc;
+}
+
+.dialogify_donate .check-group input[type="checkbox"] + label h6 {
+  color: #C7C6CB;
+}
+
+.dialogify_donate_ec .dialogify_donate_select_gift a > div {
+  background: #1c1c1c;
+  border-color: #444;
+  color: #C7C6CB;
+}
+
+.dialogify_donate_ec .dialogify_donate_select_gift a.is-active > div, .dialogify_donate_ec .dialogify_donate_select_gift a:hover > div {
+  color: #00B0B6;
+  border-color: #00B0B6;
+}
+
+.payway-virtual-block:before {
+  border-color: transparent transparent #272728;
+}
+
+.payway-virtual-block:after {
+  border-color: transparent transparent #444;
+}
+
+.dialogify_donate_ec .bonus-info-block input {
+  color: #F7F7F7;
+  border-color: #444;
+  background: #1c1c1c;
+}
+
+.dialogify_donate_ec .dropdown-group {
+  background: transparent;
+}
+
+.dialogify_donate .dialogify_donate_giftbox .donate_input .clearall:before {
+  color: #F7F7F7;
+}
+
+/*# sourceMappingURL=donate_dark.css.map */

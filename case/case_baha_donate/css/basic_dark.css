@@ -1,0 +1,542 @@
+body {
+  background: url(https://i2.bahamut.com.tw/forum/html_bg_dark.gif) center top #111111;
+  color: #C7C6CB;
+}
+
+.TOP-bh {
+  background: #116b80;
+  background: -webkit-gradient(linear, left top, right top, from(#117e96), color-stop(35%, #116b80), color-stop(80%, #125b6b));
+  background: linear-gradient(to right, #117e96 0%, #116b80 35%, #125b6b 80%);
+  background: linear-gradient(to right, #117e96 0%, #116b80 35%, #125b6b 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#51aeac", endColorstr="#117e96", GradientType=1);
+}
+
+ul.BH-menuE {
+  border-top: none;
+  background-color: #1C1C1C;
+}
+
+.BH-menu {
+  background-color: #1C1C1C;
+}
+
+ul.BH-menuE li:first-child > a {
+  color: #00B0B6;
+}
+
+ul.BH-menuE > li > a {
+  color: #C7C6CB;
+  border-color: #444444;
+}
+
+ul.BH-menuE > li > a:before,
+ul.rwd-nav .rwd-nav-main-items > li > a:before {
+  background: #444444;
+}
+
+ul.BH-menuE li a:hover {
+  color: #00B0B6;
+}
+
+ul.BH-menuE .now {
+  color: #00B0B6;
+}
+
+#navBarHover {
+  background-color: #00B0B6;
+  border-color: #00B0B6;
+  -webkit-box-shadow: 0 0 2px 0px #33cccc;
+  box-shadow: 0 0 2px 0px #33cccc;
+  z-index: 2;
+}
+
+ul.BH-menuE li.BH-menu-forumA-right > a {
+  color: #C7C6CB;
+}
+
+ul.rwd-nav .rwd-nav-main-items > li a {
+  color: #C7C6CB;
+  border-color: #444444;
+}
+ul.rwd-nav .rwd-nav-main-items > li a.now {
+  color: #00B0B6;
+}
+ul.rwd-nav .rwd-nav-main-items > li:hover a {
+  color: #00B0B6;
+}
+
+ul.BH-menuE li.BH-menu-forumA-right.nav-text-btn:hover a {
+  color: #F7F7F7;
+}
+ul.BH-menuE li.BH-menu-forumA-right.nav-text-btn:hover a img {
+  filter: contrast(0%) brightness(3);
+}
+
+ul.BH-menuE li.BH-menu-forumA-right > a:hover i {
+  color: #F7F7F7;
+}
+
+.TOP-btn a:before, .nav-search-button .nav-search-icon {
+  color: #0e4355;
+}
+
+.TOP-btn a.topb1:before {
+  background-image: url(https://i2.bahamut.com.tw/navicon_notification_dark.png);
+}
+
+.TOP-btn a.topbnow1:before {
+  background-image: url(https://i2.bahamut.com.tw/navicon_notification_active.png);
+}
+
+.BHicon-clothes:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) 0 0;
+}
+
+li.BH-menu-forumA-right:hover .BHicon-clothes:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) 0 -41px;
+}
+
+.BHicon-comment2:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) -63px 0;
+}
+
+li.BH-menu-forumA-right:hover .BHicon-comment2:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) -63px -41px;
+}
+
+.BHicon-bin:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) -42px 0;
+}
+
+li.BH-menu-forumA-right:hover .BHicon-bin:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) -42px -41px;
+}
+
+.BHicon-crown:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) -21px 0;
+}
+
+li.BH-menu-forumA-right:hover .BHicon-crown:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png) -21px -41px;
+}
+
+.BHicon-signin:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png?v=2015050501) -84px 0;
+}
+
+li.BH-menu-forumA-right:hover .BHicon-signin:before {
+  background: url(https://i2.bahamut.com.tw/2022menuicon_dark.png?v=2015050501) -84px -41px;
+}
+
+.BH-searchC form {
+  border-color: #444444;
+}
+
+.TOP-msg > span {
+  background-color: #404040;
+  color: #F7F7F7;
+}
+
+.TOP-msglist {
+  background: rgba(39, 39, 40, 0.98);
+}
+.TOP-msglist a {
+  color: #F7F7F7;
+}
+.TOP-msglist a:hover {
+  color: #00B0B6;
+}
+.TOP-msglist > div {
+  border-top: 1px solid #585858;
+}
+.TOP-msglist > div:hover {
+  background: #202020;
+}
+.TOP-msglist > div:hover .msg-ellipsis img {
+  opacity: 0.5;
+  filter: invert(1);
+}
+.TOP-msglist > div a .msgname {
+  color: #F7F7F7;
+}
+.TOP-msglist > div a .link {
+  color: #00B0B6;
+}
+.TOP-msglist > div a .link:hover {
+  color: #33CCCC;
+}
+.TOP-msglist > div.new {
+  background-color: rgba(0, 177, 183, 0.3);
+}
+.TOP-msglist > div.new:hover {
+  background-color: #202020;
+}
+.TOP-msglist > div.new .link {
+  color: #00B0B6;
+}
+.TOP-msglist > div.new .link:hover {
+  color: #33CCCC;
+}
+.TOP-msglist .time {
+  color: #A7A6AD;
+}
+.TOP-msglist .empty-item p {
+  color: #A7A6AD;
+}
+.TOP-msglist .empty-item a.background__color-primary:hover {
+  background-color: #00B0B6;
+  color: #F7F7F7;
+}
+.TOP-msglist .title .link {
+  color: #00B0B6;
+}
+
+.TOP-msgbtn {
+  background: #404040;
+  border-top: 1px solid #585858;
+}
+.TOP-msgbtn a {
+  color: #F7F7F7;
+  border-right: 1px solid #1C1C1C;
+  border-left: 1px solid #585858;
+}
+.TOP-msgbtn a i {
+  color: #F7F7F7;
+}
+.TOP-msgbtn a:hover {
+  color: #00B0B6;
+  text-decoration: none;
+}
+.TOP-msgbtn a:hover i {
+  color: #00B0B6;
+}
+
+#topBarMsg_light_1 .TOP-msglist div a {
+  color: #F7F7F7;
+}
+
+#topBarMsg_light_2 .TOP-msglist div a {
+  color: #F7F7F7;
+}
+
+.TOP-btn a.topbnow_arrow:after {
+  border-color: transparent transparent #444;
+}
+
+.im_bhtop-user-name {
+  color: #00B0B6;
+}
+
+.im_bhtop-message-summary {
+  color: #A7A6AD;
+}
+
+.im_bhtop-message-notice {
+  background-color: #00B0B6;
+}
+
+.TOP-board {
+  background: rgba(39, 39, 40, 0.98);
+}
+.TOP-board a {
+  color: #F7F7F7;
+}
+.TOP-board a:hover {
+  color: #00B0B6;
+}
+
+#topBarMsg_forum .TOP-msglist > div {
+  border-bottom: 1px solid #585858;
+}
+#topBarMsg_forum .TOP-msglist > div.guild_slider a:hover .guild_slider-item-img {
+  border-color: #00B0B6;
+}
+#topBarMsg_forum .TOP-msglist > div.guild_slider .add-guild_slider-item p {
+  color: #00B0B6;
+}
+
+#topBarMsg_member ul li a {
+  color: #00B0B6;
+}
+#topBarMsg_member .TOP-msglist div:nth-child(odd):hover {
+  background: #202020;
+}
+
+.nav-userinfo .userinfo__headertext .username {
+  color: #F7F7F7;
+}
+.nav-userinfo .userinfo__headertext .username:hover {
+  color: #33CCCC;
+}
+.nav-userinfo .userinfo__headertext .userid {
+  color: #00B0B6;
+}
+.nav-userinfo .userinfo__headertext .userid:hover {
+  color: #33CCCC;
+}
+
+.TOP-more ul li:hover {
+  background: #1c1c1c;
+}
+.TOP-more ul li a {
+  color: #00B0B6;
+}
+.TOP-more ul li a:hover {
+  color: #33CCCC;
+}
+.TOP-more > div p {
+  background-color: #404040;
+  color: #F7F7F7;
+}
+
+.BA-top .TOP-my ul > li a.topbnow {
+  background: rgba(0, 177, 183, 0.5);
+}
+
+#BH-pagebtn a {
+  border: none;
+  background: #1C1C1C;
+  color: #33cccc;
+}
+
+#BH-pagebtn a:hover {
+  background: #00B0B6;
+  color: #F7F7F7;
+}
+
+#BH-pagebtn a:active {
+  background: #00B0B6;
+}
+
+#BH-pagebtn .pagenow {
+  -webkit-box-shadow: 0 0px 5px 1px #33cccc;
+  box-shadow: 0 0px 5px 1px #33cccc;
+  background: #00B0B6;
+  color: #F7F7F7;
+}
+
+#BH-pagebtn .pagenow:hover {
+  background: #00B0B6;
+  color: #F7F7F7;
+}
+
+#BH-pagebtn .no {
+  border-color: #444444;
+  background: #1C1C1C;
+  color: #33cccc;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#BH-pagebtn .no:hover {
+  border-color: #444444;
+  background: #1C1C1C;
+  color: #33cccc;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#BH-pagebtn .no:active {
+  border-color: #444444;
+  background: #1C1C1C;
+  color: #33cccc;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.BH-pagebtnB input {
+  border: 1px solid #444444;
+  background: #272728;
+  color: #C7C6CB;
+}
+
+#BH-footer {
+  border-color: #444444;
+  color: #A7A6AD;
+}
+
+.radio:after {
+  background: #111111;
+  border: 1px solid #444444;
+}
+
+.ui-datepicker.ui-widget .ui-state-default,
+.ui-datepicker.ui-widget .ui-widget-content .ui-state-default,
+.ui-datepicker.ui-widget .ui-widget-header .ui-state-default,
+.ui-datepicker.ui-widget .ui-button,
+.ui-datepicker.ui-widget html .ui-button.ui-state-disabled:hover,
+.ui-datepicker.ui-widget html .ui-button.ui-state-disabled:active,
+.ui-datepicker table.bahaRte td,
+.ui-datepicker th {
+  color: #A7A6AD;
+}
+
+.ui-datepicker.ui-widget .ui-state-highlight,
+.ui-datepicker.ui-widget .ui-widget-content .ui-state-highlight,
+.ui-datepicker.ui-widget .ui-widget-header .ui-state-highlight {
+  color: #F7F7F7;
+}
+
+.ui-datepicker.ui-widget.ui-widget-content {
+  background: #444444;
+}
+
+.check-group label .label-icon i {
+  color: transparent !important;
+}
+
+.check-group input[type=radio]:disabled {
+  opacity: 0.5;
+}
+.check-group input[type=checkbox]:checked + label .label-icon {
+  background: #00b0b6 !important;
+  color: #F7F7F7 !important;
+  border: 1px solid #00b0b6 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.check-group input[type=checkbox]:checked + label .label-icon i {
+  color: #F7F7F7 !important;
+}
+
+.check-group input[type=checkbox]:disabled {
+  opacity: 0.5;
+}
+.check-group input[type=checkbox]:disabled + label .label-icon {
+  background: #424242;
+  border-color: #424242;
+  box-shadow: none;
+}
+.check-group input[type=checkbox]:disabled + label .label-icon i {
+  color: #272728 !important;
+}
+.check-group input[type=checkbox]:disabled:checked + label .label-icon {
+  color: #989898;
+}
+.check-group input[type=checkbox]:disabled:checked + label .label-icon i {
+  color: #F7F7F7 !important;
+}
+
+#BH-slave h5 {
+  background: rgba(0, 176, 182, 0.15) !important;
+  font-weight: normal;
+}
+
+.BH-rbox {
+  border: 1px solid rgba(66, 148, 165, 0.1) !important;
+  background-color: #1C1C1C !important;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33) !important;
+}
+.BH-rbox p, .BH-rbox a p {
+  color: #C7C6CB;
+}
+
+.BH-list1 {
+  border-color: #444444;
+}
+.BH-list1 a {
+  color: #C7C6CB;
+}
+
+.card-content {
+  background: #272728;
+  border-color: #444;
+}
+.card-content h2 {
+  color: #F7F7F7;
+}
+.card-content img {
+  opacity: 0.95;
+}
+
+.BH-lbox, .BH-list1 li {
+  border-color: #444444;
+}
+
+#BH-master h4 {
+  background: #E4F1F5;
+  background: -moz-linear-gradient(-45deg, rgb(228, 241, 245) 20%, rgb(42, 134, 156) 50%);
+  background: -webkit-linear-gradient(-45deg, rgb(228, 241, 245) 210%, rgb(42, 134, 156) 50%);
+  background: linear-gradient(135deg, rgb(228, 241, 245) 20%, rgb(42, 134, 156) 50%);
+}
+
+.BH-txtmore {
+  text-decoration: none;
+  color: #00B0B6;
+}
+
+.BH-master_tag1 a {
+  border: 1px solid #444444;
+  background-color: #272728;
+  color: #A7A6AD;
+}
+
+.BH-master_tag1 .BH-master_tag1now {
+  background-color: #00B0B6;
+  color: #F7F7F7;
+  border-bottom: 1px solid #444444;
+}
+
+.btn.btn-primary {
+  background-color: #00B0B6;
+  border-color: #00B0B6;
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: #009cad;
+  border-color: #009cad;
+}
+
+.subscription-list {
+  background: #272728;
+}
+.subscription-list.article-management .management-wrapper .switch-title {
+  color: #f7f7f7;
+}
+.subscription-list.article-management .management-wrapper .article-dele__input:checked + .filter-label::after {
+  border: 1px solid transparent;
+}
+.subscription-list.article-management .management-wrapper .article-dele__label {
+  color: #A6A6A6;
+  background: #444444;
+}
+
+.subscription-list ul li a, .subscription-list ul li:first-child a {
+  color: #f7f7f7 !important;
+}
+.subscription-list ul li a small, .subscription-list ul li:first-child a small {
+  color: #A7A6AD;
+}
+
+.management-item .subscription-list:before {
+  border-color: transparent transparent #272728;
+}
+
+.dropdown-group {
+  border-color: #444;
+}
+.dropdown-group a.js-link {
+  color: #C7C6CB;
+}
+
+.tippy-box .sticker-nav {
+  border-color: #444;
+}
+.tippy-box .mes-sticker-slide .tab-item > .sticker-item.is-active {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+}
+.tippy-box .mes-sticker-slide .tab-item > .sticker-item i {
+  color: #999;
+}
+.tippy-box .mes-sticker-slide .tab-item > .sticker-item span {
+  font-weight: normal;
+  border: 1px solid #444;
+  color: #f7f7f7;
+  background: #696969;
+}
+.tippy-box .sticker-list__edit {
+  border: 1px solid #444;
+  color: #f7f7f7;
+  background: rgba(28, 28, 28, 0.5) url(https://im.bahamut.com.tw/hahamut%2Fim_sticker_edit.svg?alt=media) no-repeat center;
+}

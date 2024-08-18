@@ -1,0 +1,139 @@
+.dialogify {
+  background: #272728;
+  color: #C7C6CB;
+}
+.dialogify h5.dialogify_title {
+  color: #F7F7F7;
+}
+.dialogify p, .dialogify .post__text-small {
+  color: #A7A6AD;
+}
+.dialogify p a, .dialogify .dialogify__body a {
+  color: #00B0B6;
+}
+.dialogify p a:hover, .dialogify .dialogify__body a:hover {
+  color: #33cccc;
+}
+.dialogify .tab-box {
+  background: #272728 !important;
+}
+.dialogify .btn-box .post__text-small {
+  color: #A7A6AD !important;
+}
+.dialogify .btn-box .post__text-small a {
+  color: #00B0B6 !important;
+}
+.dialogify .form-control {
+  background-color: #1C1C1C;
+  color: #F7F7F7;
+  border-color: #444444;
+}
+.dialogify .form-control::-webkit-input-placeholder {
+  color: #A7A6AD;
+}
+.dialogify small {
+  color: #A7A6AD !important;
+}
+.dialogify .dropdown_box .dropdown-group {
+  background: url(https://i2.bahamut.com.tw/forum/arrow-down2-w.svg) no-repeat right 6px center transparent !important;
+  border-color: #444444 !important;
+  color: #F7F7F7 !important;
+  background-color: #1C1C1C !important;
+}
+.dialogify .dropdown-group option {
+  background-color: #1C1C1C;
+  color: #F7F7F7;
+}
+.dialogify .icon {
+  filter: invert(1) contrast(110%) !important;
+}
+.dialogify .dialogify__close img {
+  filter: brightness(100) opacity(0.5);
+}
+.dialogify .radio:before {
+  background: #00B0B6 !important;
+}
+.dialogify .radio:after {
+  background: #111111 !important;
+  border-color: #444444 !important;
+}
+.dialogify .dropdown-group {
+  color: #F7F7F7;
+  background: url(https://i2.bahamut.com.tw/forum/arrow-down2-w.svg) no-repeat right 6px center transparent;
+  background-size: 8px !important;
+  border-color: #444;
+}
+.dialogify textarea.form-control {
+  background: #1C1C1C;
+  border-color: rgba(66, 148, 165, 0.3);
+  color: #F7F7F7;
+}
+.dialogify textarea.form-control::-webkit-input-placeholder {
+  color: #A7A6AD;
+}
+.dialogify .check-group input[type=checkbox] + label h6 {
+  color: #a6a6a6;
+}
+.dialogify .check-group input[type=checkbox] + label a {
+  color: #00B0B6;
+}
+.dialogify .btn {
+  background-color: #444444;
+  color: #A6A6A6;
+}
+.dialogify .btn:hover {
+  color: #F7F7F7;
+}
+.dialogify .btn.btn-primary {
+  background: #00B0B6;
+  color: #FFF;
+}
+.dialogify .btn.btn-primary:hover {
+  background: #33cccc;
+}
+.dialogify .check-group input[type=checkbox] + label .label-icon {
+  background: #111111;
+  border: 1px solid #444;
+}
+.dialogify .check-group input[type=checkbox] + label .label-icon i {
+  color: transparent;
+}
+.dialogify .check-group input[type=checkbox]:checked + label .label-icon {
+  background: #33cccc;
+  color: #FFF;
+  box-shadow: 0 0px 2px 1px #4394a6;
+  border: 0;
+}
+.dialogify .check-group input[type=checkbox]:checked + label .label-icon i {
+  color: #F7F7F7;
+}
+
+.popup-dailybox .popup-dailybox--width,
+.dailybox .dailybox-day {
+  background-color: transparent;
+}
+
+.popup-dailybox .popup-dailybox__subtitle {
+  color: #C7C6CB;
+}
+
+.popup-dailybox .popup-dailybox__title {
+  color: #FE9901;
+}
+
+.dailybox,
+.popup-dailybox .popup-dailybox__fulilink {
+  color: #A7A6AD;
+}
+
+.dailybox .dailybox-day:after {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-dailybox .popup-dailybox__fulilink a {
+  color: #00B0B6;
+}
+
+.dialogify.popup-dailybox .dialogify__body {
+  background-color: transparent;
+}
