@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>巴哈姆特 UI System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
+  <meta name="keywords" content="巴哈姆特">
+  <!-- Favicon -->
+  <link rel="icon" href="https://i2.bahamut.com.tw/favicon.ico" type="image/png">
+  <!-- Fonts -->
+  <link href="https://i2.bahamut.com.tw/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github-gist.min.css">
+  <link rel="stylesheet" href="css/guideline_layout.css" type="text/css">
+  <link rel="stylesheet" href="css/bahamut-style.css" type="text/css">
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header">
+        <a class="navbar-brand" href="https://www.gamer.com.tw/">
+          <img src="img/logo.svg" class="navbar-brand-img" style="height:35px;">
+        </a>
+      </div>
+     <!--  側欄項目新增於此 -->
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="nav-link-text">目的介紹 Introduction</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_documentation.html">
+                <span class="nav-link-text">文件說明 Documentation</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_coding.html">
+                <span class="nav-link-text">語法規範 Coding Style</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_colors.html">
+                <span class="nav-link-text">色彩規劃 Colors</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_cis.html">
+                <span class="nav-link-text">品牌識別規範 CIS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_ad.html">
+                <span class="nav-link-text">巴哈廣告規範</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_rwd.html">
+                <span class="nav-link-text">RWD 設定</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_git.html">
+                <span class="nav-link-text">GIT 相關</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading">
+            <span class="docs-normal">元件</span>
+          </h6>
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-3">
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_wrapper.html">
+                <span class="nav-link-text">頁面範圍 Wrapper</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_container.html">
+                <span class="nav-link-text">內容範圍 Container</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_tables.html">
+                <span class="nav-link-text">表格 Tables</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_align.html">
+                <span class="nav-link-text">對齊方式 Align</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_grid.html">
+                <span class="nav-link-text">欄格 Grid</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_typography.html">
+                <span class="nav-link-text">文字版式 Typography</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="guideline_background.html">
+                <span class="nav-link-text">背景 Background</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_shadow.html">
+                <span class="nav-link-text">陰影 Shadow</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_marginpadding.html">
+                <span class="nav-link-text">間距內距 Margin Padding</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_icon.html">
+                <span class="nav-link-text">圖標 Icon</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_button.html">
+                <span class="nav-link-text">按鈕 Button</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_input.html">
+                <span class="nav-link-text">輸入框 Input</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_label.html">
+                <span class="nav-link-text">標籤 Label</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_image.html">
+                <span class="nav-link-text">圖片 Image</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_checkboxes.html">
+                <span class="nav-link-text">複選框 Checkboxes</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="guideline_radiobox.html">
+                <span class="nav-link-text">單選框 RadioBox</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_badge.html">
+                <span class="nav-link-text">徽章提示 Badge</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_alert.html">
+                <span class="nav-link-text">警示框 Alert</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_figures.html">
+                <span class="nav-link-text">圖說 Figures</span>
+              </a>
+            </li>
+          </ul>
+           <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading">
+            <span class="docs-normal">組件</span>
+          </h6>
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-3">
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">全站天 Nav</span>
+              </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">頁腳 Footer</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">側邊欄 Side</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">選單 Menu</span>
+              </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">回覆框 Reply</span>
+              </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">回覆列表清單 Reply Lisy</span>
+              </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">卡片 Card</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">頁籤分頁 Tab</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">切換 Switch</span>
+              </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">麵包屑 Breadcrumb</span>
+              </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">下拉式選單 Dropdowns</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">排行榜 Leaderboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">影片 Video</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">提示 Tippy</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">頁碼 Pagination</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">搜尋框 Search bar</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">輪播 Slider</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">圖片燈箱 Lightbox</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_">
+                <span class="nav-link-text">推噓按鈕 GPBP Buttons</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_social-buttons.html">
+                <span class="nav-link-text">分享按鈕 Social Buttons</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_accordion.html">
+                <span class="nav-link-text">展開收合 Accordion</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guideline_dialogify.html">
+                <span class="nav-link-text">彈跳視窗 Dialogify</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  側欄項目結束 -->
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Header -->
+    <!-- Header -->
+    <div class="guideline_header pb-6">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <nav aria-label="breadcrumb">
+                <h6 class="breadcrumb-title">UI Kit</h6>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">元件</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">單選框</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="main-container">
+      <div class="card">
+        <div class="card-header bg-transparent">
+          <h2>Radio Box</h2>
+        </div>
+        <div class="card-body">
+          <section id="s1">
+            <h3>用法</h3>
+            <p>Radio Buttons 是一個<span class="highlight">單一選項</span>的功能模組，呈現結果是以許多不同的選項一次呈現<br>
+              使用者僅能在眾多選項中挑選其中一個選項，若要可以選擇多個項目，可以使用 <a href="guideline_checkboxes.html">Checkboxes</a> 而不是 Radio Buttons 選項按鈕<br>
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th align="left">Class</th>
+                  <th align="left">說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left"><p><span class="hljs-value">.check-box</span></p></td>
+                  <td align="left"><p>每一組 Radio Buttons 選項，使用 <span class="hljs-name">&lt;ul&gt;</span> 包覆</p></td>
+                </tr>
+                <tr>
+                  <td align="left"><p><span class="hljs-value">.check-group</span></p></td>
+                  <td align="left"><p>用來包 &lt;input&gt; 與 &lt;label&gt; 內容，使用 <span class="hljs-name">&lt;div&gt;</span> 標籤</p></td>
+                </tr>
+                <tr>
+                  <td align="left"><p><span class="hljs-value">.radio</span></p></td>
+                  <td align="left"><p>單選框，type="radio"，使用 <span class="hljs-name">&lt;input&gt;</span> 標籤</p></td>
+                </tr>
+                <tr>
+                  <td align="left"><p><span class="hljs-value">.label--radio</span></p></td>
+                  <td align="left"><p>為 input 元素定義文字標籤的內容，使用 <span class="hljs-name">&lt;label&gt;</span> 標籤</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <p><span class="note">NOTE</span>Radio Buttons 優點是所有選項一目了然，缺點是需要佔用較多的表單空間</p>
+
+          </section>
+            <hr>
+          <section id="s2">
+            <h3>語法</h3>
+            <pre>
+              <code class=" hljs xml">&lt;ul class="check-box"&gt;
+  &lt;li&gt;
+    &lt;div class="check-group"&gt;
+      &lt;input type="radio" class="radio" name="radio" checked="checked"&gt;
+      &lt;label class="label--radio"&gt; First Radio Option &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class="check-group"&gt;
+      &lt;input type="radio" class="radio" name="radio" disabled="disabled"&gt;
+      &lt;label class="label--radio"&gt; Disabled &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code>
+            </pre>
+            <table>
+              <thead>
+                <tr>
+                  <th align="left">值</th>
+                  <th align="left">說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left"><p><span class="hljs-value">checked="checked"</span></p></td>
+                  <td align="left"><p>被加入參數的選項會呈現已經被選擇的狀態，一組 radio button <span class="highlight">僅能使用一個</span> checked="checked"</p></td>
+                </tr>
+                <tr>
+                  <td align="left"><p><span class="hljs-value">disabled="disabled"</span></p></td>
+                  <td align="left"><p>被加入參數的選項，無法被選擇</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <hr>
+          <section id="s3">
+            <h3>展示</h3>
+            <div class="tab-wrapper">
+              <ul class="tab-menu text-center">
+                <li class="tab-menu__item1 active"><a href="javascript:void(0)">PREVIEW</a></li>
+                <li class="tab-menu__item2"><a href="javascript:void(0)">MARKUP</a></li>
+                <hr>
+              </ul>
+              <div class="tab-content">
+                <ul class="check-box">
+                  <li>
+                    <div class="check-group">
+                      <input type="radio" class="radio" name="radio" checked="checked">
+                      <label class="label--radio">選項一 First Radio Option</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-group">
+                      <input type="radio" class="radio" name="radio">
+                      <label class="label--radio">選項二 Second Radio Option</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-group">
+                      <input type="radio" class="radio" disabled="disabled" name="radio">
+                      <label class="label--radio">選項三 Disabled</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-group">
+                      <input type="radio" class="radio" disabled="disabled" checked="checked">
+                      <label class="label--radio">選項四 Disabled Radio Option</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content"><pre>
+              <code class=" hljs xml">&lt;ul class="check-box"&gt;
+  &lt;li&gt;
+    &lt;div class="check-group"&gt;
+      &lt;input type="radio" class="radio" name="radio" checked="checked"&gt;
+      &lt;label class="label--radio"&gt; 選項一 First Radio Option &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class="check-group"&gt;
+      &lt;input type="radio" class="radio" name="radio"&gt;
+      &lt;label class="label--radio"&gt; 選項二 Second Radio Option &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class="check-group"&gt;
+      &lt;input type="radio" class="radio" name="radio" disabled="disabled"&gt;
+      &lt;label class="label--radio"&gt; 選項三 Disabled &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class="check-group"&gt;
+      &lt;input type="radio" class="radio" name="radio" disabled="disabled"checked="checked"&gt;
+      &lt;label class="label--radio"&gt; 選項四 Disabled Radio Option &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code>
+              </pre></div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <nav class="fixed-box section-nav">
+        <ul>
+          <li><a href="#s1">用法</a></li>
+          <li><a href="#s2">語法</a></li>
+          <li><a href="#s3">展示</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+//平滑滾動
+$("a[href^='#']").click(function(e) {
+  e.preventDefault();
+
+  var position = $($(this).attr("href")).offset().top;
+
+  $("body, html").animate({
+    scrollTop: position
+  } /* speed */ );
+});
+</script>
+<script>
+  //監聽
+  window.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+        } else {
+          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+        }
+      });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach(section => {
+      observer.observe(section);
+    });
+
+  });
+  //# sourceURL=pen.js
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+//展示用 Tab
+  jQuery(document).ready(function() {
+    var $wrapper = jQuery('.tab-wrapper'),
+      $allTabs = $wrapper.find('.tab-content'),
+      $tabMenu = $wrapper.find('.tab-menu > li');
+      $allTabs.not(':first-of-type').hide();
+      $tabMenu.filter(':first-of-type').find(':first').width('100%')
+      $tabMenu.each(function(i) {
+        jQuery(this).attr('data-tab', 'tab'+i);
+      });
+      $allTabs.each(function(i) {
+        jQuery(this).attr('data-tab', 'tab'+i);
+      });
+      $tabMenu.on('click', function() {
+        var dataTab = jQuery(this).data('tab'),
+        $getWrapper = jQuery(this).closest($wrapper);
+        $getWrapper.find($tabMenu).removeClass('active');
+        jQuery(this).addClass('active');
+        $getWrapper.find($allTabs).hide();
+        $getWrapper.find($allTabs).filter('[data-tab='+dataTab+']').show();
+    });
+  });
+</script>
+</html>
