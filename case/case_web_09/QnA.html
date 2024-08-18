@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>e-Bill全國繳費網</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/detail.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/rwd.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//顯示費用搜尋
+			$(".billsearch").hide();
+			$(".btn-bills-search").click(function(){
+		    	$(".billsearch").slideToggle("slow");
+		  		});
+			//顯示使用活期性存款帳戶的注意事項
+			$(".announcement").hide();	
+		    $("#method01").click(function(){
+		    	$(".announcement").slideDown("slow");
+		    	});
+		    $("#method02").click(function(){
+		    	$(".announcement").slideUp("slow");
+		    	});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function(){
+			// 幫 #qaContent 的 ul 子元素加上 .accordionPart
+			// 接著再找出 li 中的第一個 div 子元素加上 .qa_title
+			// 並幫其加上 hover 及 click 事件
+			// 同時把兄弟元素加上 .qa_content 並隱藏起來
+			$('#qaContent ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa_title').hover(function(){
+				$(this).addClass('qa_title_on');
+			}, function(){
+				$(this).removeClass('qa_title_on');
+			}).click(function(){
+				// 當點到標題時，若答案是隱藏時則顯示它，同時隱藏其它已經展開的項目
+				// 反之則隱藏
+				var $qa_content = $(this).next('div.qa_content');
+				if(!$qa_content.is(':visible')){
+					$('#qaContent ul li div.qa_content:visible').slideUp();
+				}
+				$qa_content.slideToggle();
+			}).siblings().addClass('qa_content').hide();
+		});
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default header">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="btn-bills-search btn-magnifier" href="#">費用搜尋</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1 class="logo"><a href="#"><img src="img/e-Bill_logo.svg" alt="e-Bill">e-Bill全國繳費網</a></h1>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<ul class="nav navbar-nav topnav">
+		    		<li><a href="index.html">回首頁</a></li>
+			    	<li><a href="#">問題與協助</a></li>
+			    	<li class="mobile-none"><a href="#">自我環境檢測</a></li>
+			    	<li><a href="#">繳費限額</a></li>
+			    	<li class="mobile-none"><a class="btn-bills-search" href="#">費用搜尋</a></li>
+		    	</ul>
+		    </div>
+		</div>
+	</nav>
+
+	<div class="container-fluid billsearch">
+		<div class="container">
+			<span>費用搜尋</span><input class="billfi" type="text" placeholder="請輸入關鍵字" title="搜尋">
+		</div>
+	</div>
+
+	<div class="container-fluid informationtitle">
+		<div class="container">
+			<div class="box3"><img src="img/qna-icon.svg"></div><h3>問題與協助</h3>
+		</div>
+	</div>
+
+	<div class="container-fluid information">
+		<div id="qaContent" class="container">
+			<div class="qafilter">
+				<span>問題搜尋</span>
+				<input type="text" placeholder="請輸入關鍵字" title="搜尋">
+			</div>
+			<ul class="accordionPart">
+				<li>
+					<div class="qa_title"><span class="Q">Q1:</span>全國繳費網目前提供的繳費服務有哪些？</div>
+					<div class="qa_content"><span class="A">A1:</span>
+						<p>全國繳費網目前已上線提供服務包括了學費、電費、信用卡費、貸款、國有土地租金(補償金)、中華電信費、報名費、補習費以及捐款等費用之繳納。</p></div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q2:</span>全國繳費網繳款的方式有哪些？</div>
+					<div class="qa_content"><span class="A">A2:</span>
+						<p>目前全國繳費網提供以晶片金融卡或活期性存款帳戶兩種繳款方式。使用晶片金融卡繳款需具備讀卡機，且可繳他人帳單；使用活期性存款帳戶繳款不需讀卡機，但只能繳本人帳單。</p></div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q3:</span>全國繳費網提供的各類繳費交易服務手續費率為何？</div>
+					<div class="qa_content"><span class="A">A3:</span>
+						<p>本網站所提供各類繳費交易服務之手續費率，請參閱各類帳單繳款方式或說明事項，或逕洽各帳單業者或代收銀行。</p></div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q4:</span>繳納信用卡費需輸入之銷帳編號為何？</div>
+					<div class="qa_content"><span class="A">A4:</span>
+						<p> 請繳費者參閱各家信用卡銀行之帳單繳款方式或說明事項，或逕洽該信用卡發行銀行。</p></div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q5:</span>哪些銀行代收學費可以在全國繳費網繳納？</div>
+					<div class="qa_content"><span class="A">A5:</span>
+						<p>目前加入全國繳費網學費代收的銀行包括台灣銀行、土地銀行、華南銀行，以及臺灣企銀，陸續將有其它代收銀行加入，以擴大服務範圍。</p></div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q6:</span> 第一次使用全國繳費網繳費交易時，畫面出現安裝安全性元件提示時，該如何處理？</div>
+					<div class="qa_content"><span class="A">A6:</span>
+						<p>第一次使用全國繳費網，<a href="https://ebill.ba.org.tw/CPP/Download/test.pdf" target="_blank">請點此依「首次繳費電腦環境檢測」步驟完成相關設定</a>， 設定完成後，交易服務將出現如下安裝安全性元件提示的畫面，請選擇「是」即可。</p>
+						<img src="img/FAQ_1.jpg" alt="">
+						<p>若您看到的不是上列的畫面，請往下看，並請耐心依下面步驟安裝ActiveX控制項安全性元件訊息。</p>
+						<p>Step1: 請將滑鼠移到ActiveX訊息列，按下滑鼠右鍵，即出現安裝ActiveX控制項視窗，請按下「安裝ActiveX控制項」。</p>
+						<img src="img/FAQ_2.jpg" alt="">
+						<p>	Step2: 請按下安裝即可。</p>
+						<img src="img/FAQ_3.jpg" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q7:</span> 於全國繳費網使用晶片金融卡繳納費用的交易流程為何？(以繳納中華電信費為例)</div>
+					<div class="qa_content"><span class="A">A7:</span>
+						<p>Step1: 輸入電信(話)號碼查詢待繳費用後，決定是否繳費。</p>
+						<img src="img/FAQ_4.jpg" alt="">
+						<p>	Step2: 待繳費用查詢結果，若確定繳費，請選擇「使用晶片金融卡」繳款方式。</p>
+						<img src="img/FAQ_5.jpg" alt="">
+						<p>	Step3: 確認繳費相關資料無誤後，即可插入晶片金融卡進行繳費。</p>
+						<img src="img/FAQ_6.jpg" alt="">
+						<p>	Step4: 輸入「動態圖像驗證碼」後，按下「確認付款」。</p>
+						<img src="img/FAQ_7.jpg" alt="">
+						<p>	Step5: 輸入晶片金融卡密碼後，確認轉出帳號等資料後，再次輸入晶片金融卡密碼。</p>
+						<img src="img/FAQ_8.jpg" alt="">
+						<p>	Step6: 完成交易，取出晶片金融卡，並列印交易明細表供日後查詢使用。</p>
+						<img src="img/FAQ_9.jpg" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q8:</span>於全國繳費網使用活期性存款帳戶繳納費用的交易流程為何？(以繳納信用卡費為例)</div>
+					<div class="qa_content"><span class="A">A8:</span>
+						<p>Step1:選擇信用卡銀行，輸入銷帳編號、繳款金額後，選擇「使用活期性存款帳戶」繳款方式。</p></div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q9:</span>繳費當中遇無法出現繳費畫面或輸入「動態圖像驗證碼」或無法按下「確認付款」時，如：銀行公會教育訓練報名費或信用卡費等費用等，該如何處理？</div>
+					<div class="qa_content"><span class="A">A9:</span>
+						<p>可能您在IE有設定或安裝了Google、MSN或YAHOO!提供的「攔截彈跳式視窗」或「快顯封鎖」程式，可於「檢視」/「工具列」項下如有「V」，請在項目上再點一次，確認無「V」狀態，若不改無「V」狀態，網頁的網址列下可能出現「快顯已封鎖」畫面，請選擇「暫時允許快顯」</p></div>
+				</li>
+				<li>
+					<div class="qa_title"><span class="Q">Q10:</span>身分証字號英文字母對照代碼說明。</div>
+					<div class="qa_content"><span class="A">A10:</span>
+						<p>身分証字號英文字母第一碼：A為01，B為02，C為03，D為04，E為05，F為06，G為07，H為08，I為09，J為10，K為11，L為12，M為13，N為14，O為15，P為16，Q為17，R為18，S為19，T為20，U為21，V為22，W為23，X為24，Y為25，Z為26。</p></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+		<div class="container">
+			<ul class="footernav clearfix">
+				<li><a href="#"><img src="img/bank-logo.png" alt="中華民國銀行公會"></a></li>
+				<li><a href="#">關於e-Bill</a></li>
+				<li><a href="#">隱私權聲明</a></li>
+				<li><a href="#">使用聲明</a></li>
+				<li><a href="#">個人資料保護法告知義務內容</a></li>
+			</ul>
+			<p>全國繳費網 版權所有 轉載必究 © 2016 ALL RIGHT RESERVED.  本網站委託財金資訊股份有限公司維運</p>
+			<p class="mobile-none">如有任何問題或建議請至<a href="#" class="email">意見信箱</a>留下您寶貴的意見</p>
+			<p class="mobile-none">有關業務及推廣事務請於上班時間(週一至週五 09:00~17:00)洽銀行公會(02)85962323</p>
+			<p class="mobile-none">如有操作或帳務問題請於上班時間(週一至週五 09:00~17:00)洽財金公司0800-767-168或(02)2631-9800按1400</p>
+			<div class="app-qr">
+				<h6>全國繳費網APP</h6>
+				<ul>
+					<li><a href="#"><img src="img/qr-android.jpg" alt="Android APP"><span>Android</span></a></li>
+					<li><a href="#"><img src="img/qr-ios.jpg" alt="iOS APP"><span>iOS</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

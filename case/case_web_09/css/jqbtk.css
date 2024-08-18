@@ -1,0 +1,48 @@
+.jqbtk-row  {
+	text-align: center;
+}
+.jqbtk-container .btn {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 1.5em;
+	width: 2.2em;
+	height: 2em;
+	text-align: center;
+	margin: 2px;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.jqbtk-container .jqbtk-space {
+	width: 12em;
+}
+.jqbtk-container .jqbtk-shift {
+	width: 4em;
+}
+
+.jqbtk-container .jqbtk-nothing2{
+	width: 3.2em;
+}
+.jqbtk-container .jqbtk-nothing, 
+.jqbtk-container .jqbtk-nothing2{
+	opacity: 0;
+	cursor: default;
+}
+
+.jqbtk-container .fontstyle01{
+	color: rgb(38,117,0);
+	font-family: 微軟正黑體, sans-serif, AppleGothic;
+	width: 3.2em;
+}
+.jqbtk-container .fontstyle02{
+	color: rgb(243,152,0);
+	font-family: 微軟正黑體, sans-serif, AppleGothic;
+	width: 3.2em;
+}
+.jqbtk-container .fontstyle03{
+	color: rgb(195,13,35);
+	font-family: 微軟正黑體, sans-serif, AppleGothic;
+	width: 3.2em;
+}
+.popover {
+	max-width: 800px;
+}

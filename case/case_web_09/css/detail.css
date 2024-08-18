@@ -1,0 +1,446 @@
+.billtitle{ background-color: rgb(171,205,61);}
+.billtitle .container{ }
+
+.box2{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: rgb(255,255,255);
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	display: block;
+	text-align: center;
+	vertical-align:middle;
+	overflow: hidden;
+	float: left;
+}
+.box2 img{
+	width: 64.28571428%;
+	padding-top: 17.85714289%;
+}
+.billtitle h3{
+	display: block;
+	float: left;
+	font-weight: bold;
+	color: #fff;
+	-webkit-text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+	-moz-text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+	text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+	width: 85%;
+}
+
+
+.paybill{ background-color: rgb(239,239,239); min-height: 40vh; padding-top: 15px;}
+.paybill h5, .paynote h5{
+	font-size: 1.4em;
+	font-weight: bold;
+	color: rgb(89,87,87);
+	background: url('../img/icon-title.png') left center no-repeat;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+.paybill a{
+	color: rgb(3,110,184);
+	text-decoration: underline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.paybill a:hover{
+	color: rgb(255,0,0);
+}
+.paybill .container{
+	background-color: #FFF;
+	border: 5px solid rgb(220,221,221);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+
+/*表格樣式---------------------*/
+.paybill input[type=text]{
+	width: 100%;
+	height: 30px;
+	padding: 0 5px;
+}
+.paybill input[type=text].w4{width: 21.8%;}
+.paybill select{
+	width: 100%;
+	height: 30px;
+}
+input[type=radio].css-checkbox {
+	position:absolute;
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+input[type=radio].css-checkbox + label.css-label {
+	padding-left:26px;
+	height:21px; 
+	display:inline-block;
+	line-height:21px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+	margin-right: 15px;
+}
+input[type=radio].css-checkbox:checked + label.css-label {
+	background-position: 0 -21px;
+}
+label.css-label {
+	background-image:url('../img/pic-radio.png');
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+	position:absolute; 
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label2 {
+	padding-left:24px;
+	height:19px; 
+	display:inline-block;
+	line-height:19px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label2 {
+	background-position: 0 -19px;
+}
+label.css-label2 {
+	background-image:url('../img/pic-check2.png');
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.allcheck{ font-size: 1.15em; color: rgb(103,86,80); margin-left: 10px;margin-bottom: 5px}
+
+.reminder{
+	font-size: 1.1em;
+	line-height: 1.8em;
+	color: red;
+}
+.fee{ margin: 0 10px; }
+
+.keyinData, .showResult, .listBills, .reminder{ margin-bottom: 15px; }
+
+.keyinData .row > div:first-child, .showResult .row > div:first-child{
+	font-weight: bold;
+}
+.keyinData .row, .showResult .row{
+	font-size: 1.15em;
+	line-height: 1.8em;
+	color: rgb(62,58,57);
+}
+.keyinData .row > div{ padding: 10px 5px; }
+.information .keyinData .row > div, .paybill .keyinData .row > div{ padding: 1px 5px; }
+.information .keyinData > .row, .paybill .keyinData .row {padding: 15px 5px;}
+.keyinData .row > div > div{ padding: 0 5px 0 0; }
+.showResult .row > div{ padding: 8px 5px; }
+.keyinData .row{
+	background-color: rgba(171,205,61,0.2);
+	border-bottom: 1px solid #FFF;
+}
+/*.radioselect{ margin-bottom: 6px; }*/
+label{ margin-bottom: 0px}
+.showResult .row{border-bottom: 1px solid rgba(171,205,61,1);}
+.showResult > div:first-child{border-top: 1px solid rgba(171,205,61,1);}
+.showResult .row div:first-child{background-color: rgba(171,205,61,0.2);}
+
+.announcement{
+	/*background-color: rgba(250,238,0,0.2);
+	padding: 15px 20px;*/
+	font-size: 1.1em;
+	margin-top: 15px;
+}
+.notice-content{ 
+	height: 120px; 
+	overflow-y: scroll;
+	border: 1px solid rgb(201,202,202);
+	margin-bottom: 2px;
+}
+.notice-content h6{
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.5em;
+	color: rgb(114,113,113);
+	background-color: rgb(239,239,239);
+	text-align: center;
+	margin: 0;
+	padding: 5px 0;
+}
+.notice-content p{
+	color: rgb(102,86,80);
+	line-height: 1.8em;
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+.checklist{
+	background-color: rgb(239,239,239);
+	padding: 10px;
+}
+
+
+.paynote{ background-color: rgb(239,239,239); padding: 10px 0;}
+.paynote .container{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+/*.paynote h5{ font-size: 1.4em; color: rgb(62,58,57); font-weight: bold;}*/
+.notelist{
+	font-size: 1.15em;
+	line-height: 1.8em;
+	color: rgb(62,58,57);
+}
+.notelist ul{ 
+	list-style-type: decimal;
+	padding-left: 20px;
+}
+
+.title_ps{
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+/*QnA-------------------------*/
+.informationtitle{ background-color: rgb(246,176,57);}
+.informationtitle .container{ position: relative; }
+
+.box3{
+	-webkit-border-radius: 10%;
+	-moz-border-radius: 10%;
+	border-radius: 10%;
+	background-color: rgb(239,239,239);
+	/*-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);*/
+	display: block;
+	text-align: center;
+	vertical-align:middle;
+	overflow: hidden;
+	float: left;
+}
+.box3 img{
+	width: 64.28571428%;
+	padding-top: 17.85714289%;
+}
+.informationtitle h3{
+	display: block;
+	float: left;
+	font-weight: bold;
+	color: #fff;
+	-webkit-text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+	-moz-text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+	text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+	width: 85%;
+}
+
+.information{ background-color: rgb(239,239,239); min-height: 40vh; padding-top: 15px;}
+.information .container{
+	background-color: #FFF;
+	border: 5px solid rgb(220,221,221);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+
+.information input[type=text]{
+	width: 100%;
+	height: 30px;
+	padding: 0 5px;
+}
+.information select{
+	width: 100%;
+	height: 30px;
+	background-color:#FFF;
+}
+.information textarea{
+	width: 100%;
+	height: 90px;
+	padding: 0 5px;
+}
+
+.qafilter span{
+	margin-right: 10px;
+}
+.qafilter select, .qafilter input{
+	width: 180px;
+	height: 30px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+
+
+.Q, .A{ position: absolute; font-weight: bold; left: 20px; text-align: right; width: 40px;}
+.Q{ color: rgb(255,0,0); }
+.A{ color: rgb(145,193,13);}
+
+#qaContent {
+	padding: 0px;
+	font-size: 1.15em;
+	line-height: 1.6em;
+	margin-bottom: 20px;
+}
+.accordionPart {
+	margin: 10px 0;
+	padding: 0 10px;
+}
+.accordionPart li {
+	background-color: rgba(111,108,136,0.1);
+	list-style: none;
+	padding: 10px 10px;
+	margin-top: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.accordionPart li .qa_title {
+	color: rgb(111,108,136);
+	font-weight: bold;
+	cursor: pointer;
+	padding-left: 45px;
+}
+.accordionPart li .qa_title_on {
+	font-weight: bold;
+}
+.accordionPart li .qa_content {
+	color: #666;
+	padding-top: 10px;
+	padding-left: 45px;
+}
+.accordionPart li:hover{
+	background-color: rgba(246,176,57,0.1);
+}
+.accordionPart li:hover .qa_title{ color: rgb(246,176,57); }
+
+/*news-list-----------------*/
+.newslist_box{
+	position: relative;
+	padding: 10px !important;
+	margin-bottom: 20px;
+	border: 1px solid rgb(246,176,57);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.newslist_box ul{ 
+	padding-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+.newslist_box ul li{
+	list-style: none;
+}
+.newslist_box ul li:nth-child(odd){ background-color: rgba(250,238,0,0.15); }
+.newslist_box li:hover{
+	background-color: rgba(111,108,136,0.1);
+}
+.newslist_box ul li a{
+	display: block;
+	padding: 10px 10px 10px 25px;
+	color: rgb(62,58,57);
+	font-size: 1.15em;
+	line-height: 1.6em;
+	font-weight: 400;
+	text-decoration: none;
+	background: url('../img/icon-arrow01.png') 7px 16px no-repeat;
+}
+
+/*cp頁-------------*/
+.cpinformation{ background-color: rgb(239,239,239); min-height: 40vh; padding-top: 15px;}
+.cpinformation .container{
+	background-color: #FFF;
+	border: 5px solid rgb(220,221,221);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+
+/*Mobile-first - 輸入晶片卡密碼----------------*/
+.cardpassword .container{ position: relative; }
+.keyinNumber{
+	z-index: 100;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	max-width: 400px;
+	padding: 10px 0;
+	background-color: rgba(3,107,168,1);
+	border: 2px solid #FFF;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.keyinNumber .row{
+	padding: 8px;
+	font-size: 1.15em;
+}
+.keyinNumber .row > div:first-child{
+	color: #FFF;
+	line-height: 1.9em;
+}
+.keyinNumber select, .keyinNumber input[type=text]{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: 100%;
+	height: 30px;
+	border: 0;
+}
+.keyinNumber select{ 
+	padding-left: 5px; 
+}
+.keyinNumber input[type=text]{ padding-left: 10px; }
+
+#keyboard{ position: absolute; background-color: #FFF; }
+
+

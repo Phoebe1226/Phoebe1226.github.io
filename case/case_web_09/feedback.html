@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>e-Bill全國繳費網</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/detail.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/rwd.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//顯示費用搜尋
+			$(".billsearch").hide();
+			$(".btn-bills-search").click(function(){
+		    	$(".billsearch").slideToggle("slow");
+		  		});
+
+		});
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default header">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="btn-bills-search btn-magnifier" href="#">費用搜尋</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1 class="logo"><a href="#"><img src="img/e-Bill_logo.svg" alt="e-Bill">e-Bill全國繳費網</a></h1>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<ul class="nav navbar-nav topnav">
+		    		<li><a href="index.html">回首頁</a></li>
+			    	<li><a href="#">問題與協助</a></li>
+			    	<li class="mobile-none"><a href="#">自我環境檢測</a></li>
+			    	<li><a href="#">繳費限額</a></li>
+			    	<li class="mobile-none"><a class="btn-bills-search" href="#">費用搜尋</a></li>
+		    	</ul>
+		    </div>
+		</div>
+	</nav>
+
+	<div class="container-fluid billsearch">
+		<div class="container">
+			<span>費用搜尋</span><input class="billfi" type="text" placeholder="請輸入關鍵字" title="搜尋">
+		</div>
+	</div>
+
+	<div class="container-fluid informationtitle">
+		<div class="container">
+			<div class="box3"><img src="img/feedback-icon.svg"></div><h3>意見信箱
+			</h3>
+		</div>
+	</div>
+
+	<div class="container-fluid information">
+		<div class="container">
+			<div class="title_ps">如您對操作有任何問題，可點選<a class="red" href="QnA.html">問題與協助</a>；或請留下您的聯絡資料，我們將派專員與您聯絡。如為急件可直接撥打客服專線0800-767-168。(<span class="red">*</span>為必填欄位)</div>
+
+			
+
+			<div class="keyinData">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>聯絡人</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input class="" type="text" placeholder="" title=""></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">性別</div>
+					<div class="col-xs-12 col-sm-8 col-md-3">
+						<input type="radio" class="css-checkbox" name="gender" id="gender1"><label for="gender1" class="css-label">先生</label>
+						<input type="radio" class="css-checkbox" name="gender" id="gender2"><label for="gender2" class="css-label">小姐</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>希望回覆方式</div>
+					<div class="col-xs-12 col-sm-8 col-md-3">
+						<select class="select-option">
+					        <option ></option>
+					        <option>電話聯絡</option>
+					        <option>E-mail聯絡</option>
+					    </select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">聯絡電話</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input class="" type="text" placeholder="" title=""></div>
+					<div class="col-xs-12 col-sm-8 col-md-6">選擇電話回覆時，請務必留下您的聯絡電話</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">E-mail</div>
+					<div class="col-xs-12 col-sm-8 col-md-5"><input class="" type="text" placeholder="" title=""></div>
+					<div class="col-xs-12 col-sm-8 col-md-4">選擇E-mail回覆時，請務必留下您的E-mail</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>意見內容</div>
+					<div class="col-xs-12 col-sm-8 col-md-5"><textarea class=""></textarea></div>
+					<div class="col-xs-12 col-sm-8 col-md-4">請輸入400個字以內的意見內容</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>動態圖像驗證碼</div>
+					<div class="col-xs-12 col-sm-8 col-md-3">
+						<div><img src="img/code.jpg"></div>
+						<div>
+							<a href="#">重新產生</a><br>
+							請輸入上圖中您所看到的數字<a href="#">說明</a>
+							<input class="" type="text" placeholder="" title="">
+						</div>
+					</div>
+				</div>
+				<div class="reminder">
+					* 請輸入聯絡電話<br>
+					* 請輸入意見內容<br>
+				</div>
+			</div>
+
+			<div class="announcement">
+				<div class="notice-content" style="height:280px;">
+					<h6>中華民國銀行商業同業公會全國聯合會<br>履行個人資料保護法第八條第一項告知義務內容</h6>
+					<p>一、親愛的客戶您好，由於個人資料之蒐集，涉及　臺端之隱私權益，中華民國銀行商業同業公會全國聯合會（以下稱本會）向　臺端蒐集個人資料時，依據個人資料保護法（以下稱個資法）第八條第一項規定，應明確告知  臺端下列事項：<br>
+						（一） 非公務機關名稱。<br>
+						（二） 蒐集之目的。<br>
+						（三） 個人資料之類別。<br>
+						（四） 個人資料利用之期間、地區、對象及方式。<br>
+						（五） 當事人依個資法第三條規定得行使之權利及方式。<br>
+						（六） 當事人得自由選擇提供個人資料時，不提供將對其權益之影響。<br><br>
+
+					 二、有關本會蒐集　臺端個人資料之目的、個人資料類別及個人資料利用之期間、地區、對象及方式等內容，請　臺端詳閱如後附表。<br><br>
+
+					 三、依據個資法第三條規定，臺端就本會保有  臺端之個人資料得行使下列權利：<br>
+						（一） 除有個資法第十條所規定之例外情形外，得向本會查詢、請求閱覽或請求製給複製本，惟本會依個資法第十四條規定得酌收必要成本費用。<br>
+						（二） 得向本會請求補充或更正，惟依個資法施行細則第十九條規定，臺端應適當釋明其原因及事實。<br>
+						（三） 本會如有違反個資法規定蒐集、處理或利用臺端之個人資料，依個資法第十一條第四項規定，臺端得向本會請求停止蒐集。<br>
+						（四） 依個資法第十一條第二項規定，個人資料正確性有爭議者，得向本會請求停止處理或利用　臺端之個人資料。惟依該項但書規定，本會因執行業務所必須並註明其爭議或經  臺端書面同意者，不在此限。<br>
+						（五） 依個資法第十一條第三項規定，個人資料蒐集之特定目的消失或期限屆滿時，得向本會請求刪除、停止處理或利用　臺端之個人資料。惟依該項但書規定，本會因執行業務所必須或經　臺端書面同意者，不在此限。<br><br>
+
+					 四、臺端如欲行使上開個資法第三條當事人權利規定，有關如何行使之方式，  臺端得透過下述電子郵件或聯絡電話洽詢。<br><br>
+
+					 五、臺端得自由選擇是否提供相關個人資料，惟　臺端若拒絕提供相關個人資料，本會將無法執行必要之處理作業，致無法提供　臺端相關服務。<br>
+
+電子郵件：請至首頁點選「意見信箱」連結<br>
+聯絡電話：(02)26319800 按 1400</p>
+				</div>
+				<div class="checklist">
+					<input type="checkbox" name="ann01" id="ann01" class="css-checkbox"><label for="ann01" class="css-label2 red">本人已詳閱及瞭解注意事項並同意</label>
+				</div>
+			</div>
+
+			<div class="btnzone"><button class="btn-style03" type="button">清除</button> <button class="btn-style04" type="button">確認送出</button></div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid paynote">
+		<div class="container">
+			<h5>相關說明</h5>
+			<div class="notelist">
+				<ul>
+					<li>如有任何問題或建議，請於此留下您寶貴的意見，非常感謝!</li>
+					<li><span class="red">*</span>表示該欄位為必填欄位</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+		<div class="container">
+			<ul class="footernav clearfix">
+				<li><a href="#"><img src="img/bank-logo.png" alt="中華民國銀行公會"></a></li>
+				<li><a href="#">關於e-Bill</a></li>
+				<li><a href="#">隱私權聲明</a></li>
+				<li><a href="#">使用聲明</a></li>
+				<li><a href="#">個人資料保護法告知義務內容</a></li>
+			</ul>
+			<p>全國繳費網 版權所有 轉載必究 © 2016 ALL RIGHT RESERVED.  本網站委託財金資訊股份有限公司維運</p>
+			<p class="mobile-none">如有任何問題或建議請至<a href="#" class="email">意見信箱</a>留下您寶貴的意見</p>
+			<p class="mobile-none">有關業務及推廣事務請於上班時間(週一至週五 09:00~17:00)洽銀行公會(02)85962323</p>
+			<p class="mobile-none">如有操作或帳務問題請於上班時間(週一至週五 09:00~17:00)洽財金公司0800-767-168或(02)2631-9800按1400</p>
+			<div class="app-qr">
+				<h6>全國繳費網APP</h6>
+				<ul>
+					<li><a href="#"><img src="img/qr-android.jpg" alt="Android APP"><span>Android</span></a></li>
+					<li><a href="#"><img src="img/qr-ios.jpg" alt="iOS APP"><span>iOS</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

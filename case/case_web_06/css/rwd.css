@@ -1,0 +1,59 @@
+@media only screen and (max-width:1200px){
+	.navbar-nav>li>a {padding: 0 15px;font-size: 14px;}
+}
+@media (max-width:997px){.navbar-nav{display:none}
+.container{width:85%}
+nav{position:fixed; background:rgba(44,44,44,0); height:60px; padding:20px 10px}
+.hamburger{right:10px; top:22px}
+.l-scroll-count{right:10px}
+.nav-color{background:rgba(44,44,44,0.9); -webkit-transition:-webkit-transform 0.3s; -moz-transition:-moz-transform 0.3s; transition:transform 0.3s}
+.hamburger {display: block;}
+.hamburger__icon.changing-color, .hamburger__icon.changing-color:before, .hamburger__icon.changing-color:after{background-color:#FFF
+}
+@media (max-width:767px){.mob{display:block}
+.mob .video_content{position:absolute;  left:50%;  top:50%;  -webkit-transform:translate(-50%,-50%);  transform:translate(-50%,-50%);  width:100%}
+.videobanner{display:none}
+.hamburger{width:23px; height:16px; right:20px; top:19px}
+nav{padding:17px 15px; height:52px}
+.hamburger__icon:before{top:-6px}
+.hamburger__icon:after{top:6px}
+.hamburger__icon, .hamburger__icon:after, .hamburger__icon:before{width:23px}
+nav .container{margin: 0 5px;}
+.title h2{ font-size:26px;    margin: 5px 0 70px;}
+.title small{ font-size:16px}
+.title h2:after{ top:55px}
+.index-list .item{ margin-bottom:35px}
+.index-list figure:hover .hover-color{
+	display:none;
+	-webkit-transform:none;
+	transform:none;}
+	.index-list figure{ margin-bottom:15px}
+	.index-list .item h4{ margin-bottom:5px}
+	.btn-1{ margin-top:50px}
+	.section {padding: 60px 0 75px;}
+	.index-list .item h4 {font-size: 16px;}
+	p { font-size: 13px;}
+	.counter-item:nth-child(3){ border:none} 
+.counter-item h1 {font-size: 36px;}
+.counter-item{ margin-bottom:15px}
+.fixed-bg{padding: 60px 0 60px;}
+.index-bg .title h2 {margin-bottom: 30px;}
+.index-list figure:hover .mask{opacity:0}
+figure:hover .highlight{opacity:1; transform:scale(1); -webkit-transform:scale(1);box-shadow:none}
+.highlight{left: auto; right: 15px;bottom: auto;top: 0;height: 65px; width: 60px;}
+.highlight img {max-width: 26px; margin-bottom: 7px;}
+.fixed-bg {background-attachment: inherit;background-position: left;}
+#map-canvas-left, #map-canvas-right {height: 200px; width: 100%;}
+.footer-info,.footer h5{ text-align:center}
+.footer-logo{ text-align: center; margin-bottom:15px}
+.footer-info h5.mail{padding: 0; margin-left: 0; border: none;}
+.footer-info{ width:100%;    margin-bottom: 30px;} 
+.footer-info p{ display:none}
+footer h5 {margin: 0 0 10px; width: 100%;}
+.footer p { text-align: center;margin-bottom: 30px;}
+.footer .copyright{ margin-top:0; margin-bottom:0}
+footer{ padding: 50px 0 20px;}
+.footer-logo img{ height:28px}
+.mob .search_bar button[type=submit]{ text-align:center}
+.search_bar button[type=submit]:after{ left:38.5%}
+}

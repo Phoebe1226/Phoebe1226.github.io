@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>e-Bill全國繳費網</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/rwd.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-default header">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1 class="logo"><a href="#"><img src="img/e-Bill_logo.svg" alt="e-Bill">e-Bill全國繳費網</a></h1>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<ul class="nav navbar-nav topnav">
+			    	<li><a href="#">問題與協助</a></li>
+			    	<li class="mobile-none"><a href="#">自我環境檢測</a></li>
+			    	<li><a href="#">繳費限額</a></li>
+		    	</ul>
+		    </div>
+		</div>
+	</nav>
+
+	<div class="container-fluid billsearch">
+		<div class="container">
+			<span>費用搜尋</span><input class="billfi" type="text" placeholder="請輸入關鍵字" title="搜尋">
+		</div>
+	</div>
+
+	<div class="container-fluid mainmenu">
+		<div class="container" id="mainMenu">
+	        <div class="box highlight"><img class="corner svg" src="img/corner.svg">
+	        <div class="menuitem"><img class="svg" src="img/bill-icon01.svg"><h3>熱門專區</h3></div>
+	        	</div>
+	        <div class="box highlight"><img class="corner svg" src="img/corner.svg">
+	        <div class="menuitem"><img class="svg" src="img/bill-icon02.svg"><h3>即查即繳專區</h3></div>
+	        	</div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon03.svg"><h3>電信費</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon04.svg"><h3>信用卡費</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon05.svg"><h3>交通費</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon06.svg"><h3>水電費</h3></div></div>
+<!--
+			<div class="submenu clearfix">
+				<h3>即查即繳專區</h3>
+				<div class="close"><img src="img/close.svg" alt=""></div>
+				<ul class="clearfix">
+					<li><a href="#">健保費</a></li>
+					<li><a href="#">中華電信費</a></li>
+					<li><a href="#">遠傳電信費</a></li>
+					<li><a href="#">台灣大哥大電信費</a></li>
+					<li><a href="#">台灣之星電信費</a></li>
+
+					<li><a href="#">eTag儲值</a></li>
+					<li><a href="#">臺北市路邊停車費</a></li>
+					<li><a href="#">新北市路邊停車費</a></li>
+					<li><a href="#">臺中市停車費</a></li>
+					<li><a href="#">高雄市路邊停車費</a></li>
+
+					<li><a href="#">臺北自來水費</a></li>
+					<li><a href="#">臺南市停車費</a></li>
+				</ul>
+			</div>
+			-->
+			<div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon07.svg"><h3>瓦斯費</h3></div></div>
+			<div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon08.svg"><h3>政府相關費用</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon09.svg"><h3>繳納貸款</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon10.svg"><h3>保險費</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon11.svg"><h3>醫療住院費用</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon12.svg"><h3>報名訓練費</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon13.svg"><h3>學雜費</h3></div></div>
+
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon14.svg"><h3>住戶管理費</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon15.svg"><h3>捐款費用</h3></div></div>
+	        <div class="box"><div class="menuitem"><img class="svg" src="img/bill-icon16.svg"><h3>會費/規費</h3></div></div>
+	        <div class="box mobile-none"><div class="menuitem"><img class="svg" src="img/bill-icon17.svg"><h3>其他費用</h3></div></div>
+		</div>
+	</div>
+
+	<div class="container-fluid news_box">
+		<div class="container newslist_box">
+			<h4>最新消息</h4><a class="more-news" href="news-list.html">更多消息 > </a>
+			<ul class="latest">
+				<li><a href="news-list.html#news01">本網將於105年6月8日取消支援TLS1.0加密連線機制，請停用TLS1.0相關加密機制，而改以TLS1.1(含)以上進行加密連線作業，以確保交易安全。<span class="new">new</span></a></li>
+				<li><a href="#">使用IE11進入全國繳費網，惠請點選網頁上方的「工具」→「相容性檢視設定」，在新增此網站處輸入ba.org.tw並點選「新增」，再重新連結至本公司網站。<span class="hot">hot</span></a></li>
+				<li><a href="#">繳費出現5014(晶片卡作業發生錯誤，原因：卡片被其他程式佔住)訊息之排除方式！繳費出現5014(晶片卡作業發生錯誤，原因：卡片被其他程式佔住)訊息之排除方式！
+				繳費出現5014(晶片卡作業發生錯誤，原因：卡片被其他程式佔住)訊息之排除方式！
+				繳費出現5014(晶片卡作業發生錯誤，原因：卡片被其他程式佔住)訊息之排除方式！<span class="more">...詳全文</span></a></li>
+				<li><a href="#">本網站支援瀏覽器種類為Internet Explorer(版本7以上、只支援Windows平台)、Google Chrome(版本45(不含)以下、只支援Windows平台)、Firefox(版本3.6以上)、Opera、Safari(版本4.13以上、只支援mac平台)。</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container-fluid adbanner">
+		<div class="container">
+			<div class="owl-carousel">
+	            <div class="item"><a href="#"><img src="img/slide1.jpg"></a></div>
+			    <div class="item"><a href="#"><img src="img/slide2.jpg"></a></div>
+			    <div class="item"><a href="#"><img src="img/slide3.jpg"></a></div>
+            </div>
+		</div>
+	</div>
+
+	<div class="container-fluid otherlink">
+		<div class="container">
+			<h4>合作網站</h4>
+			<div class="owl-carousel">
+	            <div class="item"><a href="#" target="_blank">公司線上申辦系統</a></div>
+			    <div class="item"><a href="#" target="_blank">航港服務平台網站</a></div>
+			    <div class="item"><a href="#" target="_blank">電子公路監理網站</a></div>
+			    <div class="item"><a href="#" target="_blank">關稅總局稅費繳納系統</a></div>
+			    <div class="item"><a href="#" target="_blank">中華社會福利聯合勸募協會</a></div>
+			    <div class="item"><a href="#" target="_blank">財團法人脊髓損傷潛能發展中心</a></div>
+            </div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+		<div class="container">
+			<ul class="footernav clearfix">
+				<li><a href="#" target="_blank"><img src="img/bank-logo.png" alt="中華民國銀行公會"></a></li>
+				<li><a href="#">關於e-Bill</a></li>
+				<li><a href="#">隱私權聲明</a></li>
+				<li><a href="#">使用聲明</a></li>
+				<li><a href="#">個人資料保護法告知義務內容</a></li>
+			</ul>
+			<p>全國繳費網 版權所有 轉載必究 © 2016 ALL RIGHT RESERVED.  本網站委託財金資訊股份有限公司維運</p>
+			<p class="mobile-none">如有任何問題或建議請至<a href="#" class="email">意見信箱</a>留下您寶貴的意見</p>
+			<p class="mobile-none">有關業務及推廣事務請於上班時間(週一至週五 09:00~17:00)洽銀行公會(02)85962323</p>
+			<p class="mobile-none">如有操作或帳務問題請於上班時間(週一至週五 09:00~17:00)洽財金公司0800-767-168或(02)2631-9800按1400</p>
+			<div class="app-qr">
+				<h6>全國繳費網APP</h6>
+				<ul>
+					<li><a href="#"><img src="img/qr-android.jpg" alt="Android APP"><span>Android</span></a></li>
+					<li><a href="#"><img src="img/qr-ios.jpg" alt="iOS APP"><span>iOS</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		$('.adbanner .owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:true,
+		    autoplay:true,
+		    autoplayTimeout:6000,
+		    autoplayHoverPause:true,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    }
+		})
+
+		$('.otherlink .owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:true,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:3
+		        },
+		        1000:{
+		            items:4
+		        },
+		        1200:{
+		            items:5
+		        }
+		    }
+		})
+	</script>
+</html>

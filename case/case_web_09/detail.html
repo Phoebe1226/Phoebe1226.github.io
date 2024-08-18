@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>e-Bill全國繳費網</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/detail.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/rwd.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//顯示費用搜尋
+			$(".billsearch").hide();
+			$(".btn-bills-search").click(function(){
+		    	$(".billsearch").slideToggle("slow");
+		  		});
+			//顯示使用活期性存款帳戶的注意事項
+			$(".announcement").hide();	
+		    $("#method01").click(function(){
+		    	$(".announcement").slideDown("slow");
+		    	});
+		    $("#method02").click(function(){
+		    	$(".announcement").slideUp("slow");
+		    	});
+		});
+	</script>
+
+
+
+	<!--Mobile-first - Virtual Keyboard -->
+	<link rel="stylesheet" href="css/jqbtk.css">
+	<script src="js/jqbtk.js"></script>
+	<script>
+		$(function(){
+			$('#custom').keyboard({
+				layout:[
+					[['6'],['9'],['8'],['確認']],
+					[['5'],['0'],['1'],['更正']],
+					[['3'],['7'],['2'],['清除']],
+					[['w22'],['4'],['w22'],['w30']],
+				]
+			});
+			$('#addInputBtn').click(function(){
+				$(this).parent().append($('<input>').attr('type','text').addClass('form-control').addClass('keyboard'));
+				$(this).siblings('.keyboard').keyboard();
+			});
+			$('#removeInputBtn').click(function(){
+				$(this).siblings('.keyboard').last().remove();
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-default header">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="btn-bills-search btn-magnifier" href="#">費用搜尋</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1 class="logo"><a href="#"><img src="img/e-Bill_logo.svg" alt="e-Bill">e-Bill全國繳費網</a></h1>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<ul class="nav navbar-nav topnav">
+		    		<li><a href="index.html">回首頁</a></li>
+			    	<li><a href="#">問題與協助</a></li>
+			    	<li class="mobile-none"><a href="#">自我環境檢測</a></li>
+			    	<li><a href="#">繳費限額</a></li>
+			    	<li class="mobile-none"><a class="btn-bills-search" href="#">費用搜尋</a></li>
+		    	</ul>
+		    </div>
+		</div>
+	</nav>
+
+	<div class="container-fluid billsearch">
+		<div class="container">
+			<span>費用搜尋</span><input class="billfi" type="text" placeholder="請輸入關鍵字" title="搜尋">
+		</div>
+	</div>
+
+	<!--輸入晶片卡密碼-->
+	<div class="container-fluid cardpassword">
+		<div class="container">
+			<div class="keyinNumber">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">讀卡機</div>
+					<div class="col-xs-7 col-sm-5 col-md-5">
+						<select class="select-option">
+					        <option>請選擇</option>
+					        <option>讀卡機一</option>
+					        <option>讀卡機二</option>
+					    </select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">晶片卡密碼</div>
+					<div class="col-xs-7 col-sm-5 col-md-5">
+						<input type="text" class="keyboard form-control" id="custom"></div>
+					<div class="col-xs-5 col-sm-4 col-md-4">
+						<button class="btn-style07">驗證密碼</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="container-fluid billtitle">
+		<div class="container">
+			<div class="box2"><img src="img/bill-icon05.svg"></div><h3>國道高速公路交通資費
+			</h3>
+		</div>
+	</div>
+
+	<div class="container-fluid paybill">
+		<div class="container">
+		<!-- step1 -->
+			<h5>待繳費用查詢</h5>
+			<div class="keyinData">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>電信(話)號碼</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input class="" type="text" placeholder="" title=""></div>
+					<div class="col-xs-12 col-sm-12 col-md-6">可參考<a href="#">電信號碼輸入範例</a></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>用戶證號</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input class="" type="text" placeholder="" title=""></div>
+					<div class="col-xs-12 col-sm-12 col-md-6">此即電信(話)號碼所有人(法人)的身分證字號(統一編號)</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>車輛種類</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div class="radioselect">
+							<input type="radio" class="css-checkbox" name="selectora" id="radio1a">
+							<label for="radio1a" class="css-label">汽車</label>
+							<input type="radio" class="css-checkbox" name="selectora" id="radio2a">
+							<label for="radio2a" class="css-label">機車</label>
+							</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>信用卡機構</div>
+					<div class="col-xs-12 col-sm-8 col-md-3">
+						<select class="select-option">
+					        <option ></option>
+					        <option>銀行一</option>
+					        <option>銀行二</option>
+					    </select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>銷帳編號</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input class="" type="text" placeholder="" title=""></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>銷帳編號</div>
+					<div class="col-xs-12 col-sm-8 col-md-3">
+						<input class="w4" type="text" placeholder="" title="">-
+						<input class="w4" type="text" placeholder="" title="">-
+						<input class="w4" type="text" placeholder="" title="">-
+						<input class="w4" type="text" placeholder="" title="">
+						</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>繳款金額</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input class="" type="text" placeholder="" title=""></div>
+					<div class="col-xs-12 col-sm-12 col-md-6">元<a href="#">繳費限額</a></div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>社區名稱</div>
+					<div class="col-xs-12 col-sm-8 col-md-3">
+						<select class="select-option">
+					        <option ></option>
+					        <option>社區一</option>
+					        <option>社區二</option>
+					    </select>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6"><a class="btn-style06" href="#"><span>...</span></a></div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>銷帳編號</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div class="col-xs-12 col-sm-12 col-md-4"><input class="" type="text" placeholder="" title=""></div>
+						<div class="col-xs-12 col-sm-12 col-md-12">請輸入16碼數字：公司代碼(5碼)+款項性質(1碼)+保單號碼(10碼)=16碼。<br>公司代碼：37011；款項性質：1=保費，2=償還保單借款，3=償還自動墊繳；保單號碼：10碼，不足10碼或其中有英文字母者請改以本公司寄發之「繳費通知單」上其他管道繳費。</div>
+					</div>
+				</div>
+
+				<div class="reminder">
+					* 請輸入電信(話)號碼<br>
+					* 請輸入用戶證號<br>
+				</div>
+			</div>
+			<div class="btnzone"><button class="btn-style04" type="button">確認送出</button></div>
+			
+		<!-- step2 -->
+			<h5>查詢結果</h5>
+			<div class="showResult">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">查詢時間</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">105/4/18</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">電信(話)號碼</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">12345678</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">資費類別</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">市內電話</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">資費筆數</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">5</div>
+				</div>
+			</div>
+			
+			<h5>帳單明細</h5>
+			<!--單選 -->
+			<div class="listBills">
+				<table class="rwd-table">
+					<tr>
+						<th></th>
+						<th>電信(話)號碼</th>
+						<th>待繳金額</th>
+						<th>繳費期限</th>
+						<th>列帳年月</th>
+						<th>機構代號</th>
+						<th>帳單別</th>
+					</tr>
+					<tr>
+						<td data-th="選取帳單" class="center"><input type="radio" class="css-checkbox" name="bill01" id="bill1"><label for="bill1" class="css-label"></label></td>
+						<td data-th="電信(話)號碼">12345678</td>
+						<td data-th="待繳金額">1000</td>
+						<td data-th="繳費期限">105/6/30</td>
+						<td data-th="列帳年月">105/6/30</td>
+						<td data-th="機構代號">1000</td>
+						<td data-th="帳單別">E1</td>
+					</tr>
+					<tr>
+						<td data-th="選取帳單" class="center"><input type="radio" class="css-checkbox" name="bill01" id="bill2"><label for="bill2" class="css-label"></label></td>
+						<td data-th="電信(話)號碼">12345678</td>
+						<td data-th="待繳金額">1000</td>
+						<td data-th="繳費期限">105/6/30</td>
+						<td data-th="列帳年月">105/6/30</td>
+						<td data-th="機構代號">1000</td>
+						<td data-th="帳單別">E1</td>
+					</tr>
+					<tr>
+						<td data-th="選取帳單" class="center"><input type="radio" class="css-checkbox" name="bill01" id="bill3"><label for="bill3" class="css-label"></label></td>
+						<td data-th="電信(話)號碼">12345678</td>
+						<td data-th="待繳金額">1000</td>
+						<td data-th="繳費期限">105/6/30</td>
+						<td data-th="列帳年月">105/6/30</td>
+						<td data-th="機構代號">1000</td>
+						<td data-th="帳單別">E1</td>
+					</tr>
+					<tr>
+						<td data-th="選取帳單" class="center"><input type="radio" class="css-checkbox" name="bill01" id="bill4"><label for="bill4" class="css-label"></label></td>
+						<td data-th="電信(話)號碼">12345678</td>
+						<td data-th="待繳金額">1000</td>
+						<td data-th="繳費期限">105/6/30</td>
+						<td data-th="列帳年月">105/6/30</td>
+						<td data-th="機構代號">1000</td>
+						<td data-th="帳單別">E1</td>
+					</tr>
+					<tr>
+						<td data-th="選取帳單" class="center"><input type="radio" class="css-checkbox" name="bill01" id="bill5"><label for="bill5" class="css-label"></label></td>
+						<td data-th="電信(話)號碼">12345678</td>
+						<td data-th="待繳金額">1000</td>
+						<td data-th="繳費期限">105/6/30</td>
+						<td data-th="列帳年月">105/6/30</td>
+						<td data-th="機構代號">1000</td>
+						<td data-th="帳單別">E1</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--複選-->
+			<div class="allcheck"><input type="checkbox" name="ann00a" id="ann00a" class="css-checkbox"><label for="ann00a" class="css-label2">勾選欲繳納之帳單</label></div>
+			<div class="listBills">
+				<table class="rwd-table">
+					<tr>
+						<th></th>
+						<th>停車單號</th>
+						<th>應繳金額</th>
+						<th>停車日期</th>
+						<th>帳單類別</th>
+					</tr>
+					<tr>
+						<td data-th="選取帳單" class="center"><input type="checkbox" name="ann01a" id="ann01a" class="css-checkbox"><label for="ann01a" class="css-label2"></label></td>
+						<td data-th="停車單號">997c92c555555z555</td>
+						<td data-th="應繳金額">3049</td>
+						<td data-th="停車日期">105/6/30</td>
+						<td data-th="帳單類別">催繳單</td>
+					</tr>
+					<tr>
+						<td data-th="選取帳單" class="center"><input type="checkbox" name="ann02a" id="ann02a" class="css-checkbox"><label for="ann02a" class="css-label2"></label></td>
+						<td data-th="停車單號">997c92c555555z555</td>
+						<td data-th="應繳金額">3049</td>
+						<td data-th="停車日期">105/6/30</td>
+						<td data-th="帳單類別">催繳單</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--單項明細示意 -->
+			<div class="listBills">
+				<table class="rwd-table2">
+					<tr>
+						<th>車牌號碼</th>
+						<td data-th="車牌號碼">135-AB</td>
+					</tr>
+					<tr>
+						<th>用戶證號</th>
+						<td data-th="用戶證號">H123456789</td>
+					</tr>
+					<tr>
+						<th>目前儲值餘額</th>
+						<td data-th="目前儲值餘額">50</td>
+					</tr>
+					<tr>
+						<th>本次最高可儲值金額</th>
+						<td data-th="本次最高可儲值金額">10000</td>
+					</tr>
+					<tr>
+						<th>本次最低可儲值金額</th>
+						<td data-th="本次最低可儲值金額">1000</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--<h5>繳費</h5>-->
+			<div class="keyinData">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>繳費方式</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div class="radioselect">
+							<input type="radio" class="css-checkbox" name="selector" id="radio1">
+							<label for="radio1" class="css-label" id="method01">使用活期性存款帳戶</label></div>
+						<div class="radioselect">
+							<input type="radio" class="css-checkbox" name="selector" id="radio2">
+							<label for="radio2" class="css-label" id="method02">使用晶片金融卡</label><span class="mobile-none"> ( 首次使用晶片金融卡繳費，請先進行<a class="btn-style05" href="#">自我環境檢測</a>）</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">手續費說明</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div>非約定活期性存款帳戶繳款，限繳本人帳單，手續費<span class="fee">10</span>元</div>
+						<div>使用晶片金融卡，手續費<span class="fee">5</span>元</div>
+					</div>
+				</div>
+				<!--<div class="reminder">
+					* 請輸入繳費方式<br>
+				</div>-->
+				<div class="announcement">
+					<div class="notice-content" style="height:200px;">
+						<h6>使用非約定活期性帳戶繳費（稅）注意事項</h6>
+						<p>「e-Bill全國繳費網」（或「全國性繳費（稅）業務」）係提供即時自您的轉出帳戶繳付多張帳單之代收費用服務平台（以下稱本服務）。為了保障您的權益，請於使用本服務前，詳細閱讀下列注意事項，若您對本服務尚有不瞭解或不同意注意事項之內容者，請勿執行相關交易。<br>
+						一、 資料蒐集<br>
+						您使用本服務所輸入之相關資料，將由帳單業者、帳務代理、轉出、轉入金融機構及財金資訊股份有限公司在完成上述服務之特定目的內，蒐集、處理、利用及國際傳輸您的個人資料。<br>
+						二、繳費限額<br>
+						本服務繳付限額，每一轉出帳戶每日不得超過新臺幣（下同）10萬元，每月不得超過20萬元。如轉出金融機構之限額低於前述規定，則依轉出金融機構之規定辦理。<br>
+						三、服務收費<br>
+						您使用本服務可能需繳納交易手續費，請自行向帳單業者確認，如需由您負擔手續費者，系統將併繳款金額一併自您轉出帳戶扣取。<br>
+						四、交易糾紛<br>
+						您使用本服務倘有錯誤或對款項之計算暨退補費等發生疑義，應自行洽帳單業者或轉出金融機構處理。</p>
+					</div>
+					<div class="checklist">
+						<input type="checkbox" name="ann01" id="ann01" class="css-checkbox"><label for="ann01" class="css-label2 red">本人已詳閱及瞭解注意事項並同意遵守。</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="btnzone"><button class="btn-style03" type="button">回上一頁</button> <button class="btn-style04" type="button">確認送出</button></div>
+
+		<!-- step3 -->
+			<h5>輸入繳費資訊</h5>
+			<div class="keyinData">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>轉出銀行</div>
+					<div class="col-xs-12 col-sm-8 col-md-3">
+						<select class="select-option">
+					        <option ></option>
+					        <option>銀行一</option>
+					        <option>銀行二</option>
+					    </select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>轉出帳號</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input class="" type="text" placeholder="" title=""></div>
+				</div>
+			</div>
+			<div class="btnzone"><button class="btn-style03" type="button">回上一頁</button> <button class="btn-style04" type="button">確認送出</button></div>
+
+		<!-- step4 -->
+			<h5>確認繳費資訊</h5>
+			<div class="showResult">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">轉出銀行</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">463模擬行463</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">轉出帳戶</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">00000000000000000000000000000</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">轉入銀行</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">460模擬行460</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">電信(話)號碼</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">12345678</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">待繳金額</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">10000</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">繳費期限</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">105/6/30</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">列帳年月</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">105/3</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">機構代號</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">100000</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">帳單別</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">E01</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">手續費</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">10</div>
+				</div>
+			</div>
+
+			<div class="keyinData">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3"><span class="red">*</span>動態圖像驗證碼</div>
+					<div class="col-xs-12 col-sm-8 col-md-4">
+						<div class="codezone"><div class="code"><img src="img/code.jpg"></div><a href="#">重新產生</a></div>
+						<div>
+							請輸入上圖中您所看到的數字<a href="#">說明</a>
+							<input class="" type="text" placeholder="" title="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">寄發繳費收據?</div>
+					<div class="col-xs-12 col-sm-8 col-md-3"><input type="checkbox" name="bi01" id="bi01" class="css-checkbox"><label for="bi01" class="css-label2"></label></div>
+				</div>
+			</div>
+			<div class="btnzone"><button class="btn-style03" type="button">回上一頁</button> <button class="btn-style04" type="button">確認付款</button></div>
+		
+		<!-- 交易結果 -->
+			<h5>交易結果</h5>
+			<div class="showResult">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">交易訊息</div>
+					<div class="col-xs-12 col-sm-8 col-md-9 red">交易失敗，身分證統一編號或營利事業統一編號有誤(4806)</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">交易序號</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">0000</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">繳款時間</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">105/4/18 上午 11:50:47</div>
+				</div>
+			</div>
+
+			<h5>繳費資訊</h5>
+			<div class="showResult">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">轉出銀行</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">463模擬行463</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">轉出帳戶</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">00000000000000000000000000000</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">轉入銀行</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">460模擬行460</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">電信(話)號碼</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">12345678</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">待繳金額</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">10000</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">繳費期限</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">105/6/30</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">列帳年月</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">105/3</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">機構代號</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">100000</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">帳單別</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">E01</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-3">手續費</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">10</div>
+				</div>
+			</div>
+			<div class="print">
+				<button class="btn-style08">友善列印</button>
+				<span class="red">※ 請列印本頁，以供日後查詢使用(本頁非正式收據)</span>
+			</div>
+			<div class="btnzone"><button class="btn-style03" type="button">回首頁</button> <button class="btn-style04" type="button">重新查詢</button></div>
+		</div>
+	</div>
+
+	<div class="container-fluid paynote">
+		<div class="container">
+			<h5>相關說明</h5>
+			<div class="notelist">
+				<ul>
+					<li>流程進度 : 待繳電信(話)費查詢 > 輸入繳費資訊 > 確認頁 > 繳費交易結果</li>
+					<li>請依查詢種類，輸入相關欄位資訊做查詢；此費用待查詢結果出現後，再決定是否進行繳費。</li>
+					<li><span class="red">*</span>表示該欄位為必填欄位</li>
+					<li class="red">開放項目(全日開放)：室內電話，行動電話，呼叫器，傳訊王，數據業務(含HiNet)，國際電信業務，智慧型網路。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+		<div class="container">
+			<ul class="footernav clearfix">
+				<li><a href="#"><img src="img/bank-logo.png" alt="中華民國銀行公會"></a></li>
+				<li><a href="#">關於e-Bill</a></li>
+				<li><a href="#">隱私權聲明</a></li>
+				<li><a href="#">使用聲明</a></li>
+				<li><a href="#">個人資料保護法告知義務內容</a></li>
+			</ul>
+			<p>全國繳費網 版權所有 轉載必究 © 2016 ALL RIGHT RESERVED.  本網站委託財金資訊股份有限公司維運</p>
+			<p class="mobile-none">如有任何問題或建議請至<a href="#" class="email">意見信箱</a>留下您寶貴的意見</p>
+			<p class="mobile-none">有關業務及推廣事務請於上班時間(週一至週五 09:00~17:00)洽銀行公會(02)85962323</p>
+			<p class="mobile-none">如有操作或帳務問題請於上班時間(週一至週五 09:00~17:00)洽財金公司0800-767-168或(02)2631-9800按1400</p>
+			<div class="app-qr">
+				<h6>全國繳費網APP</h6>
+				<ul>
+					<li><a href="#"><img src="img/qr-android.jpg" alt="Android APP"><span>Android</span></a></li>
+					<li><a href="#"><img src="img/qr-ios.jpg" alt="iOS APP"><span>iOS</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- message popup -->
+	<div>
+		<!-- Trigger the modal with a button -->
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open alert</button>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">晶片金融卡安控元件不存在!!!</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>請在下載安裝程式後，關閉所有瀏覽器，<br>執行元件安裝程式後，再重新執行本功能。</p>
+		        <a class="btn-style05" href="#">下載元件</a>
+		      </div>
+		      <!--<div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>-->
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+</body>
+
+</html>

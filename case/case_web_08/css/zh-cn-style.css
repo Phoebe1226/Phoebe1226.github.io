@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	overflow-x:hidden;
+	overflow:-moz-scrollbars-vertical;
+	width:100%
+}
+body {
+	overflow-x: hidden;
+	font-family: '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',arial,sans-serif-light,sans-serif, Helvetica;
+	height:100%!important;
+	cursor:default
+}
+.navbar-nav>li>a>span {
+	color:#f2f8c5;
+	font-size:14px;
+	text-shadow:none;
+	font-family: 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	letter-spacing: 0.5px;
+	font-weight:200;
+}
+.text-sans {
+	font-family: '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+    font-size: 14.5px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 24px;/*display:inline*/
+	letter-spacing: 1px;
+}
+#myImage {
+	display: inline-block;
+	-webkit-animation: box .6s infinite;
+	-webkit-animation-duration: .6s infinite;
+	-moz-animation-duration: .6s infinite;
+	z-index: 2;
+	animation-name: slidein;
+	-webkit-animation-name: slidein;
+	position: absolute;
+}
+#myImage:hover {
+	opacity:0.8
+}
+@-webkit-keyframes slidein {
+ 0% {
+ top:-14px;
+}
+ 50% {
+ top:-9px;
+}
+ 100% {
+ top:-14px;
+}
+}
+@keyframes slidein {
+ 0% {
+ top:-14px;
+}
+ 50% {
+ top:-9px;
+}
+ 100% {
+ top:-14px;
+}
+}
+#product .intro {
+    text-align:center;
+}
+#product .intro:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.intro p {
+	display: inline-block;
+  vertical-align: middle;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #343434;
+	margin-top: 12px;
+}
+.da-thumbs li a div span {
+    margin: 30% 60px auto 60px;}
+.download-btn {
+	display: inline-block;
+	color: #FFF;
+	font-size: 22px;
+	width: 230px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809', GradientType=0);
+	background-color:#89c403;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	margin-top: 30px;
+}
+.mfControls button {
+	display: inline-block;
+	border: none;
+	color: #FFF;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	font-weight:400;
+	font-size:18px;
+	width:175px;
+	height:45px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+footer {
+	line-height:25px;
+	font-size:14px;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	font-weight:400;
+	color:#595958;
+	height: 100%;
+}
+footer span {
+	color:#639715;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+}
+footer .lan {
+	text-align:right;
+}
+footer .lan a {
+	font-size:14px;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	color:#595958
+}
+.product-modal p, .recipe-modal p, .recipe-modal ol li {
+	font-size:13px;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	margin-bottom:8px;
+	color:#90857E;
+	line-height: 18px;
+    margin-bottom: 15px;
+}
+.product-modal ol li {
+	font-size: 13px;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	margin-bottom: 8px;
+	color: #90857E;
+}
+.modal-content table h5 span {
+	font-size: 13px;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	color:#5C7C09
+}
+.modal-content ul {
+	font-size: 13px;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+}
+.mfValidation {
+	-o-transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-moz-transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+	-moz-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 10px;
+	font-weight: 300;
+	font-size: 12.5px;
+	background: #6D9112;
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	z-index: 998;
+	line-height: 20px;
+	height: 20px;
+	right: -4px;
+	top: 13px;
+	width: 167px;
+	font-family:  '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+	letter-spacing: 0.3px;
+	font-weight: 200;
+}
+.modal-content table h5 {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    color: #374909;
+    line-height: 28px;
+	padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar-default .navbar-nav>li>a {
+    min-width: 140px;}
+#brand-story p {
+    font-weight: lighter;
+}
+.product-list-til h5 {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    font-family: '微軟雅黑體', '微軟正黑體','Microsoft JhengHei','Adamina', 'Source Sans Pro',Helvetica, Arial, sans-serif;
+    text-align: left;
+    background: url(../img/arrow-right.png) no-repeat;
+    background-position-y: 3px;
+    padding-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+}

@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>e-Bill全國繳費網</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/detail.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/rwd.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//顯示費用搜尋
+			$(".billsearch").hide();
+			$(".btn-bills-search").click(function(){
+		    	$(".billsearch").slideToggle("slow");
+		  		});
+		});
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default header">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="btn-bills-search btn-magnifier" href="#">費用搜尋</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1 class="logo"><a href="#"><img src="img/e-Bill_logo.svg" alt="e-Bill">e-Bill全國繳費網</a></h1>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<ul class="nav navbar-nav topnav">
+		    		<li><a href="index.html">回首頁</a></li>
+			    	<li><a href="#">問題與協助</a></li>
+			    	<li class="mobile-none"><a href="#">自我環境檢測</a></li>
+			    	<li><a href="#">繳費限額</a></li>
+			    	<li class="mobile-none"><a class="btn-bills-search" href="#">費用搜尋</a></li>
+		    	</ul>
+		    </div>
+		</div>
+	</nav>
+
+	<div class="container-fluid billsearch">
+		<div class="container">
+			<span>費用搜尋</span><input class="billfi" type="text" placeholder="請輸入關鍵字" title="搜尋">
+		</div>
+	</div>
+
+	<div class="container-fluid informationtitle">
+		<div class="container">
+			<div class="box3"><img src="img/information-icon.svg"></div><h3>其他說明頁-繳費限額示意
+			</h3>
+		</div>
+	</div>
+
+	<div class="container-fluid cpinformation">
+		<div class="container">
+
+<!-- 以繳費限額示意 -->
+<h6>繳費限額</h6>		
+<table class="NormalText" width="100%" cellspacing="0" cellpadding="5" border="1">
+<tbody>
+<tr height="57">
+<td height="57" width="1058" colspan="12">
+<p align="left"><b>金融機構辦理全國性繳費(稅)業務交易限額表 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;單位：新臺幣元</b></p></td></tr>
+<tr height="51">
+<td height="115" rowspan="3" width="37">
+<p align="center"><font size="2">代號</font></p></td>
+<td rowspan="3">
+<p align="center"><font size="2">銀行<br>名稱</font></p></td>
+<td style="WIDTH: 96pt" width="128" colspan="2">
+<p align="center"><font size="2">晶片金融卡</font></p></td>
+<td style="WIDTH: 190pt" width="255" colspan="5">
+<p align="center"><font size="2">活期性帳戶</font></p></td>
+<td style="WIDTH: 57pt" width="75" colspan="2">
+<p align="center"><font size="2">交易計算<br>方式</font></p></td>
+<td rowspan="3">
+<p align="center"><font size="2">備註</font></p></td></tr>
+<tr style="HEIGHT: 16.5pt" height="22">
+<td style="HEIGHT: 48pt; WIDTH: 58pt" height="64" rowspan="2" width="77">
+<p align="center"><font size="2">單筆<br>限額</font></p></td>
+<td style="WIDTH: 38pt" rowspan="2" width="51">
+<p align="center"><font size="2">每日<br>限額</font></p></td>
+<td style="WIDTH: 76pt" width="102" colspan="2">
+<p align="center"><font size="2">約定交易</font></p></td>
+<td style="WIDTH: 114pt" width="153" colspan="3">
+<p align="center"><font size="2">非約定交易</font></p></td>
+<td style="WIDTH: 28pt" rowspan="2" width="37">
+<p align="center"><font size="2">以交易日</font></p></td>
+<td style="WIDTH: 29pt" rowspan="2" width="38">
+<p align="center"><font size="2">以營業日</font></p></td></tr>
+<tr style="HEIGHT: 31.5pt" height="42">
+<td style="HEIGHT: 31.5pt; WIDTH: 38pt" height="42" width="51">
+<p align="center"><font size="2">單筆<br>限額</font></p></td>
+<td style="WIDTH: 38pt" width="51">
+<p align="center"><font size="2">每日<br>限額</font></p></td>
+<td style="WIDTH: 38pt" width="51">
+<p align="center"><font size="2">單筆<br>限額</font></p></td>
+<td style="WIDTH: 38pt" width="51">
+<p align="center"><font size="2">每日<br>限額</font></p></td>
+<td style="WIDTH: 38pt" width="51">
+<p align="center"><font size="2">當月<br>限額</font></p></td></tr>
+<tr style="HEIGHT: 20.1pt" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">004</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">臺灣銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與ATM轉帳額度併同計算</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">005</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">臺灣土地銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">006</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">合作金庫銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與ATM約定轉帳合併計算限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">007</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">第一商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">008</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">華南商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡限額併入ATM約定轉帳限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">009</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">彰化商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">011</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">上海商業儲蓄銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">012</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">台北富邦商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">013</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">國泰世華銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">016</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">高雄銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與ATM約定轉帳合併計算限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">017</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">兆豐國際商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡限額與ATM約定轉帳合併計算限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">018</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">全國農業金庫</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 76pt" width="102" colspan="5">
+<p align="right"><font size="2">未參加</font></p></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡限額與ATM約定轉帳合併計算限額</font></td></tr>
+<tr class="xl77" style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td class="xl73" style="HEIGHT: 20.1pt" height="26"><font size="2">021</font></td>
+<td class="xl74" style="WIDTH: 126pt" width="168"><font size="2">花旗台灣商業銀行</font></td>
+<td class="xl75" style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td class="xl75" style="WIDTH: 76pt" width="102" colspan="2">
+<p align="center"><font size="2">未參加</font></p></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td class="xl75" style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td class="xl74" style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">022</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">美國銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">未參加</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">未參加</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與ATM轉帳額度併同計算。</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">039</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">澳盛銀行</font></td>
+<td class="xl75" style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td class="xl75" style="WIDTH: 76pt" width="102" colspan="2">
+<p align="center"><font size="2">未參加</font></p></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與ATM轉帳額度併同計算。</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">050</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">台灣中小企業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">052</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">渣打國際商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">100萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">5萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">053</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">台中商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與ATM轉帳額度併同計算。</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">054</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">京城商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2"></font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">081</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">匯豐(台灣)商業銀行</font></td>
+<td class="xl75" style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td class="xl75" style="WIDTH: 76pt" width="102" colspan="2">
+<p align="center"><font size="2">未參加</font></p></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">本行只提供繳費服務，不提供繳稅服務。</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">101</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">瑞興商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">5萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">無</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">102</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">華泰商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">103</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">臺灣新光商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">108</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">陽信商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">114</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">基隆第一信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">非約定交易以交易日計算，約定交易以營業日計算；晶片金融卡繳費每日限額與ATM約定轉帳合併計算限額。</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">115</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">基隆市第二信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡每日限額與ATM約定轉帳合併計算限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">118</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">板信商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">119</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">淡水第一信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">100萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">100萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">100萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">100萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">130</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">新竹第一信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">132</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">新竹第三信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">146</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">台中市第二信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">5萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">147</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">三信商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">162</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">彰化第六信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">165</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">彰化縣鹿港信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">204</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">高雄市第三信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">3萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">3萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">無</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">215</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">花蓮第一信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">216</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">花蓮第二信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費額度與ATM約定轉帳合併計算限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">600</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">財團法人全國農漁業及金融資訊中心</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">會員機構共計1家(註1)　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">605</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">高雄市高雄地區農會</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">625</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">台中市農會</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 76pt" width="102" colspan="5">
+<p align="right"><font size="2">未參加</font></p></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">700</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">中華郵政</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">100萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">100萬</font></td>
+<td style="WIDTH: 76pt" width="102" colspan="5">
+<p align="right"><font size="2">未參加</font></p></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費額度與ATM約定轉帳合併計算限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">803</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">聯邦商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">805</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">遠東國際商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">806</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">元大商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與ATM轉帳額度併同計算</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">807</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">永豐商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費額度與本行自動化交易合併計算限額</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">808</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">玉山商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 55.5pt; mso-height-source: userset" height="74">
+<td style="HEIGHT: 55.5pt" height="74"><font size="2">809</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">凱基商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">20萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">晶片金融卡繳費與國內外提款、轉帳、消費及非約定帳戶轉帳、限定性繳費(如水、電、瓦斯等)合併計算限額。</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">810</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">新加坡商星展銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr class="xl77" style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td class="xl73" style="HEIGHT: 20.1pt" height="26"><font size="2">812</font></td>
+<td class="xl74" style="WIDTH: 126pt" width="168"><font size="2">台新國際商業銀行</font></td>
+<td class="xl75" style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td class="xl75" style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td class="xl76" style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td class="xl76" style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td class="xl74" style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">814</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">大眾商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">815</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">日盛國際商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">816</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">安泰商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">822</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">中國信託商業銀行</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">910</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">農漁會聯合資訊中心</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">無</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">會員機構共計13家(註2)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">922</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">台南市台南地區農會</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">　</font></td></tr>
+<tr style="HEIGHT: 39.95pt; mso-height-source: userset" height="53">
+<td style="HEIGHT: 39.95pt" height="53"><font size="2">928</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">板橋區農會電腦共用中心</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">1.晶片金融卡繳費額度與ATM約定轉帳合併計算限額<br>2.會員機構共計5家(註3)</font></td></tr>
+<tr style="HEIGHT: 83.25pt; mso-height-source: userset" height="111">
+<td style="HEIGHT: 83.25pt" height="111"><font size="2">951</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">新北市農會附設北區農會電腦共用中心</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">1.晶片金融卡及活期帳戶約定繳費與ATM約定轉帳合併計算限額<br>2.活期帳戶非約定交易以交易日計算，晶片金融卡及活期帳戶約定交易以營業日計算。<br>3.會員機構共計55家(註4)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">952</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">農漁會南區資訊中心</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">會員機構共計129家(註5)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">954</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">農漁會中區資訊中心</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37"><font size="2">　</font></td>
+<td style="WIDTH: 29pt" width="38">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">會員機構共計100家(註6)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">104</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">台北市第五信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">120</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">新北市淡水信用合作社 <br></font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">20萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">600萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">124</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">宜蘭縣宜蘭市信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">127</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">桃園信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">158</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">彰化市第一信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">161</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">彰化市第五信用合作社 <br></font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">163</font></td>
+<td style="WIDTH: 126pt" width="168"><font size="2">彰化第十信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)　</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+</tr><tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">178</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">嘉義市第三信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">300萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">188</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">台南市第三信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">500萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">222</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">澎湖縣第一信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">223</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">澎湖縣第二信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 20.1pt; mso-height-source: userset" height="26">
+<td style="HEIGHT: 20.1pt" height="26"><font size="2">224</font></td>
+<td class="xl72" style="WIDTH: 126pt" width="168"><font size="2">金門縣信用合作社</font></td>
+<td style="WIDTH: 58pt" width="77"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">200萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">10萬</font></td>
+<td style="WIDTH: 38pt" width="51"><font size="2">20萬</font></td>
+<td style="WIDTH: 28pt" width="37">
+<p align="center"><font size="2">V</font></p></td>
+<td style="WIDTH: 29pt" width="38"><font size="2">　</font></td>
+<td style="WIDTH: 296pt" width="395"><font size="2">信用合作社聯合社南區聯合資訊處理中心(997)</font></td></tr>
+<tr style="HEIGHT: 73.5pt; mso-height-source: userset" height="98">
+<td class="xl90" style="HEIGHT: 42.75pt; WIDTH: 793pt" height="57" width="1058" colspan="12"><font size="2">◎註1：財團法人全國農漁業及金融資訊中心(600)<br>會員機構共計1家，包括:6350017彰化縣線西鄉農會。</font></td></tr>
+<tr style="HEIGHT: 171.75pt; mso-height-source: userset" height="229">
+<td class="xl87" style="HEIGHT: 73.5pt; WIDTH: 793pt" height="98" width="1058" colspan="12"><font size="2">◎註2：財團法人農漁會聯合資訊中心(910)<br>會員機構共計13 家，其代號皆為 910，包括：桃園縣桃園市農會、桃園縣大溪鎮農會、桃園縣楊梅鎮農會、桃園縣大園鄉農會、桃園縣蘆竹鄉農會、桃園縣龍潭鄉農會、桃園縣平鎮市農會、桃園縣新屋鄉農會、桃園縣龜山鄉農會、桃園縣八德市農會、桃園縣復興鄉農會、桃園縣桃園區漁會、新竹市新竹區漁會。</font></td></tr>
+<tr style="HEIGHT: 42.75pt; mso-height-source: userset" height="57">
+<td class="xl90" style="HEIGHT: 42.75pt; WIDTH: 793pt" height="57" width="1058" colspan="12"><font size="2">◎註3：板橋區農會電腦共用中心(928)<br>會員機構共計5家，其代號皆為928，包括：臺中市大里區農會、宜蘭縣冬山鄉農會、南投縣草屯鎮農會、新北市板橋區農會、新北市新莊區農會。</font></td></tr>
+<tr style="HEIGHT: 171.75pt; mso-height-source: userset" height="229">
+<td class="xl92" style="HEIGHT: 171.75pt; WIDTH: 793pt" height="229" width="1058" colspan="12"><font size="2">◎註4：新北市農會附設北區農會電腦共同利用中心(951)<br>會員機構共計55家，其代號皆為951，包括：新北市三重區農會、新北市樹林區農會、新北市鶯歌區農會、新北市三峽區農會、臺北市內湖區農會、新北市新店區農會、新北市淡水區農會、新北市三芝區農會、新北市瑞芳地區農會、新北市中和地區農會、新北市土城區農會、新北市蘆洲區農會、新北市五股區農會、新北市林口區農會、新北市泰山區農會、新北市深坑區農會、新北市坪林區農會、新北市八里區農會、新北市平溪區農會、新北市石門區農會、新北市金山地區農會、基隆市農會、新北市石碇區農會、臺北市士林區農會、臺北市北投區農會、臺北市南港區農會、臺北市木柵區農會、臺北市景美區農會、新北市瑞芳區漁會、新北市萬里區漁會、宜蘭縣蘇澳區漁會、宜蘭縣頭城區漁會、基隆市基隆區漁會、宜蘭市農會、宜蘭縣員山鄉農會、宜蘭縣羅東鎮農會、宜蘭縣蘇澳地區農會、宜蘭縣壯圍鄉農會、宜蘭縣三星地區農會、宜蘭縣頭城鎮農會、新竹市農會、新竹縣湖口鄉農會、竹東地區農會、新竹縣新埔鎮農會、新竹縣關西鎮農會、新竹縣竹北市農會、新竹縣芎林鄉農會、新竹縣橫山地區農會、宜蘭縣五結鄉農會、苗栗縣後龍鎮農會、新竹縣寶山鄉農會、新竹縣峨嵋鄉農會、新竹縣北埔鄉農會、新竹縣新豐鄉農會、省農會。</font></td></tr>
+<tr style="HEIGHT: 339pt; mso-height-source: userset" height="452">
+<td class="xl92" style="HEIGHT: 339pt; WIDTH: 793pt" height="452" width="1058" colspan="12" x:str="◎註5：財團法人農漁會南區資訊中心(952)
+會員機構共計129家，其代號皆為952，包括：臺中市神岡區農會、臺中市豐原區農會、雲林縣雲林區漁會、嘉義縣嘉義區漁會、臺南市南市區漁會、高雄市小港區漁會、高雄市興達港區漁會、高雄市林園區漁會、高雄市彌陀區漁會、高雄市永安區漁會、高雄市梓官區漁會、屏東縣琉球區漁會、屏東縣東港區漁會、屏東縣林邊區漁會、臺東縣新港區漁會、澎湖縣澎湖區漁會、南投縣名間鄉農會、彰化縣員林鎮農會、彰化縣二林鎮農會、彰化縣秀水鄉農會、彰化縣埔心鄉農會、彰化縣永靖鄉農會、彰化縣埤頭鄉農會、彰化縣竹塘鄉農會、彰化縣芬園鄉農會、彰化縣芳苑鄉農會、雲林縣斗六市農會、雲林縣虎尾鎮農會、雲林縣西螺鎮農會、雲林縣斗南鎮農會、雲林縣古坑鄉農會、雲林縣大埤鄉農會、雲林縣莿桐鄉農會、雲林縣二崙鄉農會、雲林縣崙背鄉農會、雲林縣臺西鄉農會、雲林縣褒忠鄉農會、雲林縣四湖鄉農會、雲林縣口湖鄉農會、嘉義縣朴子市農會、嘉義縣布袋鎮農會、嘉義縣大林鎮農會、嘉義縣民雄鄉農會、嘉義縣溪口鄉農會、嘉義縣東石鄉農會、嘉義縣義竹鄉農會、嘉義縣鹿草鄉農會、嘉義縣太保市農會、嘉義縣水上鄉農會、嘉義縣番路鄉農會、嘉義縣竹崎鄉農會、嘉義縣梅山鄉農會、嘉義縣新港鄉農會、嘉義縣六腳鄉農會、嘉義縣大埔鄉農會、嘉義縣嘉義市農會、臺南市新營區農會、臺南市鹽水區農會、臺南市六甲區農會、臺南市佳里區農會、臺南市西港區農會、臺南市將軍區農會、臺南市北門區農會、臺南市善化區農會、臺南市玉井區農會、臺南市楠西區農會、臺南市歸仁區農會、臺南市永康區農會、高雄市鳳山區農會、高雄市岡山區農會、高雄市旗山區農會、高雄市美濃區農會、高雄市林園區農會、高雄市大寮區農會、高雄市大樹區農會、高雄市仁武區農會、高雄市大社區農會、高雄市鳥松區農會、高雄市橋頭區農會、高雄市燕巢區農會、高雄市田寮區農會、高雄市阿蓮區農會、高雄市路竹區農會、高雄市湖內區農會、高雄市茄萣區農會、高雄市永安區農會、高雄市彌陀區農會、高雄市梓官區農會、高雄市六龜區農會、高雄市杉林區農會、高雄市內門區農會、高雄市甲仙地區農會、高雄市小港區農會、屏東縣東港鎮農會、屏東縣恆春鎮農會、屏東縣麟洛鄉農會、屏東縣九如鄉農會、屏東縣里港鄉農會、屏東縣崁頂鄉農會信用部、屏東縣南州鄉農會、屏東縣琉球鄉農會、屏東縣滿州鄉農會、屏東縣枋山地區農會、花蓮縣吉安鄉農會、花蓮縣壽豐鄉農會、花蓮縣富里鄉農會、花蓮縣新秀地區農會、臺東縣關山鄉農會、臺東縣成功鎮農會、臺東縣池上鄉農會、臺東縣東河鄉農會、臺東縣長濱鄉農會、臺東縣臺東地區農會、臺東縣鹿野鄉農會、臺東縣太麻里地區農會、澎湖縣農會、連江縣農會、屏東市農會、屏東縣車城地區農會、屏東縣農會、屏東縣坊寮地區農會、屏東縣竹田鄉農會、屏東縣萬丹鄉農會、屏東縣長治鄉農會。"><font size="2">◎註5：財團法人農漁會南區資訊中心(952)<br>會員機構共計131家，其代號皆為952，包括：臺中市神岡區農會、臺中市豐原區農會、雲林縣雲林區漁會、嘉義縣嘉義區漁會、臺南市南市區漁會、台南市南縣漁會、高雄市高雄區漁會、高雄市小港區漁會、高雄市興達港區漁會、高雄市林園區漁會、高雄市彌陀區漁會、高雄市永安區漁會、高雄市梓官區漁會、屏東縣琉球區漁會、屏東縣東港區漁會、屏東縣林邊區漁會、臺東縣新港區漁會、澎湖縣澎湖區漁會、南投縣名間鄉農會、彰化縣員林鎮農會、彰化縣二林鎮農會、彰化縣秀水鄉農會、彰化縣埔心鄉農會、彰化縣永靖鄉農會、彰化縣埤頭鄉農會、彰化縣竹塘鄉農會、彰化縣芬園鄉農會、彰化縣芳苑鄉農會、雲林縣斗六市農會、雲林縣虎尾鎮農會、雲林縣西螺鎮農會、雲林縣斗南鎮農會、雲林縣古坑鄉農會、雲林縣大埤鄉農會、雲林縣莿桐鄉農會、雲林縣二崙鄉農會、雲林縣崙背鄉農會、雲林縣臺西鄉農會、雲林縣褒忠鄉農會、雲林縣四湖鄉農會、雲林縣口湖鄉農會、嘉義縣朴子市農會、嘉義縣布袋鎮農會、嘉義縣大林鎮農會、嘉義縣民雄鄉農會、嘉義縣溪口鄉農會、嘉義縣東石鄉農會、嘉義縣義竹鄉農會、嘉義縣鹿草鄉農會、嘉義縣太保市農會、嘉義縣水上鄉農會、嘉義縣番路鄉農會、嘉義縣竹崎地區農會、嘉義縣梅山鄉農會、嘉義縣新港鄉農會、嘉義縣六腳鄉農會、嘉義縣嘉義市農會、臺南市新營區農會、臺南市鹽水區農會、臺南市六甲區農會、臺南市佳里區農會、臺南市西港區農會、臺南市將軍區農會、臺南市北門區農會、臺南市善化區農會、臺南市玉井區農會、臺南市楠西區農會、臺南市歸仁區農會、臺南市永康區農會、高雄市鳳山區農會、高雄市岡山區農會、高雄市旗山區農會、高雄市美濃區農會、高雄市林園區農會、高雄市大寮區農會、高雄市大樹區農會、高雄市仁武區農會、高雄市大社區農會、高雄市鳥松區農會、高雄市橋頭區農會、高雄市燕巢區農會、高雄市田寮區農會、高雄市阿蓮區農會、高雄市路竹區農會、高雄市湖內區農會、高雄市茄萣區農會、高雄市永安區農會、高雄市彌陀區農會、高雄市梓官區農會、高雄市六龜區農會、高雄市杉林區農會、高雄市內門區農會、高雄市甲仙地區農會、高雄市小港區農會、屏東縣東港鎮農會、屏東縣恆春鎮農會、屏東縣麟洛鄉農會、屏東縣九如鄉農會、屏東縣里港鄉農會、屏東縣崁頂鄉農會、屏東縣南州鄉農會、屏東縣琉球鄉農會、屏東縣滿州鄉農會、屏東縣枋山地區農會、花蓮縣吉安鄉農會、花蓮縣壽豐鄉農會、花蓮縣富里鄉農會、花蓮縣新秀地區農會、臺東縣關山鄉農會、臺東縣成功鎮農會、臺東縣池上鄉農會、臺東縣東河鄉農會、臺東縣長濱鄉農會、臺東縣臺東地區農會、臺東縣鹿野鄉農會、臺東縣太麻里地區農會、澎湖縣農會、連江縣農會、屏東市農會、屏東縣車城地區農會、屏東縣農會、屏東縣坊寮地區農會、屏東縣竹田鄉農會、屏東縣萬丹鄉農會、屏東縣長治鄉農會、屏東縣林邊鄉農會、屏東縣佳冬鄉農會、屏東縣高樹鄉農會、屏東縣萬巒地區農會、屏東縣新園鄉農會、金門縣金門區漁會。</font></td></tr>
+<tr style="HEIGHT: 278.25pt; mso-height-source: userset" height="371">
+<td class="xl92" style="HEIGHT: 278.25pt; WIDTH: 793pt" height="371" width="1058" colspan="12"><font size="2">◎註6：財團法人農漁會中區資訊中心 (954)<br>會員機構共計100家，其代號皆為 954，包括：宜蘭縣礁溪鄉農會、彰化縣二水鄉農會、苗栗縣公館鄉農會、嘉義縣阿里山鄉農會、臺中市大安區農會、臺中市大肚區農會、臺中市龍井區農會、苗栗縣獅潭鄉農會、苗栗縣南龍區漁會、苗栗縣卓蘭鎮農會、苗栗縣竹南鎮農會、苗栗縣頭份市農會、苗栗縣三灣鄉農會、苗栗縣造橋鄉農會、苗栗縣頭屋鄉農會、苗栗縣苗栗市農會、苗栗縣西湖鄉農會、苗栗縣通霄鎮農會、苗栗縣銅鑼鄉農會、南投縣南投市農會、南投縣水里鄉農會、南投縣信義鄉農會、南投縣集集鎮農會、南投縣埔里鎮農會、南投縣中寮鄉農會、南投縣魚池鄉農會、南投縣國姓鄉農會、南投縣鹿谷鄉農會、南投縣仁愛鄉農會、苗栗縣苑裡鎮農會、苗栗縣三義鄉農會、苗栗縣大湖地區農會、苗栗縣南庄鄉農會、彰化縣線西鄉農會、花蓮縣花蓮市農會、彰化縣田尾鄉農會、彰化縣北斗鎮農會、臺中市太平區農會、臺中市大甲區農會、臺中市石岡區農會、臺中市新社區農會、臺中市梧棲區農會、臺中市后里區農會、臺中市清水區農會、臺中市霧峰區農會、臺中市外埔區農會、臺中市烏日區農會、臺中市潭子區農會、彰化縣伸港鄉農會、彰化縣和美鎮農會、彰化縣花壇鄉農會、彰化縣大村鄉農會、彰化縣溪湖鎮農會、彰化縣社頭鄉農會、彰化縣大城鄉農會、彰化縣溪州鄉農會、彰化縣田中鎮農會、南投縣竹山鎮農會、雲林縣麥寮鄉農會、雲林縣東勢鄉農會、雲林縣土庫鎮農會、雲林縣元長鄉農會、雲林縣北港鎮農會、雲林縣水林鄉農會、嘉義縣中埔鄉農會、彰化縣鹿港鎮農會、花蓮縣瑞穗鄉農會、花蓮縣玉溪地區農會、臺南市官田區農會、臺南市大內區農會、臺南市新市區農會、臺南市左鎮區農會、臺南市山上區農會、臺南市柳營區農會、臺南市學甲區農會、臺南市下營區農會、臺南市麻豆區農會、臺南市仁德區農會、臺南市關廟區農會、臺南市龍崎區農會、臺南市安定區農會、臺南市白河區農會、臺南市東山區農會、臺南市後壁區農會、臺南市新化區農會、臺南市七股區農會、臺南市南化區農會、彰化縣彰化區漁會、屏東縣內埔地區農會、花蓮縣鳳榮地區農會、花蓮縣光豐地區農會、臺中市和平區農會、臺中市大雅區農會、苗栗縣通苑區漁會、臺中市東勢區農會、臺中市沙鹿區農會、彰化縣福興鄉農會、雲林縣林內鄉農會、彰化縣埔鹽鄉農會、彰化縣彰化市農會。</font></td></tr></tbody></table>
+<!-- 以繳費限額示意:end -->
+
+
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+		<div class="container">
+			<ul class="footernav clearfix">
+				<li><a href="#"><img src="img/bank-logo.png" alt="中華民國銀行公會"></a></li>
+				<li><a href="#">關於e-Bill</a></li>
+				<li><a href="#">隱私權聲明</a></li>
+				<li><a href="#">使用聲明</a></li>
+				<li><a href="#">個人資料保護法告知義務內容</a></li>
+			</ul>
+			<p>全國繳費網 版權所有 轉載必究 © 2016 ALL RIGHT RESERVED.  本網站委託財金資訊股份有限公司維運</p>
+			<p class="mobile-none">如有任何問題或建議請至<a href="#" class="email">意見信箱</a>留下您寶貴的意見</p>
+			<p class="mobile-none">有關業務及推廣事務請於上班時間(週一至週五 09:00~17:00)洽銀行公會(02)85962323</p>
+			<p class="mobile-none">如有操作或帳務問題請於上班時間(週一至週五 09:00~17:00)洽財金公司0800-767-168或(02)2631-9800按1400</p>
+			<div class="app-qr">
+				<h6>全國繳費網APP</h6>
+				<ul>
+					<li><a href="#"><img src="img/qr-android.jpg" alt="Android APP"><span>Android</span></a></li>
+					<li><a href="#"><img src="img/qr-ios.jpg" alt="iOS APP"><span>iOS</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
