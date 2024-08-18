@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>guild_icon_invite_16px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,9.33333333 C7.47275933,9.33333333 8.66666667,8.139426 8.66666667,6.66666667 C8.66666667,5.19390733 7.47275933,4 6,4 C4.52724067,4 3.33333333,5.19390733 3.33333333,6.66666667 C3.33333333,8.139426 4.52724067,9.33333333 6,9.33333333 Z M6,10.6666667 C4.22,10.6666667 0.666666667,11.56 0.666666667,13.3333333 L0.666666667,14.6666667 L11.3333333,14.6666667 L11.3333333,13.3333333 C11.3333333,11.56 7.78,10.6666667 6,10.6666667 Z M10.0533333,5.36666667 C10.6133333,6.15333333 10.6133333,7.17333333 10.0533333,7.96 L11.1733333,9.08666667 C12.52,7.74 12.52,5.70666667 11.1733333,4.24 L10.0533333,5.36666667 Z M13.38,2 L12.2933333,3.08666667 C14.14,5.1 14.14,8.12666667 12.2933333,10.2466667 L13.38,11.3333333 C15.98,8.74 15.9866667,4.7 13.38,2 Z" id="path-1"></path>
+    </defs>
+    <g id="guild_icon_invite_16px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="群組-10">
+            <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icon/action/record_voice_over_24px" fill-opacity="0.5" fill="#1A1A1A" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

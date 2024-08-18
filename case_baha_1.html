@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phoebe Chen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/kube.min.css" />
+     <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<style>
+ mobile{
+    display: flex;
+    flex-flow: column nowrap;
+    background: white;
+    margin: 0 auto 120px;
+    width: 380px;
+    max-width: 96%;
+    height: 640px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:0px 12px 24px #0004;
+  }
+  .mobile-status-bar img{
+    width:100%;
+  }
+  .mobile-container{
+    height:100%;
+    max-height: 600px;
+    overflow:auto;
+  }
+</style>
+<body class="page page-case">
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				   
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="index.html">關於我</a></li>
+				        <li><a href="index.html#experiences">工作經驗</a></li>
+				        <li><a href="index.html#achievements">接案經驗</a></li>
+				        <li><a href="index.html#skills">專業技能</a></li>
+				        <li><a href="case.html">作品案例</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+<section>
+    <div class="container container2 section">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <article>
+            <h1 class="title  wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">巴哈姆特文章 Web View 改版</h1>
+            <p>隨著用戶需求的變化和技術的進步，巴哈姆特決定對文章 Web View 進行全面的改版，以提升閱讀體驗、增強互動性並統一設計風格。巴哈姆特 APP 的文章頁選擇使用 Web View 進行開發，由於 Web View 可以在不同平台上重複使用相同的代碼，這可以大幅減少開發時間和成本。<br>相比於需要針對 iOS 和 Android 等多個平台進行原生開發，Web View 支持所見即所得編輯器（WYSIWYG），是一個更快速穩定的選擇。</p>
+            <p>在 APP 文章頁改版專案中，我負責整體的視覺設計和設計系統的開發，同時也參與了前端切版工作，確保設計理念在實際產品中得到精確呈現。</p>
+          </article>
+          <mobile>
+            <div class="mobile-status-bar">
+              <img src="https://i.imgur.com/XSqz2K4.png" alt="">
+              <img src="case/case_baha/header.jpg" alt="">
+            </div>
+            <div class='mobile-container'>
+              <iframe src="case/case_baha/article_webview.html" width="100%" height="100%"></iframe>
+            </div>
+          </mobile>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="text-center"></div>
+  </section>
+
+      <!-- Swiper -->
+      <div class="swiper-container">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide"> <a href="case01.html"><img class="img-fluid" src="img/photo-1.jpg" alt="Photo"></a></div>
+            <div class="swiper-slide"> <a href="case/case_web_01/index.html" target="_blank"><img class="img-fluid" src="img/photo-2.jpg" alt="Photo"></a></div>
+            <div class="swiper-slide"><img class="img-fluid" src="img/photo-3.jpg" alt="Photo"></div>
+         </div>
+         <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+         <!-- Add Arrows -->
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+      </div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Email: m88111235@gmail.com</p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:m88111235@gmail.com"><i class="fa fa-send"></i></a></li>
+						<li><a href="https://www.facebook.com/shinmin.chen.1?ref=tn_tnmn"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.instagram.com/phoebe___1226/n"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["Phoebe Chen", "UI Designer"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+
+  <script type="text/javascript">
+    $('.navigation-toggle').click(function() {
+      $('#navbar-1').toggle('Display');
+    });
+    $('#navbar-1 a').click(function() {
+      $('#navbar-1').toggle('Display');
+    });
+  </script>
+      <!-- Swiper JS -->
+      <script src="js/swiper.min.js"></script>
+      <script>
+         var swiper = new Swiper('.swiper-container', {
+           loop: true,
+           loopFillGroupWithBlank: true,
+           pagination: {
+             el: '.swiper-pagination',
+             clickable: true,
+           },
+           breakpoints: {
+         400: {
+           slidesPerView: 1,
+           slidesPerGroup: 1,
+           spaceBetween: 30,
+         },
+         768: {
+           slidesPerView: 2,
+           slidesPerGroup: 1,
+           spaceBetween: 30,
+         },
+         1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 30,
+         },
+         },
+           keyboard: {
+               enabled: true,
+               onlyInViewport: false,
+            },
+           navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+           },
+         });
+      </script>
+</body>
+</html>
