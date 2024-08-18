@@ -37,6 +37,41 @@
     max-height: 600px;
     overflow:auto;
   }
+  .scroll {
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.scroll svg {
+  width: 14px;
+  display: block;
+  margin: 10px auto;
+}
+.scroll svg .arrow {
+  -webkit-animation: scroll 0.35s ease-in alternate infinite;
+          animation: scroll 0.35s ease-in alternate infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 </style>
 <body class="page page-case">
 	<!-- Navigation -->
@@ -69,6 +104,13 @@
             <p>隨著用戶需求的變化和技術的進步，巴哈姆特決定對文章 Web View 進行全面的改版，以提升閱讀體驗、增強互動性並統一設計風格。巴哈姆特 APP 的文章頁選擇使用 Web View 進行開發，由於 Web View 可以在不同平台上重複使用相同的代碼，這可以大幅減少開發時間和成本。<br>相比於需要針對 iOS 和 Android 等多個平台進行原生開發，Web View 支持所見即所得編輯器（WYSIWYG），是一個更快速穩定的選擇。</p>
             <p>在 APP 文章頁改版專案中，我負責整體的視覺設計和設計系統的開發，同時也參與了前端切版工作，確保設計理念在實際產品中得到精確呈現。</p>
           </article>
+          <div class="scroll">
+            scroll
+            <svg version="1.1" id="svg-arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 35" style="enable-background:new 0 0 22 35;" xml:space="preserve">
+              <polygon class="arrow" style="fill:#000000;" points="20.58,11.584 12.004,20.158 12.004,0 9.996,0 9.996,20.158 1.42,11.584 0,13.004 11,24
+                    22,13.004 "></polygon>
+            </svg>
+          </div>
           <mobile>
             <div class="mobile-status-bar">
               <img src="https://i.imgur.com/XSqz2K4.png" alt="">
