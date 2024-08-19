@@ -42,15 +42,25 @@ input, button {
   margin: auto;
   max-width: 1000px;
   padding: 0 20px; }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
-
-
 .main-nav .container {
   max-width: 1000px;
 }
-
+.container.margin-top{
+  margin-top: 120px;
+}
+.container.section  {
+  margin-top: 80px;
+}
 .navbar {
   padding: 0;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -58,6 +68,9 @@ input, button {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+    .container.margin-top {
+      margin-top: 80px;
+  }
 
   footer {
     text-align: center; } }
@@ -100,7 +113,7 @@ input, button {
     opacity: 1; } }
 .main-nav {
   background: #f4f4f4;
-  padding-top: 23px; }
+  padding-top: 20px; }
   .main-nav nav ul li a {
     color: #a7a7a7; }
   .main-nav nav ul li.active a {
@@ -121,7 +134,7 @@ input, button {
     position: relative; }
 
 .intro {
-  padding: 95px 0px 70px 0px;
+  padding: 152px 0px 70px 0px;
   overflow-x: hidden; }
   .intro img {
     min-width: 148px;

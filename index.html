@@ -32,7 +32,7 @@
 				</div>
 			    <nav id="navbar-1" class="navbar item-nav">
 				    <ul>
-				        <li class="active"><a href="index.html">關於我</a></li>
+				        <li class="active"><a href="index.html#about">關於我</a></li>
 				        <li><a href="index.html#experiences">工作經驗</a></li>
 				        <li><a href="index.html#achievements">接案經驗</a></li>
 				        <li><a href="index.html#skills">專業技能</a></li>
@@ -248,6 +248,32 @@
 				$('#navbar-1').toggle('Display');
 			});
 		}
+	</script>
+	<script>
+$(document).ready(function () {
+    // 監聽滾動事件
+    $(window).on('scroll', function () {
+        // 遍歷每一個錨點
+        $('#navbar-1 a').each(function () {
+            // 取得當前錨點對應的目標區塊的offset位置
+            var target = $(this.hash);
+            if (target.length) {
+                var scrollPosition = $(window).scrollTop();
+                var targetPosition = target.offset().top - 92;
+                var targetHeight = target.outerHeight();
+
+                // 判斷滾動位置是否在該區塊範圍內
+                if (scrollPosition >= targetPosition && scrollPosition < targetPosition + targetHeight) {
+                    // 移除其他li的active類別，並將當前li設為active
+                    $('#navbar-1 li').removeClass('active');
+                    $(this).parent().addClass('active');
+                }
+            }
+        });
+    });
+});
+
+
 	</script>
       <!-- Swiper JS -->
       <script src="js/swiper.min.js"></script>
