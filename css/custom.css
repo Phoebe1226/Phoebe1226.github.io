@@ -519,7 +519,7 @@ footer {
 
 /*page*/
 .case-header {
-    height: 115vh;
+    min-height: 115vh;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
