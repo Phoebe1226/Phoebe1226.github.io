@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- PAGE TITLE -->
+    <title>（二下）創新服務設計期末</title>
+    <!-- ALL GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="assets/fonts/remixicon.css" />
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- NICE SELECT CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css" />
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <!-- SPACING CSS -->
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.css" />
+    <style>
+        #audioModal {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        }
+
+        #audioPlayer {
+        background: #fff;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+.psv-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- START PRELOADER AREA-->
+    <div id="preloader-area">
+        <div class="loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER AREA -->
+    <!-- START MENU DESIGN AREA -->
+    <header class="main-header">
+        <div class="header-upper">
+            <div class="container">
+                <div class="header-inner d-flex align-items-center">
+                    <!-- START LOGO DESIGN AREA -->
+                    <div class="logo-outer">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="Logo" title="Logo" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / END MENU DESIGN AREA -->
+    <!-- START HEADER DESIGN AREA -->
+    <section id="home" class="main-hero-area">
+        <div class="container">
+            <div class="container-inner">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-sm-12">
+                        <!-- START HERO DESIGN AREA -->
+                        <div class="hero-content rmb-25 wow fadeInUp delay-0-2s text-center">
+                            <h1>I'm <span>Kane</span> Walker</h1>
+                            <div class="job">
+                                <span>UI Designer</span><span>Webflow Developer</span><span>Marketer</span>
+                            </div>
+                        </div>
+                        <!-- / END HERO DESIGN AREA -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END HEADER DESIGN AREA -->
+     
+    <!-- START ABOUT DESIGN AREA -->
+
+    <section id="about" class="about-area">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- START ABOUT IMAGE DESIGN AREA -->
+      <div class="col-lg-7">
+        <div class="about-image-part wow fadeInUp delay-0-3s">
+          <img src="assets/working/2-1-1.jpg" alt="札達土林">
+          <h2>札達土林國家地質公園入口</h2>
+          <div class="about-btn btn-one text-center mt-3">
+            <h6 style=" white-space: nowrap;">語音導覽</h6>
+            <div class="circle pulse color-pulse"></div>
+          </div>
+          
+            <audio controls src="assets/working/2-2-1.mp3" style="width:100%;"></audio>
+        </div>
+      </div>
+      <!-- / END ABOUT IMAGE DESIGN AREA -->
+
+      <!-- START ABOUT TEXT DESIGN AREA -->
+      <div class="col-lg-5">
+        <div class="about-content-part wow fadeInUp delay-0-2s">
+          <h2>
+            高原上的地質奇觀
+          </h2>
+          <p>
+            這張照片攝於札達土林國家地質公園入口，畫面中央立有石碑，背景為一望無際的荒漠地貌與壯闊藍天，晴朗天氣映照下，巨石與遠山相映成趣，展現獨特的高原地質風貌。
+          </p>
+          <div class="d-flex">
+            <div class="hero-btns">
+                <a href="assets/working/2-3-1.mp4" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+            </div>
+            <div class="hero-btns">
+                <a href="assets/working/3-1.mov" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+            </div>
+         </div>
+          <ul class="list-style-one two-column wow fadeInUp delay-0-2s">
+                <li><a href="https://www.google.com/maps?q=Zanda+Earth+Forest" target="_blank"></a><i class="ri-arrow-right-up-line"></i>Google 地圖</li>
+           </ul>
+        </div>
+      </div>
+      <!-- / END ABOUT TEXT DESIGN AREA -->
+    </div>
+  </div>
+</section>
+
+    <section id="tibet-scenes" class="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="section-title text-center wow fadeInUp delay-0-2s">
+                        <p>西藏文化地景探索旅程</p>
+                        <h2>從札達土林到拉薩老城</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 場景 2 -->
+                <div class="col-md-6">
+                    <div class="service-item wow fadeInUp delay-0-2s">
+                        <i class="ri-landscape-line"></i>
+                        <h4>荒野中的歇腳處</h4>
+                        <p>這張照片拍攝於西藏高原寬闊的戶外地帶，視野開闊，遠方可見停靠的大巴與標示牌，象徵旅程的起點或歇腳處。厚重雲層鋪滿整片天空，陽光透過雲隙灑落大地，與地面裂紋交織出蒼涼卻壯麗的氛圍。</p>
+                        <p><strong>地點：</strong>通往札達土林的郊外道路（近阿里地區）<br>
+                        <a href="https://www.google.com/maps?q=Zanda,+Ali,+Tibet,+China" target="_blank">查看地圖</a></p>
+                        <div class="media-content">
+                            <img src="assets/working/2-1-2.jpg" alt="場景2" class="img-fluid">
+                            <audio controls>
+                                <source src="assets/working/2-2-2.mp3" type="audio/mp3">
+                            </audio>
+                            <div class="d-flex">
+                                <div class="hero-btns">
+                                    <a href="assets/working/2-3-2.mp4" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                                </div>
+                                <div class="hero-btns">
+                                    <a href="assets/working/3-2.mov" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 場景 3 -->
+                <div class="col-md-6">
+                    <div class="service-item wow fadeInUp delay-0-4s">
+                        <i class="ri-building-line"></i>
+                        <h4>八廓街文化街區</h4>
+                        <p>這張照片拍攝於一處融合藏式建築風格的街道，兩旁白牆建築點綴著木窗與彩色花飾，屋頂高掛經幡。地面鋪設整齊石板路，街區整潔有序，遊客悠閒行走其間，體驗文化與市集交融的旅遊風情。</p>
+                        <p><strong>地點：</strong>拉薩八廓街／老城區內商圈<br>
+                        <a href="https://www.google.com/maps/search/Barkhor+Street,+Lhasa,+Tibet" target="_blank">查看地圖</a></p>
+                        <div class="media-content">
+                            <img src="assets/working/2-1-3.png" alt="場景3" class="img-fluid">
+                            <audio controls>
+                                <source src="assets/working/2-2-3.mp3" type="audio/mp3">
+                            </audio>
+                            
+                            <div class="d-flex">
+                                <div class="hero-btns">
+                                    <a href="assets/working/2-3-3.mp4" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                                </div>
+                                <div class="hero-btns">
+                                    <a href="assets/working/3-3.mov" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- START RESUME EXPERIENCE DESIGN AREA -->
+    <section id="resume" class="resume-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="section-title text-center wow fadeInUp delay-0-2s">
+                        <p>Experience</p>
+                        <h2> Professional Resume</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-items">
+                <div class="row">
+                    <!-- START EXPERIENCE RESUME DESIGN AREA -->
+                    <div class="col-xl-6 col-md-6">
+                        <div class="experience-list">
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2021 - Present</span>
+                                    <h4>Themeforest Market</h4>
+                                    <span class="company"> Web Designer </span>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2021 - 2023</span>
+                                    <h4>Envato Theme Developer</h4>
+                                    <span class="company">Web Development</span>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2021 - 2022</span>
+                                    <h4> Marketing Expert GRP</h4>
+                                    <span class="company">Web Developer & Business Partner</span>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                        </div>
+                    </div>
+                    <!-- // END EXPERIENCE RESUME DESIGN AREA -->
+                    <!-- START EDUCATION RESUME DESIGN AREA -->
+                    <div class="col-xl-6 col-md-6">
+                        <div class="experience-list">
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2013 - 2015</span>
+                                    <h4>Bachelor Degree of Information Technology</h4>
+                                    <span class="company">State University bangladesh
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2021 - 2024</span>
+                                    <h4>Higher secoundery Education </h4>
+                                    <span class="company">Premium College United VC</span>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2021 - 2024</span>
+                                    <h4>Webster College</h4>
+                                    <span class="company"> UI/UX Design </span>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="blog" class="blog-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12">
+        <div class="section-title text-center wow fadeInUp delay-0-2s">
+          <p>blog</p>
+          <h2>Latest Blog</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- START SCENE 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-item wow fadeInUp delay-0-2s">
+          <div class="image">
+           <div class="psv-container" id="viewer-4"></div>
+          </div>
+          <div class="content">
+            <div class="blog-meta mt-15">
+              <a class="date" href="#"><i class="far fa-calendar-alt"></i> 西藏文化旅程</a>
+            </div>
+            <h5>
+              <a href="#">藏式風情中庭 — 民宿歇息之地</a>
+            </h5>
+            <p>照片展示一處融合藏式風情的中庭空間，石階與白牆建築交織，天際懸掛色彩繽紛的經幡隨風飄揚，營造出歡愉與神聖交融的氛圍。</p>
+            <audio controls>
+              <source src="assets/working/2-2-4.mp3" type="audio/mp3">
+              您的瀏覽器不支援音訊播放。
+            </audio>
+            
+            <div class="d-flex">
+                <div class="hero-btns">
+                <a href="assets/working/3-4.mov" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                </div>
+                <div class="hero-btns">
+                    <a href="assets/working/3-4.mp4" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                </div>
+            </div>
+            <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated">
+              <li><a href="https://www.google.com/maps?q=Barkhor+Street,+Lhasa,+Tibet" target="_blank"><i class="ri-arrow-right-up-line"></i>Google 地圖</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END SCENE 4 -->
+
+      <!-- START SCENE 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-item wow fadeInUp delay-0-4s">
+          <div class="image">
+            <img src="assets/working/2-1-5.png" alt="Scene 5" />
+          </div>
+          <div class="content">
+            <div class="blog-meta mt-15">
+              <a class="date" href="#"><i class="far fa-calendar-alt"></i> 西藏文化旅程</a>
+            </div>
+            <h5>
+              <a href="#">寺廟屋頂走道 — 靜謐的信仰角度</a>
+            </h5>
+            <p>照片拍攝於藏地寺廟的屋頂走道，可遠眺雪山與城市景致，轉經筒與宗教裝飾展現濃厚的藏傳佛教氛圍，外牆色調莊嚴典雅。</p>
+            <audio controls>
+              <source src="assets/working/2-2-5.mp3" type="audio/mp3">
+              您的瀏覽器不支援音訊播放。
+            </audio>
+            <div class="d-flex">
+                <div class="hero-btns">
+                <a href="assets/working/3-5.mov" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                </div>
+                
+                <div class="hero-btns">
+                    <a href="assets/working/3-5.mp4" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                </div>
+            </div>
+            <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated">
+              <li><a href="https://www.google.com/maps?q=Jokhang+Temple,+Lhasa,+Tibet" target="_blank"><i class="ri-arrow-right-up-line"></i>Google 地圖</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END SCENE 5 -->
+
+      <!-- START SCENE 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-item wow fadeInUp delay-0-4s">
+          <div class="image">
+            <img src="assets/working/2-1-6.png" alt="Scene 6" />
+          </div>
+          <div class="content">
+            <div class="blog-meta mt-15">
+              <a class="date" href="#"><i class="far fa-calendar-alt"></i> 西藏文化旅程</a>
+            </div>
+            <h5>
+              <a href="#">八廊街轉經輪區 — 信仰融入生活</a>
+            </h5>
+            <p>畫面中可見一排金色轉經筒，街道上人潮熙攘，融合當地信仰與日常生活，展現藏族文化風貌與溫暖氛圍。</p>
+            <audio controls>
+              <source src="assets/working/2-2-6.mp3" type="audio/mp3">
+              您的瀏覽器不支援音訊播放。
+            </audio>
+            <div class="d-flex">
+                <div class="hero-btns">
+                <a href="assets/working/3-6.mov" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                </div>
+                
+                <div class="hero-btns">
+                    <a href="assets/working/3-6.mp4" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                </div>
+            </div>
+            <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated">
+              <li><a href="https://www.google.com/maps?q=Barkhor+Street,+Lhasa,+Tibet" target="_blank"><i class="ri-arrow-right-up-line"></i>Google 地圖</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END SCENE 6 -->
+    </div>
+  </div>
+</section>
+    
+    <div class="progress-wrap cursor-pointer">
+        <i class="ri-arrow-up-double-line"></i>
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- / END SCROOL UP DESIGN AREA -->
+    <!-- JQUERY JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- APPEAR JS -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- MAGNIFICANT JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- SLICK JS-->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- NICE SELECT JS-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- IMAGE LOADER JS-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- ISOTOPE JS-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  WOW ANIMATION JS-->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- SCRIPT JS-->
+    <script src="assets/js/script.js"></script>
+    <script>
+  document.querySelectorAll('.voice-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const audioSrc = btn.getAttribute('data-audio');
+      const audioModal = document.getElementById('audioModal');
+      const audioPlayer = document.getElementById('audioPlayer');
+      audioPlayer.src = audioSrc;
+      audioModal.style.display = 'flex';
+    });
+  });
+  document.getElementById('audioModal').addEventListener('click', () => {
+    document.getElementById('audioModal').style.display = 'none';
+    document.getElementById('audioPlayer').pause();
+  });
+</script>
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.popup-video').magnificPopup({
+      type: 'video'
+    });
+  });
+</script>
+<!-- JS -->
+ <script src="https://cdn.jsdelivr.net/npm/three@0.147/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const viewer = new PhotoSphereViewer.Viewer({
+        container: document.getElementById('viewer-4'),
+        panorama: 'assets/working/2-1-4.png', // <-- 你的圖片路徑
+        navbar: ['zoom', 'fullscreen'],
+        loadingImg: null,
+        defaultLong: Math.PI,
+        mousewheel: true,
+        autorotateDelay: 1000,
+        autorotateSpeed: '1rpm',
+        useXmpData: false,
+        size: {
+          width: '100%',
+          height: '100%',
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
