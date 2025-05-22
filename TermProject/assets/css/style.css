@@ -1544,6 +1544,9 @@ ul.extra-skills li i {
     padding: 40px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .resume-item {

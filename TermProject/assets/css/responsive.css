@@ -1278,4 +1278,28 @@ Version      : 1.0
         padding-right: 0;
         padding-left: 0;
     }
+    .experience-list {
+        border-radius: 0;
+        border: none;
+    }
+    .experience-list:first-child {
+        padding-bottom: 0;
+    }
+    .resume-items {
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    .about-area {
+        padding-top: 40px;
+    }
+    .about-content-part {
+        text-align: center;
+    }
+    .about-content-part  .d-flex ,
+    .about-content-part  .list-style-one.two-column li{
+    justify-content: center;
+    }
+    .blog-area {
+        padding-top: 80px;
+    }
 }
