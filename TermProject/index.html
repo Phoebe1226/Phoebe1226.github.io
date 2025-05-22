@@ -604,32 +604,28 @@
   });
 
   // 監聽所有 .popup-video 按鈕
-  document.querySelectorAll('.popup-video').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const videoSrc = this.getAttribute('href');
+  document.querySelectorAll('.popup-720-video').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const videoSrc = this.getAttribute('href');
+    const videoContainer = modalEl.querySelector('.ratio');
 
-      // 判斷是否是720度全景影片 (有 .popup-720-video class)
-      if (this.classList.contains('popup-720-video')) {
-        // 替換 modal 內容為 video.js VR 播放器
-        videoContainer.innerHTML = `
-          <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous">
-            <source src="${videoSrc}" type="video/mp4" />
-          </video>
-        `;
-        modal.show();
+    videoContainer.innerHTML = `
+      <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous" style="height: 400px; max-height: 80vh;">
+        <source src="${videoSrc}" type="video/mp4" />
+      </video>
+    `;
 
-        // 初始化 video.js + VR 插件
-        window.player360 = videojs('videoPlayer360');
-        window.player360.vr({ projection: '360' });
-      } else {
-        // 一般影片，使用原生 video 播放器
-        clearVideoPlayer(); // 確保切換前清理
-        const videoPlayer = modalEl.querySelector('#videoPlayer');
-        videoPlayer.src = videoSrc;
-        modal.show();
-      }
-    });
+    modal.show();
+
+    // 延遲初始化，確保DOM更新完畢
+    setTimeout(() => {
+      window.player360 = videojs('videoPlayer360');
+      window.player360.vr({ projection: '360' });
+    }, 100);
+  });
+});
+
   });
 </script>
 
