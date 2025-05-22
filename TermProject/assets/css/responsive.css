@@ -1269,6 +1269,13 @@ Version      : 1.0
 
 @media only screen and (max-width: 991px) {
     .main-menu .navbar-collapse li ul li {
-        padding: 0 15px;
+       padding: 0 15px;
+    }
+    .blog-item .content .theme-btn{
+       padding: 20px; 
+    }
+    .about-image-part {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
