@@ -589,12 +589,10 @@
 
   // 用來清理 modal 內容與播放器
   function clearVideoPlayer() {
-    // 如果 video.js VR 播放器存在，先銷毀
     if (window.player360) {
       window.player360.dispose();
       window.player360 = null;
     }
-    // 恢復 modal 內容為原生 video
     videoContainer.innerHTML = `<video id="videoPlayer" class="w-100" controls autoplay></video>`;
   }
 
@@ -603,32 +601,29 @@
     clearVideoPlayer();
   });
 
-  // 監聽所有 .popup-video 按鈕
+  // 監聽所有 .popup-720-video 按鈕
   document.querySelectorAll('.popup-720-video').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const videoSrc = this.getAttribute('href');
-    const videoContainer = modalEl.querySelector('.ratio');
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const videoSrc = this.getAttribute('href');
+      videoContainer.innerHTML = `
+        <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous" style="height: 400px; max-height: 80vh;">
+          <source src="${videoSrc}" type="video/mp4" />
+        </video>
+      `;
 
-    videoContainer.innerHTML = `
-      <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous" style="height: 400px; max-height: 80vh;">
-        <source src="${videoSrc}" type="video/mp4" />
-      </video>
-    `;
+      // 顯示 modal
+      modal.show();
 
-    modal.show();
-
-    // 延遲初始化，確保DOM更新完畢
-    setTimeout(() => {
-      window.player360 = videojs('videoPlayer360');
-      window.player360.vr({ projection: '360' });
-    }, 100);
+      // 在 modal 顯示後初始化 video.js 播放器
+      modalEl.addEventListener('shown.bs.modal', () => {
+        window.player360 = videojs('videoPlayer360');
+        window.player360.vr({ projection: '360' });
+        window.player360.trigger('resize');
+      }, { once: true });  // 用 once 確保事件只綁定一次
+    });
   });
-});
-
 </script>
-
-
 
 </body>
 
