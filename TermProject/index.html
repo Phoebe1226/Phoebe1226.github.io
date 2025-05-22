@@ -183,7 +183,7 @@
             </div>
          </div>
           <ul class="list-style-one two-column wow fadeInUp delay-0-2s">
-                <li><a href="https://www.google.com/maps?q=Zanda+Earth+Forest" target="_blank"></a><i class="ri-arrow-right-up-line"></i>Google 地圖</li>
+                <li><a href="https://www.google.com/maps?q=Zanda+Earth+Forest" target="_blank"><i class="ri-arrow-right-up-line"></i>Google 地圖</a></li>
            </ul>
         </div>
       </div>
@@ -210,7 +210,9 @@
                         <h4>荒野中的歇腳處</h4>
                         <p>這張照片拍攝於西藏高原寬闊的戶外地帶，視野開闊，遠方可見停靠的大巴與標示牌，象徵旅程的起點或歇腳處。厚重雲層鋪滿整片天空，陽光透過雲隙灑落大地，與地面裂紋交織出蒼涼卻壯麗的氛圍。</p>
                         <p><strong>地點：</strong>通往札達土林的郊外道路（近阿里地區）<br>
-                        <a href="https://www.google.com/maps?q=Zanda,+Ali,+Tibet,+China" target="_blank">查看地圖</a></p>
+                        <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                            <li><a href="https://www.google.com/maps?q=Zanda,+Ali,+Tibet,+China" target="_blank"><i class="ri-arrow-right-up-line"></i>Google 地圖</a></li>
+                        </ul>
                         <div class="media-content">
                             
                             <div class="psv-container-2" id="viewer-2"></div>
@@ -235,7 +237,9 @@
                         <h4>八廓街文化街區</h4>
                         <p>這張照片拍攝於一處融合藏式建築風格的街道，兩旁白牆建築點綴著木窗與彩色花飾，屋頂高掛經幡。地面鋪設整齊石板路，街區整潔有序，遊客悠閒行走其間，體驗文化與市集交融的旅遊風情。</p>
                         <p><strong>地點：</strong>拉薩八廓街／老城區內商圈<br>
-                        <a href="https://www.google.com/maps/search/Barkhor+Street,+Lhasa,+Tibet" target="_blank">查看地圖</a></p>
+                        <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                            <li><a href="https://www.google.com/maps/search/Barkhor+Street,+Lhasa,+Tibet" target="_blank"><i class="ri-arrow-right-up-line"></i>Google 地圖</a></li>
+                        </ul>
                         <div class="media-content">
                             <div class="psv-container-2" id="viewer-3"></div>
                             <audio controls style="width:100%; margin-top: 12px;">
@@ -633,7 +637,7 @@
       modalEl.classList.add('popup-720-video-modal');
 
       videoContainer.innerHTML = `
-        <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous" style="height: 400px; max-height: 80vh;">
+        <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous" style="min-height: 360px; max-height: 80vh;aspect-ratio: 16 / 9;">
           <source src="${videoSrc}" type="video/mp4" />
         </video>
       `;
