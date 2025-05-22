@@ -587,40 +587,64 @@
   const modal = new bootstrap.Modal(modalEl);
   const videoContainer = modalEl.querySelector('.ratio');
 
-  // 用來清理 modal 內容與播放器
+  // 清理 modal 內容與播放器
   function clearVideoPlayer() {
     if (window.player360) {
       window.player360.dispose();
       window.player360 = null;
     }
     videoContainer.innerHTML = `<video id="videoPlayer" class="w-100" controls autoplay></video>`;
+    modalEl.classList.remove('popup-720-video-modal');
   }
 
-  // modal 隱藏時清理播放器
+  // modal 隱藏時清理播放器和 class
   modalEl.addEventListener('hidden.bs.modal', () => {
     clearVideoPlayer();
   });
 
-  // 監聽所有 .popup-720-video 按鈕
-  document.querySelectorAll('.popup-720-video').forEach(link => {
-    link.addEventListener('click', function(e) {
+  // 一般影片按鈕
+  document.querySelectorAll('.popup-video:not(.popup-720-video)').forEach(link => {
+    link.addEventListener('click', function (e) {
       e.preventDefault();
       const videoSrc = this.getAttribute('href');
+      const videoPlayer = document.getElementById('videoPlayer');
+
+      // 移除 720class，確保是一般影片模式
+      modalEl.classList.remove('popup-720-video-modal');
+
+      videoPlayer.src = videoSrc;
+      modal.show();
+
+      // 清除影片避免關閉後繼續播放
+      modalEl.addEventListener('hidden.bs.modal', () => {
+        videoPlayer.pause();
+        videoPlayer.removeAttribute('src');
+      }, { once: true });
+    });
+  });
+
+  // 720度全景影片按鈕
+  document.querySelectorAll('.popup-720-video').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const videoSrc = this.getAttribute('href');
+
+      // 新增class給modal標示是720度影片
+      modalEl.classList.add('popup-720-video-modal');
+
       videoContainer.innerHTML = `
         <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous" style="height: 400px; max-height: 80vh;">
           <source src="${videoSrc}" type="video/mp4" />
         </video>
       `;
 
-      // 顯示 modal
       modal.show();
 
-      // 在 modal 顯示後初始化 video.js 播放器
       modalEl.addEventListener('shown.bs.modal', () => {
         window.player360 = videojs('videoPlayer360');
         window.player360.vr({ projection: '360' });
         window.player360.trigger('resize');
-      }, { once: true });  // 用 once 確保事件只綁定一次
+      }, { once: true });
     });
   });
 </script>
