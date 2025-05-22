@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.css" />
-    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <style>
         #audioModal {
         display: none;
@@ -176,10 +176,10 @@
           </p>
           <div class="d-flex">
             <div class="hero-btns">
-                <a href="assets/working/2-3-1.mp4" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                <a href="assets/working/3-1.mov" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
             </div>
             <div class="hero-btns">
-                <a href="assets/working/3-1.mov" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                <a href="assets/working/2-3-1.mp4" class="theme-btn popup-video popup-720-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
             </div>
          </div>
           <ul class="list-style-one two-column wow fadeInUp delay-0-2s">
@@ -219,10 +219,10 @@
                             </audio>
                             <div class="d-flex">
                                 <div class="hero-btns">
-                                    <a href="assets/working/2-3-2.mp4" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                                    <a href="assets/working/3-2.mov" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
                                 </div>
                                 <div class="hero-btns">
-                                    <a href="assets/working/3-2.mov" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                                    <a href="assets/working/2-3-2.mp4" class="theme-btn popup-video popup-720-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -244,10 +244,10 @@
                             
                             <div class="d-flex">
                                 <div class="hero-btns">
-                                    <a href="assets/working/2-3-3.mp4" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
+                                    <a href="assets/working/3-3.mov" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
                                 </div>
                                 <div class="hero-btns">
-                                    <a href="assets/working/3-3.mov" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                                    <a href="assets/working/2-3-3.mp4" class="theme-btn popup-video popup-720-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
                                 </div>
                             </div>
                         
@@ -390,7 +390,7 @@
                 <a href="assets/working/3-4.mov" class="theme-btn popup-video">觀看影片 <i class="ri-play-circle-line"></i></a>
                 </div>
                 <div class="hero-btns">
-                    <a href="assets/working/3-4.mp4" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                    <a href="assets/working/2-3-4.mp4" class="theme-btn popup-video popup-720-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
                 </div>
             </div>
             <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated">
@@ -425,7 +425,7 @@
                 </div>
                 
                 <div class="hero-btns">
-                    <a href="assets/working/3-5.mp4" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                    <a href="assets/working/2-3-5.mp4" class="theme-btn popup-video popup-720-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
                 </div>
             </div>
             <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated">
@@ -460,7 +460,7 @@
                 </div>
                 
                 <div class="hero-btns">
-                    <a href="assets/working/3-6.mp4" class="theme-btn popup-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
+                    <a href="assets/working/2-3-6.mp4" class="theme-btn popup-video popup-720-video">720 度全景影片<i class="ri-play-circle-line"></i></a>
                 </div>
             </div>
             <ul class="list-style-one two-column wow fadeInUp delay-0-2s animated">
@@ -480,6 +480,24 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <video id="videoPlayer" class="w-100" controls autoplay></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <!-- / END SCROOL UP DESIGN AREA -->
     <!-- JQUERY JS -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -559,48 +577,62 @@
     });
   });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/video/lg-video.umd.min.js"></script>
+
+<!-- videojs-vr plugin -->
+<script src="https://unpkg.com/video.js@8.3.0/dist/video.min.js"></script>
+<script src="https://unpkg.com/videojs-vr/dist/videojs-vr.min.js"></script>
+
 <script>
+  const modalEl = document.getElementById('videoModal');
+  const modal = new bootstrap.Modal(modalEl);
+  const videoContainer = modalEl.querySelector('.ratio');
+
+  // 用來清理 modal 內容與播放器
+  function clearVideoPlayer() {
+    // 如果 video.js VR 播放器存在，先銷毀
+    if (window.player360) {
+      window.player360.dispose();
+      window.player360 = null;
+    }
+    // 恢復 modal 內容為原生 video
+    videoContainer.innerHTML = `<video id="videoPlayer" class="w-100" controls autoplay></video>`;
+  }
+
+  // modal 隱藏時清理播放器
+  modalEl.addEventListener('hidden.bs.modal', () => {
+    clearVideoPlayer();
+  });
+
+  // 監聽所有 .popup-video 按鈕
   document.querySelectorAll('.popup-video').forEach(link => {
-    // 建立 wrapper 並插入 DOM
-    const wrapper = document.createElement('div');
-    wrapper.style.display = 'none';
-    document.body.appendChild(wrapper);
-
-    // 讓每個連結對應一個單獨的 LightGallery 實例
-    const galleryItem = document.createElement('a');
-    galleryItem.href = link.getAttribute('href');
-    galleryItem.dataset.lgVideo = JSON.stringify({
-      source: [{ src: link.getAttribute('href'), type: 'video/mp4' }],
-      attributes: { controls: true, preload: 'none' }
-    });
-    wrapper.appendChild(galleryItem);
-
-    const gallery = lightGallery(wrapper, {
-      dynamic: true,
-      plugins: [lgVideo],
-      licenseKey: '0000-0000-000-0000', // 可留空測試，正式版填寫 key
-      speed: 500,
-      dynamicEl: [{
-        src: link.getAttribute('href'),
-        thumb: '',
-        poster: '',
-        subHtml: `<h4>${link.textContent.trim()}</h4>`,
-        video: {
-          source: [{ src: link.getAttribute('href'), type: 'video/mp4' }],
-          attributes: { controls: true }
-        }
-      }]
-    });
-
-    // 點擊觸發 LightGallery 播放
-    link.addEventListener('click', e => {
+    link.addEventListener('click', function(e) {
       e.preventDefault();
-      gallery.openGallery(0);
+      const videoSrc = this.getAttribute('href');
+
+      // 判斷是否是720度全景影片 (有 .popup-720-video class)
+      if (this.classList.contains('popup-720-video')) {
+        // 替換 modal 內容為 video.js VR 播放器
+        videoContainer.innerHTML = `
+          <video id="videoPlayer360" class="video-js vjs-default-skin w-100" controls autoplay playsinline crossorigin="anonymous">
+            <source src="${videoSrc}" type="video/mp4" />
+          </video>
+        `;
+        modal.show();
+
+        // 初始化 video.js + VR 插件
+        window.player360 = videojs('videoPlayer360');
+        window.player360.vr({ projection: '360' });
+      } else {
+        // 一般影片，使用原生 video 播放器
+        clearVideoPlayer(); // 確保切換前清理
+        const videoPlayer = modalEl.querySelector('#videoPlayer');
+        videoPlayer.src = videoSrc;
+        modal.show();
+      }
     });
   });
 </script>
+
 
 
 </body>
