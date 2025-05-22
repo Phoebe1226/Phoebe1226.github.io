@@ -31,7 +31,8 @@
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.css" />
+    <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer@4.8.1/dist/photo-sphere-viewer.css" />
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet" />
     <style>
         #audioModal {
         display: none;
@@ -555,6 +556,48 @@
           height: '100%',
         }
       });
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/video/lg-video.umd.min.js"></script>
+<script>
+  document.querySelectorAll('.popup-video').forEach(link => {
+    // 建立 wrapper 並插入 DOM
+    const wrapper = document.createElement('div');
+    wrapper.style.display = 'none';
+    document.body.appendChild(wrapper);
+
+    // 讓每個連結對應一個單獨的 LightGallery 實例
+    const galleryItem = document.createElement('a');
+    galleryItem.href = link.getAttribute('href');
+    galleryItem.dataset.lgVideo = JSON.stringify({
+      source: [{ src: link.getAttribute('href'), type: 'video/mp4' }],
+      attributes: { controls: true, preload: 'none' }
+    });
+    wrapper.appendChild(galleryItem);
+
+    const gallery = lightGallery(wrapper, {
+      dynamic: true,
+      plugins: [lgVideo],
+      licenseKey: '0000-0000-000-0000', // 可留空測試，正式版填寫 key
+      speed: 500,
+      dynamicEl: [{
+        src: link.getAttribute('href'),
+        thumb: '',
+        poster: '',
+        subHtml: `<h4>${link.textContent.trim()}</h4>`,
+        video: {
+          source: [{ src: link.getAttribute('href'), type: 'video/mp4' }],
+          attributes: { controls: true }
+        }
+      }]
+    });
+
+    // 點擊觸發 LightGallery 播放
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      gallery.openGallery(0);
     });
   });
 </script>
